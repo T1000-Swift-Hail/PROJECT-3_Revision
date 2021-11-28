@@ -29,21 +29,35 @@ extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrayMovie.count
-    }
+        
+        if collectionView == self.movieCollection {
+            return arrayMovie.count
+        }
+        return posterImage.count
+        }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let movieCell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCell", for: indexPath) as! MovieCollectionViewCell
-        movieCell.imageMovie.image = arrayMovie[indexPath.row]
-        
-        return movieCell
+        if collectionView == self.movieCollection {
+            
+            let movieCell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCell", for: indexPath) as! MovieCollectionViewCell
+            movieCell.imageMovie.image = arrayMovie[indexPath.row]
+            return movieCell
+            
+        } else {
+            guard let posterMovie = collectionView.dequeueReusableCell(withReuseIdentifier: "posterMovie", for: indexPath) as? MovieCollectionViewCell else { return UICollectionViewCell() }
+            posterMovie.posterImage.image = posterImage[indexPath.row]
+            return posterMovie
+        }
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: collectionView.frame.width , height: collectionView.frame.height)
+        if collectionView == self.movieCollection {
+            return CGSize(width: collectionView.frame.width , height: collectionView.frame.height)
+        } else {
+            return CGSize(width: 200 , height: (collectionView.frame.height) / 3 )
+        }
     }
     
     

@@ -13,6 +13,7 @@ class MovieVC: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var posterCollection: UICollectionView!
     
+    
     var timer: Timer?
     var currentCellIndex = 0
     
@@ -21,6 +22,10 @@ class MovieVC: UIViewController {
         
         movieCollection.delegate = self
         movieCollection.dataSource = self
+        posterCollection.delegate = self
+        posterCollection.dataSource = self
+        posterCollection.collectionViewLayout = UICollectionViewFlowLayout()
+        
         pageControl.numberOfPages = arrayMovie.count
         startTimer()
     }
