@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yKX-hf-XFu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tSb-Xv-4f3">
+            <objects>
+                <viewController id="yKX-hf-XFu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gCp-dg-4JI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="oQy-wO-6NK">
+                                <rect key="frame" x="5" y="103" width="395" height="754"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7W-dB-3Q2">
+                                        <rect key="frame" x="0.0" y="0.0" width="395" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="Lus-aN-q9e"/>
+                                            <constraint firstAttribute="width" constant="395" id="oJq-F8-yQG"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title=" Milestones                      .  " subtitle="">
+                                            <backgroundConfiguration key="background" cornerRadius="60" image="Milestoness" imageContentMode="scaleToFill"/>
+                                            <fontDescription key="titleFontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="45"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbK-37-v8D">
+                                        <rect key="frame" x="0.0" y="151" width="395" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="af1-y4-Rcb"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="ShoppingCenters"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtK-71-OOA">
+                                        <rect key="frame" x="0.0" y="302" width="395" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="aEo-7t-PI3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Hotels"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fc-q6-XQ5">
+                                        <rect key="frame" x="0.0" y="453" width="395" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="Whx-I3-DqD"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Milestones"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wt5-ga-ce9">
+                                        <rect key="frame" x="0.0" y="604" width="395" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="ihJ-1L-4zR"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Restaurants&amp;Cafe"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="395" id="3Tr-sD-shP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RMa-2N-mIm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RMa-2N-mIm" firstAttribute="bottom" secondItem="oQy-wO-6NK" secondAttribute="bottom" constant="5" id="lZx-cq-573"/>
+                            <constraint firstItem="oQy-wO-6NK" firstAttribute="leading" secondItem="RMa-2N-mIm" secondAttribute="leading" constant="5" id="nJc-wb-39w"/>
+                            <constraint firstItem="RMa-2N-mIm" firstAttribute="trailing" secondItem="oQy-wO-6NK" secondAttribute="trailing" constant="5" id="o0k-HC-7ac"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ZM-hF-ttV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="-3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hotels" width="546" height="176"/>
+        <image name="Milestones" width="556" height="180"/>
+        <image name="Milestoness" width="549" height="172"/>
+        <image name="Restaurants&amp;Cafe" width="555" height="176"/>
+        <image name="ShoppingCenters" width="564" height="178"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
