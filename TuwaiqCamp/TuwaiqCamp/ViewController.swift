@@ -7,30 +7,29 @@
 
 import UIKit
 
-class ViewController: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController ,UICollectionViewDelegate , UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    
     @IBOutlet weak var collection: UICollectionView!
     
-
-    
-    var logosImage = [UIImage(named: "hospital"), UIImage(named: "University")]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         collection.delegate = self
         collection.dataSource = self
         
     }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return logosImage.count
+    
+    @objc(collectionView:cellForItemAtIndexPath:) func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "logoCell", for: indexPath) as! LogosCollectionViewCell
+        cell.logoImage.image = logosImage[indexPath.row]
+        return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "logoCell", for: indexPath) as? LogosCollectionViewCell else {return UICollectionViewCell()}
-        cell.logoImage.image = logosImage[indexPath.row]
+    @objc func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return cell
+        return logosImage.count
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
@@ -38,13 +37,14 @@ class ViewController: UIViewController , UICollectionViewDelegate , UICollection
         switch indexPath.row {
         case 0 :
             performSegue(withIdentifier: "MapKit", sender: nil)
-        default:
-            performSegue(withIdentifier: "Ward", sender: nil)
-            
-            
+        default :
+            performSegue(withIdentifier: "mmm", sender: nil)
         }
+        prepare(for: <#T##UIStoryboardSegue#>, sender: <#T##Any?#>)
         
 }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (view.frame.width) - 8 , height: (view.frame.height) / 4)
+    }
 
 }
-

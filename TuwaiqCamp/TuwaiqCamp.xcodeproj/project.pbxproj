@@ -14,6 +14,8 @@
 		4F72D569275402B3005D81A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F72D568275402B3005D81A0 /* Assets.xcassets */; };
 		4F72D56C275402B3005D81A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F72D56A275402B3005D81A0 /* LaunchScreen.storyboard */; };
 		4F72D57427540520005D81A0 /* LogosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F72D57327540520005D81A0 /* LogosCollectionViewCell.swift */; };
+		4F8D44C22754AA4300BD3AA8 /* cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8D44C12754AA4300BD3AA8 /* cells.swift */; };
+		4F8D44C62754C68D00BD3AA8 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8D44C52754C68D00BD3AA8 /* LocationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4F72D56B275402B3005D81A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F72D56D275402B3005D81A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F72D57327540520005D81A0 /* LogosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogosCollectionViewCell.swift; sourceTree = "<group>"; };
+		4F8D44C12754AA4300BD3AA8 /* cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cells.swift; sourceTree = "<group>"; };
+		4F8D44C52754C68D00BD3AA8 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				4F72D56A275402B3005D81A0 /* LaunchScreen.storyboard */,
 				4F72D56D275402B3005D81A0 /* Info.plist */,
 				4F72D57327540520005D81A0 /* LogosCollectionViewCell.swift */,
+				4F8D44C12754AA4300BD3AA8 /* cells.swift */,
+				4F8D44C52754C68D00BD3AA8 /* LocationsViewController.swift */,
 			);
 			path = TuwaiqCamp;
 			sourceTree = "<group>";
@@ -145,6 +151,8 @@
 				4F72D560275402B2005D81A0 /* AppDelegate.swift in Sources */,
 				4F72D562275402B2005D81A0 /* SceneDelegate.swift in Sources */,
 				4F72D57427540520005D81A0 /* LogosCollectionViewCell.swift in Sources */,
+				4F8D44C22754AA4300BD3AA8 /* cells.swift in Sources */,
+				4F8D44C62754C68D00BD3AA8 /* LocationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
