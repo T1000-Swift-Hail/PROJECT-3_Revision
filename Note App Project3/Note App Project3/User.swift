@@ -7,12 +7,20 @@
 
 import Foundation
 // This is for user
-
-struct User {
+protocol User {
+    var email: String {get}
+    var phone: Int {get}
+    var name :String {get}
+    var age :Int {get}
+    
+}
+    
+struct person:User {
     
     var email: String
     var phone: Int
     var name :String
     var age :Int
-    
 }
+ 
+

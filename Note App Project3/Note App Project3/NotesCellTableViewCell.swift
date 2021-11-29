@@ -17,8 +17,8 @@ class NotesCellTableViewCell: UITableViewCell {
     }
 
     func setCell(note:MyNotes){
-        txteTitel.text=note.title
+        textTitel.text = note.titel
         
-        txtedetlas.text=note.details
+        textDetails.text = note.detlas
     }
 }

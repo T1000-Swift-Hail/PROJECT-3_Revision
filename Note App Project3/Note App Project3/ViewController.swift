@@ -28,14 +28,16 @@ class ViewController: UIViewController {
     @IBAction func doyousave(_ sender: Any) {
         // save in nites entity
         let newNote = MyNotes(context: context)
-        newNote.titl = txteTitel
-        newNote.detils = txtedetlas.text
-        newNote.data_save = NSData()
+        newNote.titel = txteTitel.text
+        newNote.detlas = txtedetlas.text
+        newNote.data_save = Date()
         do{
         ad.saveContext()
             print("saved")
             txteTitel.text=""
             txtedetlas.text=""
+           performSegue(withIdentifier: "savenotes", sender: nil)
+            
         }
         catch{
             print("error")
