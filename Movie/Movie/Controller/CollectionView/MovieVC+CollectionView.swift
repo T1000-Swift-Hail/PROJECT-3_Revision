@@ -13,9 +13,9 @@ import UIKit
 extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
-    func startTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(moveToNextIndex) , userInfo: nil, repeats: true)
-    }
+//    func startTimer() {
+//        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(moveToNextIndex) , userInfo: nil, repeats: true)
+//    }
     
     @objc func moveToNextIndex(){
         if currentCellIndex < arrayMovie.count - 1 {
@@ -27,6 +27,7 @@ extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         pageControl.currentPage = currentCellIndex
     }
     
+ //MARK: -
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -35,13 +36,15 @@ extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         }
         return posterImage.count
         }
-    
+  
+    //MARK: -
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if collectionView == self.movieCollection {
             
             let movieCell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCell", for: indexPath) as! MovieCollectionViewCell
-            movieCell.imageMovie.image = arrayMovie[indexPath.row]
+            movieCell.imageMovie.image = arrayMovie[indexPath.row] 
             return movieCell
             
         } else {
@@ -50,7 +53,9 @@ extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             return posterMovie
         }
     }
-    
+   
+    //MARK: -
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if collectionView == self.movieCollection {
@@ -61,8 +66,27 @@ extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
     }
     
     
+    //MARK: -
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+    
+    
+    //MARK: -
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toMovie", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toMovie" {
+         
+            let selectMovie = posterImage[self.posterCollection.indexPathsForSelectedItems?[0].row ?? 0]
+            let destination = segue.destination as! MovieDetails
+            destination.imageDetiles =  selectMovie
+        }
     }
     
     

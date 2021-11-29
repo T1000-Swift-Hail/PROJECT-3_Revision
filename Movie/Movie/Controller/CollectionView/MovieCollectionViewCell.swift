@@ -11,7 +11,5 @@ class MovieCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageMovie: UIImageView!
     @IBOutlet weak var posterImage: UIImageView!
-    
-    
 
 }

@@ -16,9 +16,10 @@
 		047FCAF2275363F50078C072 /* MovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCAF1275363F50078C072 /* MovieVC.swift */; };
 		047FCAF4275364490078C072 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCAF3275364490078C072 /* MovieCollectionViewCell.swift */; };
 		047FCAF7275369DF0078C072 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCAF6275369DE0078C072 /* UIImage+Ex.swift */; };
-		047FCAFE2753838A0078C072 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCAFD2753838A0078C072 /* Model.swift */; };
+		047FCAFE2753838A0078C072 /* ArrayCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCAFD2753838A0078C072 /* ArrayCollection.swift */; };
 		047FCB0227538BD00078C072 /* MovieVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCB0127538BD00078C072 /* MovieVC+CollectionView.swift */; };
 		047FCB062753B32D0078C072 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCB052753B32D0078C072 /* MovieDetails.swift */; };
+		047FCB082753DF310078C072 /* StructDetiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCB072753DF310078C072 /* StructDetiles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +34,10 @@
 		047FCAF1275363F50078C072 /* MovieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVC.swift; sourceTree = "<group>"; };
 		047FCAF3275364490078C072 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		047FCAF6275369DE0078C072 /* UIImage+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
-		047FCAFD2753838A0078C072 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		047FCAFD2753838A0078C072 /* ArrayCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCollection.swift; sourceTree = "<group>"; };
 		047FCB0127538BD00078C072 /* MovieVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieVC+CollectionView.swift"; sourceTree = "<group>"; };
 		047FCB052753B32D0078C072 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
+		047FCB072753DF310078C072 /* StructDetiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructDetiles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +94,8 @@
 		047FCAF827537ADE0078C072 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				047FCB052753B32D0078C072 /* MovieDetails.swift */,
 				047FCAF1275363F50078C072 /* MovieVC.swift */,
+				047FCB052753B32D0078C072 /* MovieDetails.swift */,
 				047FCAFB275382C10078C072 /* CollectionView */,
 			);
 			path = Controller;
@@ -102,7 +104,8 @@
 		047FCAF927537AF50078C072 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				047FCAFD2753838A0078C072 /* Model.swift */,
+				047FCAFD2753838A0078C072 /* ArrayCollection.swift */,
+				047FCB072753DF310078C072 /* StructDetiles.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,10 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047FCAFE2753838A0078C072 /* Model.swift in Sources */,
+				047FCAFE2753838A0078C072 /* ArrayCollection.swift in Sources */,
 				047FCAE227535F310078C072 /* ViewController.swift in Sources */,
 				047FCB0227538BD00078C072 /* MovieVC+CollectionView.swift in Sources */,
 				047FCADE27535F310078C072 /* AppDelegate.swift in Sources */,
+				047FCB082753DF310078C072 /* StructDetiles.swift in Sources */,
 				047FCAF4275364490078C072 /* MovieCollectionViewCell.swift in Sources */,
 				047FCAF2275363F50078C072 /* MovieVC.swift in Sources */,
 				047FCAF7275369DF0078C072 /* UIImage+Ex.swift in Sources */,

@@ -14,7 +14,7 @@ class MovieVC: UIViewController {
     @IBOutlet weak var posterCollection: UICollectionView!
     
     
-    var timer: Timer?
+    //var timer: Timer?
     var currentCellIndex = 0
     
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class MovieVC: UIViewController {
         posterCollection.collectionViewLayout = UICollectionViewFlowLayout()
         
         pageControl.numberOfPages = arrayMovie.count
-        startTimer()
+        //startTimer()
     }
     
 }

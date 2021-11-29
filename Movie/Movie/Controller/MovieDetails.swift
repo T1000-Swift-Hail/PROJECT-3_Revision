@@ -11,22 +11,23 @@ class MovieDetails: UIViewController {
 
     @IBOutlet weak var movieImage: UIImageView!
     @IBOutlet weak var movieTitle: UILabel!
-    @IBOutlet weak var movieReleaseDate: UILabel!
-    @IBOutlet weak var runTime: UILabel!
-    @IBOutlet weak var rating: UILabel!
+    @IBOutlet weak var movieRating: UILabel!
+    @IBOutlet weak var movieDescribtion: UILabel!
     
     
-    
-    
-    
-    
+    var imageDetiles: UIImage!
+    var titleDetiles: UILabel!
+    var ratingDetiles: UILabel!
+    var describtionDetiles: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
+        
+        
+        movieImage.image = imageDetiles
     
-
+        
+    }
 
 }

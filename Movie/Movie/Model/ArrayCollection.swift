@@ -32,7 +32,3 @@ var posterImage = [
     UIImage(resource: .SpiritedAway),
     UIImage(resource: .ToyStory)
 ]
-
-
-
-
