@@ -22,7 +22,7 @@ class ViewController2: UIViewController,
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NotesCellTableViewCell
-        
+        print(listNotes[indexPath.row].detlas)
         cell.setCell(note: listNotes[indexPath.row])
         return cell
         }
@@ -37,6 +37,8 @@ class ViewController2: UIViewController,
     
     override func viewDidLoad(){
     super.viewDidLoad()
+        
+        tvListNotes.rowHeight = 190
         loadNotes()
     }
     
@@ -70,6 +72,8 @@ class ViewController2: UIViewController,
             case weekly
             case monthly
         }
+        
+        
         let mynote = notes.daily
 
         switch mynote {
@@ -80,7 +84,12 @@ class ViewController2: UIViewController,
         case notes.monthly:
             print("month")
         }
-        let mynotes = ["one", "two", "three", "four", "five"]
+        
+        
+        
+        
+        
+        let mynotes = ["one", "two", "three"]
 
         for name in mynotes {
             print(name)

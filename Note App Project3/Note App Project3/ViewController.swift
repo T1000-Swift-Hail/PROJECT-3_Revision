@@ -22,10 +22,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func showMyNotes(_ sender: Any) {
+        
+        performSegue(withIdentifier: "gotoMyNotes", sender: nil)
+    }
+    
+
     
 
     
     @IBAction func doyousave(_ sender: Any) {
+        performSegue(withIdentifier: "gotoMyNotes", sender: nil)
+        
+    
+        
+        
+        
         // save in nites entity
         let newNote = MyNotes(context: context)
         newNote.titel = txteTitel.text
@@ -36,7 +48,7 @@ class ViewController: UIViewController {
             print("saved")
             txteTitel.text=""
             txtedetlas.text=""
-           performSegue(withIdentifier: "savenotes", sender: nil)
+          
             
         }
         catch{

@@ -21,6 +21,7 @@ struct person:User {
     var phone: Int
     var name :String
     var age :Int
+    var id : Int 
 }
  
 
