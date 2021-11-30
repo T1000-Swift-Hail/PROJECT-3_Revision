@@ -7,19 +7,27 @@
 
 import UIKit
 
-class ViewController: UIViewController ,UICollectionViewDelegate , UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
+class HomeViewController : UIViewController ,UICollectionViewDelegate , UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collection: UICollectionView!
     
+    var logosImage = [
+        UIImage(named: "11"),
+        UIImage(named: "0"),
+        UIImage(named: "City"),
+        UIImage(named: "Features"),
+        UIImage(named: "direction"),
+        UIImage(named: "click"),
+        UIImage(named: "success")
+    ]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collection.delegate = self
         collection.dataSource = self
-        
     }
+    
     
     @objc(collectionView:cellForItemAtIndexPath:) func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "logoCell", for: indexPath) as! LogosCollectionViewCell
@@ -28,7 +36,6 @@ class ViewController: UIViewController ,UICollectionViewDelegate , UICollectionV
     }
     
     @objc func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return logosImage.count
     }
     
@@ -36,13 +43,24 @@ class ViewController: UIViewController ,UICollectionViewDelegate , UICollectionV
         
         switch indexPath.row {
         case 0 :
-            performSegue(withIdentifier: "MapKit", sender: nil)
+            performSegue(withIdentifier: "Overview", sender: nil)
+        case 1 :
+            performSegue(withIdentifier: "locations", sender: nil)
+        case 2 :
+            performSegue(withIdentifier: "locations", sender: nil)
+        case 3 :
+            performSegue(withIdentifier: "Features", sender: nil)
+        case 4 :
+            performSegue(withIdentifier: "locations", sender: nil)
+        case 5 :
+            performSegue(withIdentifier: "locations", sender: nil)
+        case 6 :
+            performSegue(withIdentifier: "locations", sender: nil)
         default :
             performSegue(withIdentifier: "mmm", sender: nil)
         }
-        prepare(for: <#T##UIStoryboardSegue#>, sender: <#T##Any?#>)
-        
 }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (view.frame.width) - 8 , height: (view.frame.height) / 4)
     }

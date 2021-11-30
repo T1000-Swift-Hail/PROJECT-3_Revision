@@ -10,10 +10,5 @@ import UIKit
 class LogosCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var logoImage: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
     
-//    func setup(with cells: Cells){
-//        logoImage.image = cells.image
-//        titleLabel.text = cells.title
-//    }
 }
