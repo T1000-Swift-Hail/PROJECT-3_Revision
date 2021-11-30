@@ -7,6 +7,8 @@
 
 import UIKit
 
+// class contains the elements of cell ....
+
 class ShoppingCentersCVCell: UICollectionViewCell {
     
     @IBOutlet weak var nameOfMallLBL: UILabel!

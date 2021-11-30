@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A75BE5C92755E0960072DA97 /* InformationMallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75BE5C82755E0960072DA97 /* InformationMallVC.swift */; };
 		A75CE72627559DE70065B793 /* EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75CE72527559DE70065B793 /* EX.swift */; };
 		A75CE72C2755BBFB0065B793 /* ShoppingCentersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75CE72B2755BBFB0065B793 /* ShoppingCentersVC.swift */; };
 		A75CE72F2755BDA00065B793 /* ShoppingCentersVC++CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75CE72E2755BDA00065B793 /* ShoppingCentersVC++CollectionView.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A75BE5C82755E0960072DA97 /* InformationMallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationMallVC.swift; sourceTree = "<group>"; };
 		A75CE72527559DE70065B793 /* EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX.swift; sourceTree = "<group>"; };
 		A75CE72B2755BBFB0065B793 /* ShoppingCentersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCentersVC.swift; sourceTree = "<group>"; };
 		A75CE72E2755BDA00065B793 /* ShoppingCentersVC++CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingCentersVC++CollectionView.swift"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				A75CE72B2755BBFB0065B793 /* ShoppingCentersVC.swift */,
 				A75CE72E2755BDA00065B793 /* ShoppingCentersVC++CollectionView.swift */,
 				A75CE7302755BE3F0065B793 /* ShoppingCentersCVCell.swift */,
+				A75BE5C82755E0960072DA97 /* InformationMallVC.swift */,
 			);
 			path = ShoppingCentersVC;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				A7EBAF902754362C0071B973 /* ViewControllerFirst.swift in Sources */,
 				A7EBAF8C2754362C0071B973 /* AppDelegate.swift in Sources */,
 				A75CE7312755BE3F0065B793 /* ShoppingCentersCVCell.swift in Sources */,
+				A75BE5C92755E0960072DA97 /* InformationMallVC.swift in Sources */,
 				A7EBAFAD2754CBC10071B973 /* SectionCollectionReusableView.swift in Sources */,
 				A7EBAFA92754BFDB0071B973 /* RestaurantsAndCafeCVC.swift in Sources */,
 				A75CE72C2755BBFB0065B793 /* ShoppingCentersVC.swift in Sources */,

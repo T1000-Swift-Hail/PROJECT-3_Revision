@@ -15,7 +15,8 @@ class ShoppingCentersVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        view.backgroundColor = UIColor(rgb: 0xFFE0ECDE)
+        collectionView.backgroundColor = UIColor(rgb: 0xFFE0ECDE)
         setDelegate()
     }
 }
