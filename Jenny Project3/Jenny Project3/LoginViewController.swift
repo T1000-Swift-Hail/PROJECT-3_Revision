@@ -9,34 +9,37 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBAction func usernameUITextField(_ sender: Any) {
-    }
-    @IBAction func phonenumberUITextField(_ sender: Any) {
-    }
-    @IBAction func passwordUITextField(_ sender: Any) {
-    }
-}
-let customer = Customer()
+    @IBOutlet weak var userNameTx: UITextField!
+    
+    @IBOutlet weak var phonenumberTx: UITextField!
+    
+    @IBOutlet weak var passwordTx: UITextField!
+   
+
+let customer = Customer(name: "nasser", age: 30, service: [Service(name: "it takes you to the place you want", description: "", price: 50)], password: "4334", phoneNumber: 0535173329)
   
  // The customer writes the user name and password and enters it on the application
-func viewDidLoad() {
+override func viewDidLoad() {
        super.viewDidLoad()
+    
+    
+    if (userNameTx.text == customer.name) && (passwordTx.text == customer.password)&&(phonenumberTx.text == String(customer.phoneNumber)) {
+        
+        performSegue(withIdentifier: "home", sender: nil)
+        
+    } else {
+        
+        let alert = UIAlertController(title: "Error", message: "wrong username or password", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .cancel))
+        present(alert, animated: true)
+    }
        
    }
-func Signin(_ sender: UIButton) {
-    
-}
 
-if (username.text == customer.name) && (password.text == customer.password)&&(phonenumber.text == customer.phonenumbe) {
-    
-    performSegue(withIdentifier: "home", sender: nil)
-    
-} else {
-    
-    let alert = UIAlertController(title: "Error", message: "wrong username or password", preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: "Okay", style: .cancel))
-    present(alert, animated: true)
-}
+
+
+
+
 }
 
 

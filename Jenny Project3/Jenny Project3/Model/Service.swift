@@ -12,13 +12,16 @@ import UIKit
         var name : String
         var description : String
         var price : Int
+        var phoneNumber : Int
         
     }
 
 
 
 
-
+//protocol person {
+  //  var name : String {get}
+   // var age : Int {get}
 
 
 
@@ -33,4 +36,3 @@ import UIKit
     }
     */
 
-}

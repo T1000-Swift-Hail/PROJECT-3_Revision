@@ -7,25 +7,21 @@
 
 import UIKit
 
-class Customer: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class Customer {
 
-        // Do any additional setup after loading the view.
+    var name: String
+    var age: Int
+    let services : [Service]
+    var phoneNumber : Int
+    var password: String
+    var description : String {
+  
+        return " the customer name is \(name) and age is \(age)"
     }
+   
     
-    class Customer {
 
-        var name: String
-        var age: Int
-        let services : [Service]
-        var phonenumberphoneNumber : Int
-        var password: String
-        var description : String {
-      
-            return " the customer name is \(name) and age is \(age)"
-        }
      
     // The customer is trained if he has a gold card with all services at a reduced value and the value of the subscription 50 RS
 
@@ -51,22 +47,16 @@ class Customer: UIViewController {
                }
            }
         
-        init (name : String, age : Int, service:[Service],password:String) {
+    init (name : String, age : Int, service:[Service],password:String, phoneNumber : Int) {
         self.name = name
            self.age = age
          self.services = service
          self.password = password
+        self.phoneNumber = phoneNumber
            }
-    }
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
+    
+

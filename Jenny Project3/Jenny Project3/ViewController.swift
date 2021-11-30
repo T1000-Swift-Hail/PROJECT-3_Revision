@@ -17,5 +17,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func goToDetails(_ sender: Any) {
+        
+        performSegue(withIdentifier: "gotodetails", sender:nil  )
+    }
 }
 
