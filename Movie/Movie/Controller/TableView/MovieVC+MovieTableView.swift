@@ -11,8 +11,6 @@ import UIKit
 
 extension MovieVC: UITableViewDelegate, UITableViewDataSource {
     
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayDetiles.count
     }
@@ -30,20 +28,21 @@ extension MovieVC: UITableViewDelegate, UITableViewDataSource {
         return 170
     }
     
+ //MARK: - WATCHLIST !!
+    
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-        let favoriteAction = UIContextualAction(style: .normal, title: "WathcList") { (action, view, nil) in
+        let favoriteAction = UIContextualAction(style: .normal, title: "WathcList") { (action, view, complemntion) in
             print("User Add to Watchlist")
         }
 
         favoriteAction.image = UIImage(systemName: "clock")
 //        favoriteAction.backgroundColor = .blue
         let config = UISwipeActionsConfiguration(actions: [favoriteAction])
-        config.performsFirstActionWithFullSwipe = false // عشان لما اسحبه ما تنمغط
+        config.performsFirstActionWithFullSwipe = false // No Stretching..
         return config
     }
-    
     
     
 }

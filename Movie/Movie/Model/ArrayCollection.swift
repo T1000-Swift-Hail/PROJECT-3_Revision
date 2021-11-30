@@ -9,8 +9,6 @@ import Foundation
 import UIKit
 
 
-
-
 var arrayMovie  = [
     UIImage(resource: .ABeautifulMind_Ani),
     UIImage(resource: .Dune_Ani),

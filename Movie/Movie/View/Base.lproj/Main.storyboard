@@ -56,7 +56,7 @@
                                 </cells>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BfG-uH-LIM">
-                                <rect key="frame" x="0.0" y="296" width="414" height="517"/>
+                                <rect key="frame" x="0.0" y="287" width="414" height="526"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="movieCell" rowHeight="184" id="AVc-78-4C5" customClass="MovieTableViewCell" customModule="Movie" customModuleProvider="target">
@@ -131,7 +131,7 @@
                             <constraint firstItem="BfG-uH-LIM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5xo-L7-pjZ"/>
                             <constraint firstItem="XXo-d4-XhJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8cu-2c-Hb3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XXo-d4-XhJ" secondAttribute="trailing" id="LL8-NU-kBv"/>
-                            <constraint firstItem="BfG-uH-LIM" firstAttribute="top" secondItem="XXo-d4-XhJ" secondAttribute="bottom" constant="8" id="S9h-bY-2mO"/>
+                            <constraint firstItem="BfG-uH-LIM" firstAttribute="top" secondItem="XXo-d4-XhJ" secondAttribute="bottom" constant="-1" id="S9h-bY-2mO"/>
                             <constraint firstItem="XXo-d4-XhJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gR5-ti-5Wi"/>
                             <constraint firstItem="BfG-uH-LIM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tHC-xH-ith"/>
                             <constraint firstItem="BfG-uH-LIM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xMJ-I4-Sp5"/>
@@ -186,11 +186,11 @@
             </objects>
             <point key="canvasLocation" x="-384" y="481"/>
         </scene>
-        <!--watchlist-->
+        <!--Watchlist-->
         <scene sceneID="xdJ-Ac-IXu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lym-vc-XiK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="watchlist" image="clock" catalog="system" selectedImage="clock.fill" id="uIS-GI-PwK"/>
+                    <tabBarItem key="tabBarItem" title="Watchlist" image="clock" catalog="system" selectedImage="clock.fill" id="uIS-GI-PwK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uIH-K2-Wzv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -205,74 +205,25 @@
             </objects>
             <point key="canvasLocation" x="929" y="858"/>
         </scene>
-        <!--View Controller-->
+        <!--Watchlist-->
         <scene sceneID="diq-yn-tQD">
             <objects>
-                <viewController id="O6d-TK-oiA" sceneMemberID="viewController">
+                <viewController id="O6d-TK-oiA" customClass="WatchListVC" customModule="Movie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gQc-ap-WmB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kjq-DK-QyT">
-                                <rect key="frame" x="0.0" y="132" width="414" height="681"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="movieCell" rowHeight="184" id="xMw-qV-LjN" customClass="MovieTableViewCell" customModule="Movie" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="watchCell" rowHeight="184" id="xMw-qV-LjN" customClass="MovieTableViewCell" customModule="Movie" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="184"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xMw-qV-LjN" id="ZFH-t3-VwL">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Ql-8q-t9W">
-                                                    <rect key="frame" x="20" y="11" width="95" height="130"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="95" id="WIo-ng-yaO"/>
-                                                        <constraint firstAttribute="height" constant="130" id="vBd-ye-EqA"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qk-R7-3Tv">
-                                                    <rect key="frame" x="27" y="145" width="81" height="21"/>
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xn5-Ld-Q4b">
-                                                    <rect key="frame" x="123" y="32" width="271" height="141"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="141" id="VFT-QV-gk9"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLz-yJ-rwV">
-                                                    <rect key="frame" x="123" y="11" width="271" height="20"/>
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="8Ql-8q-t9W" firstAttribute="centerX" secondItem="6Qk-R7-3Tv" secondAttribute="centerX" id="7oT-2y-uWb"/>
-                                                <constraint firstItem="jLz-yJ-rwV" firstAttribute="leading" secondItem="8Ql-8q-t9W" secondAttribute="trailing" constant="8" id="Iz1-y4-cK4"/>
-                                                <constraint firstItem="xn5-Ld-Q4b" firstAttribute="trailing" secondItem="ZFH-t3-VwL" secondAttribute="trailingMargin" id="Jc4-xY-GfJ"/>
-                                                <constraint firstItem="8Ql-8q-t9W" firstAttribute="top" secondItem="jLz-yJ-rwV" secondAttribute="top" id="JgO-of-ROE"/>
-                                                <constraint firstItem="xn5-Ld-Q4b" firstAttribute="bottom" secondItem="ZFH-t3-VwL" secondAttribute="bottomMargin" id="NRE-KD-wkv"/>
-                                                <constraint firstItem="6Qk-R7-3Tv" firstAttribute="top" secondItem="8Ql-8q-t9W" secondAttribute="bottom" constant="4" id="O4v-ta-MUw"/>
-                                                <constraint firstItem="jLz-yJ-rwV" firstAttribute="trailing" secondItem="ZFH-t3-VwL" secondAttribute="trailingMargin" id="ONM-6R-Jow"/>
-                                                <constraint firstItem="xn5-Ld-Q4b" firstAttribute="top" secondItem="ZFH-t3-VwL" secondAttribute="topMargin" constant="21" id="SJ0-c7-sVn"/>
-                                                <constraint firstItem="xn5-Ld-Q4b" firstAttribute="leading" secondItem="8Ql-8q-t9W" secondAttribute="trailing" constant="8" symbolic="YES" id="pBl-PC-pTS"/>
-                                                <constraint firstItem="jLz-yJ-rwV" firstAttribute="top" secondItem="ZFH-t3-VwL" secondAttribute="topMargin" id="pXZ-1C-q9F"/>
-                                                <constraint firstItem="8Ql-8q-t9W" firstAttribute="leading" secondItem="ZFH-t3-VwL" secondAttribute="leadingMargin" id="vQb-bT-D88"/>
-                                            </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="descriptionMovie" destination="xn5-Ld-Q4b" id="FjB-gR-xIz"/>
-                                            <outlet property="posterMovie" destination="8Ql-8q-t9W" id="bdZ-or-vYo"/>
-                                            <outlet property="ratingMovie" destination="6Qk-R7-3Tv" id="JPS-8F-Rax"/>
-                                            <outlet property="titleMovie" destination="jLz-yJ-rwV" id="HTc-UP-GcF"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -283,10 +234,13 @@
                             <constraint firstItem="Kjq-DK-QyT" firstAttribute="trailing" secondItem="LBh-II-KXl" secondAttribute="trailing" id="TyD-o0-9Ni"/>
                             <constraint firstItem="Kjq-DK-QyT" firstAttribute="bottom" secondItem="LBh-II-KXl" secondAttribute="bottom" id="cPi-le-8Pi"/>
                             <constraint firstItem="Kjq-DK-QyT" firstAttribute="leading" secondItem="LBh-II-KXl" secondAttribute="leading" id="jpH-NB-EY4"/>
-                            <constraint firstItem="Kjq-DK-QyT" firstAttribute="top" secondItem="LBh-II-KXl" secondAttribute="top" constant="44" id="yea-Jv-Hgi"/>
+                            <constraint firstItem="Kjq-DK-QyT" firstAttribute="top" secondItem="LBh-II-KXl" secondAttribute="top" id="yea-Jv-Hgi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="4vD-lT-WSB"/>
+                    <navigationItem key="navigationItem" title="Watchlist" id="4vD-lT-WSB"/>
+                    <connections>
+                        <outlet property="watchListTableView" destination="Kjq-DK-QyT" id="zqr-yn-diC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUj-MV-fKa" sceneMemberID="firstResponder"/>
             </objects>

@@ -59,18 +59,5 @@ extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         return 0
     }
     
-    
-    
-    //MARK: -
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 }

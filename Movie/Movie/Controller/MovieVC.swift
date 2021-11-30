@@ -15,15 +15,12 @@ class MovieVC: UIViewController {
     
     
     @IBOutlet weak var movieCollection: UICollectionView!
-    
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var movieTableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         movieCollection.delegate = self
         movieCollection.dataSource = self
