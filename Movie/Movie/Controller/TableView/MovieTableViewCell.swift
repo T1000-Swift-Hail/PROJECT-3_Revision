@@ -7,14 +7,19 @@
 
 import UIKit
 
-class MovieTableViewCell: UITableViewCell {
+protocol setCell {
+    func setUpCell(imageDetiles: UIImage, titleDetiles: String, describtionDetiles: String, ratingDetiles: Double)
+}
+
+
+
+class MovieTableViewCell: UITableViewCell, setCell {
+    
     
     @IBOutlet weak var posterMovie: UIImageView!
     @IBOutlet weak var titleMovie: UILabel!
     @IBOutlet weak var descriptionMovie: UILabel!
     @IBOutlet weak var ratingMovie: UILabel!
-    
-    
     
     
     func setUpCell(imageDetiles: UIImage, titleDetiles: String, describtionDetiles: String, ratingDetiles: Double) {
@@ -25,5 +30,9 @@ class MovieTableViewCell: UITableViewCell {
         ratingMovie.text = "\(ratingDetiles)"
         
     }
+    
+    
+    
+    
     
 }

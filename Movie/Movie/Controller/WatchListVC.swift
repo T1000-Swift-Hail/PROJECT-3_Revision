@@ -8,17 +8,19 @@
 import UIKit
 
 class WatchListVC: UIViewController {
-
+    
     var watch = [Details]()
-    let sections = ["Movie Watch List"]
     
     @IBOutlet weak var watchListTableView: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         watchListTableView.delegate = self
         watchListTableView.dataSource = self
+        watchListTableView.allowsMultipleSelection = true
+        
+        
     }
 }
 
-var list = WatchListVC()
+

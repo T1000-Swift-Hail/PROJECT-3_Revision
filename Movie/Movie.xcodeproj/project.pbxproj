@@ -20,6 +20,7 @@
 		047FCB082753DF310078C072 /* StructDetiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCB072753DF310078C072 /* StructDetiles.swift */; };
 		048A53682755F9EB003F29A2 /* WatchListVC+WatchListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A53672755F9EB003F29A2 /* WatchListVC+WatchListTableView.swift */; };
 		048A536A2755FAA9003F29A2 /* WatchListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A53692755FAA9003F29A2 /* WatchListVC.swift */; };
+		048A536C275615DA003F29A2 /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A536B275615DA003F29A2 /* WatchList.swift */; };
 		04B2A1F72754C3DA0051A9C0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B2A1F62754C3DA0051A9C0 /* MovieTableViewCell.swift */; };
 		04B2A1F92754C7D60051A9C0 /* MovieVC+MovieTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B2A1F82754C7D60051A9C0 /* MovieVC+MovieTableView.swift */; };
 		04B2A1FB2755256D0051A9C0 /* WatchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B2A1FA2755256C0051A9C0 /* WatchListTableViewCell.swift */; };
@@ -41,6 +42,7 @@
 		047FCB072753DF310078C072 /* StructDetiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructDetiles.swift; sourceTree = "<group>"; };
 		048A53672755F9EB003F29A2 /* WatchListVC+WatchListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WatchListVC+WatchListTableView.swift"; sourceTree = "<group>"; };
 		048A53692755FAA9003F29A2 /* WatchListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListVC.swift; sourceTree = "<group>"; };
+		048A536B275615DA003F29A2 /* WatchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
 		04B2A1F62754C3DA0051A9C0 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		04B2A1F82754C7D60051A9C0 /* MovieVC+MovieTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieVC+MovieTableView.swift"; sourceTree = "<group>"; };
 		04B2A1FA2755256C0051A9C0 /* WatchListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListTableViewCell.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				047FCAFD2753838A0078C072 /* ArrayCollection.swift */,
 				047FCB072753DF310078C072 /* StructDetiles.swift */,
+				048A536B275615DA003F29A2 /* WatchList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				048A536A2755FAA9003F29A2 /* WatchListVC.swift in Sources */,
 				047FCB0227538BD00078C072 /* MovieVC+CollectionView.swift in Sources */,
 				047FCADE27535F310078C072 /* AppDelegate.swift in Sources */,
+				048A536C275615DA003F29A2 /* WatchList.swift in Sources */,
 				047FCB082753DF310078C072 /* StructDetiles.swift in Sources */,
 				047FCAF4275364490078C072 /* MovieCollectionViewCell.swift in Sources */,
 				04B2A1FB2755256D0051A9C0 /* WatchListTableViewCell.swift in Sources */,

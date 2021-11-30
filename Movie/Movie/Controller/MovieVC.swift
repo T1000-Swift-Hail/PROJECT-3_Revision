@@ -44,6 +44,6 @@ class MovieVC: UIViewController {
         arrayDetiles.append(Details.init(titleDetiles: "Hope - 2013", describtion: "Story of an 8 year old girl coping with a gruesome rape damaging her internally and affecting emotionally, trying to overcome all obstacles in the aftermath of the incident with a good support from those around her.", ratingDetiles: 8.3, imageDetiles: UIImage(resource: .Hope)!))
         arrayDetiles.append(Details.init(titleDetiles: "Inception - 2010", describtion: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.", ratingDetiles: 8.8, imageDetiles: UIImage(resource: .Inception)!))
     }
-
+    
     
 }

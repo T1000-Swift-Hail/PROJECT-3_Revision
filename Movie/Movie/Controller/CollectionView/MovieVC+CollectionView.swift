@@ -13,9 +13,9 @@ import UIKit
 extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
-        func startTimer() {
-            timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(moveToNextIndex) , userInfo: nil, repeats: true)
-        }
+    func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(moveToNextIndex) , userInfo: nil, repeats: true)
+    }
     
     @objc func moveToNextIndex(){
         if currentCellIndex < arrayMovie.count - 1 {
@@ -59,5 +59,5 @@ extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         return 0
     }
     
-
+    
 }

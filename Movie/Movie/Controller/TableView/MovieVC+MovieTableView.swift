@@ -20,7 +20,7 @@ extension MovieVC: UITableViewDelegate, UITableViewDataSource {
         let movies = arrayDetiles[indexPath.row]
         cell.setUpCell(imageDetiles: movies.imageDetiles, titleDetiles: movies.titleDetiles, describtionDetiles: movies.describtion, ratingDetiles: movies.ratingDetiles)
         
-        return cell
+        return cell 
     }
     
     
@@ -28,21 +28,27 @@ extension MovieVC: UITableViewDelegate, UITableViewDataSource {
         return 170
     }
     
- //MARK: - WATCHLIST !!
+    //MARK: - WATCHLIST !!
     
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let favoriteAction = UIContextualAction(style: .normal, title: "WathcList") { (action, view, complemntion) in
             print("User Add to Watchlist")
+            myWatchList.movies.append(self.arrayDetiles[indexPath.row])
+            print(myWatchList.movies)
         }
-
+        
         favoriteAction.image = UIImage(systemName: "clock")
-//        favoriteAction.backgroundColor = .blue
+        //        favoriteAction.backgroundColor = .blue
         let config = UISwipeActionsConfiguration(actions: [favoriteAction])
         config.performsFirstActionWithFullSwipe = false // No Stretching..
         return config
     }
+    
+    
+    
+    
     
     
 }
