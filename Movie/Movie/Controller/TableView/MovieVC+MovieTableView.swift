@@ -20,6 +20,7 @@ extension MovieVC: UITableViewDelegate, UITableViewDataSource {
         let movies = arrayDetiles[indexPath.row]
         cell.setUpCell(imageDetiles: movies.imageDetiles, titleDetiles: movies.titleDetiles, describtionDetiles: movies.describtion, ratingDetiles: movies.ratingDetiles)
         
+        
         return cell 
     }
     
@@ -40,7 +41,7 @@ extension MovieVC: UITableViewDelegate, UITableViewDataSource {
         }
         
         favoriteAction.image = UIImage(systemName: "clock")
-        //        favoriteAction.backgroundColor = .blue
+//        favoriteAction.backgroundColor = .systemBlue
         let config = UISwipeActionsConfiguration(actions: [favoriteAction])
         config.performsFirstActionWithFullSwipe = false // No Stretching..
         return config

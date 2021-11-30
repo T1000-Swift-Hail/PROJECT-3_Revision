@@ -24,7 +24,6 @@ extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             currentCellIndex = 0
         }
         movieCollection.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
-        pageControl.currentPage = currentCellIndex
     }
     
     //MARK: -

@@ -10,9 +10,6 @@ import UIKit
 protocol setCell {
     func setUpCell(imageDetiles: UIImage, titleDetiles: String, describtionDetiles: String, ratingDetiles: Double)
 }
-
-
-
 class MovieTableViewCell: UITableViewCell, setCell {
     
     
@@ -27,7 +24,7 @@ class MovieTableViewCell: UITableViewCell, setCell {
         posterMovie.image = imageDetiles
         titleMovie.text = titleDetiles
         descriptionMovie.text = describtionDetiles
-        ratingMovie.text = "\(ratingDetiles)"
+        ratingMovie.text = "\(ratingDetiles) / 10"
         
     }
     

@@ -15,7 +15,6 @@ class MovieVC: UIViewController {
     
     
     @IBOutlet weak var movieCollection: UICollectionView!
-    @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var movieTableView: UITableView!
     
     
@@ -26,7 +25,6 @@ class MovieVC: UIViewController {
         movieCollection.dataSource = self
         movieTableView.delegate = self
         movieTableView.dataSource = self
-        pageControl.numberOfPages = arrayMovie.count
         detilesForMovie()
         startTimer()
         
