@@ -29,19 +29,6 @@ enum UIImageResource: String {
     case SpiderMan_Ani = "SpiderMan_Ani"
     case SpiritedAway_Ani = "SpiritedAway_Ani"
     case ToyStory_Ani = "ToyStory_Ani"
-    
-    
-    case ABeautifulMind_Shot = "ABeautifulMind_Shot"
-    case Dune_Shot = "Dune_Shot"
-    case Epic_Shot = "Epic_Shot"
-    case Hope_Shot = "Hope_Shot"
-    case Inception_Shot = "Inception_Shot"
-    case SpiderMan_Shot = "SpiderMan_Shot"
-    case SpiritedAway_Shot = "SpiritedAway_Shot"
-    case ToyStory_Shot = "ToyStory_Shot"
-    
-    
-    
 }
 
 extension UIImage {
