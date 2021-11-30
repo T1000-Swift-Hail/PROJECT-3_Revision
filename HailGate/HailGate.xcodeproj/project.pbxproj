@@ -7,25 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A75CE72627559DE70065B793 /* EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75CE72527559DE70065B793 /* EX.swift */; };
+		A75CE72C2755BBFB0065B793 /* ShoppingCentersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75CE72B2755BBFB0065B793 /* ShoppingCentersVC.swift */; };
+		A75CE72F2755BDA00065B793 /* ShoppingCentersVC++CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75CE72E2755BDA00065B793 /* ShoppingCentersVC++CollectionView.swift */; };
+		A75CE7312755BE3F0065B793 /* ShoppingCentersCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75CE7302755BE3F0065B793 /* ShoppingCentersCVCell.swift */; };
+		A75CE7332755BE890065B793 /* Mall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75CE7322755BE890065B793 /* Mall.swift */; };
 		A7EBAF8C2754362C0071B973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBAF8B2754362C0071B973 /* AppDelegate.swift */; };
 		A7EBAF8E2754362C0071B973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBAF8D2754362C0071B973 /* SceneDelegate.swift */; };
-		A7EBAF902754362C0071B973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBAF8F2754362C0071B973 /* ViewController.swift */; };
+		A7EBAF902754362C0071B973 /* ViewControllerFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBAF8F2754362C0071B973 /* ViewControllerFirst.swift */; };
 		A7EBAF932754362C0071B973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7EBAF912754362C0071B973 /* Main.storyboard */; };
 		A7EBAF962754362C0071B973 /* HailGate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7EBAF942754362C0071B973 /* HailGate.xcdatamodeld */; };
 		A7EBAF982754362D0071B973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7EBAF972754362D0071B973 /* Assets.xcassets */; };
 		A7EBAF9B2754362D0071B973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7EBAF992754362D0071B973 /* LaunchScreen.storyboard */; };
+		A7EBAFA32754B8AF0071B973 /* EntertainmentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBAFA22754B8AE0071B973 /* EntertainmentTVC.swift */; };
+		A7EBAFA92754BFDB0071B973 /* RestaurantsAndCafeCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBAFA82754BFDB0071B973 /* RestaurantsAndCafeCVC.swift */; };
+		A7EBAFAB2754C4890071B973 /* RestaurantsAndCafeCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBAFAA2754C4890071B973 /* RestaurantsAndCafeCellCollectionViewCell.swift */; };
+		A7EBAFAD2754CBC10071B973 /* SectionCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EBAFAC2754CBC10071B973 /* SectionCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A75CE72527559DE70065B793 /* EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX.swift; sourceTree = "<group>"; };
+		A75CE72B2755BBFB0065B793 /* ShoppingCentersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCentersVC.swift; sourceTree = "<group>"; };
+		A75CE72E2755BDA00065B793 /* ShoppingCentersVC++CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingCentersVC++CollectionView.swift"; sourceTree = "<group>"; };
+		A75CE7302755BE3F0065B793 /* ShoppingCentersCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCentersCVCell.swift; sourceTree = "<group>"; };
+		A75CE7322755BE890065B793 /* Mall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mall.swift; sourceTree = "<group>"; };
 		A7EBAF882754362C0071B973 /* HailGate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HailGate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7EBAF8B2754362C0071B973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7EBAF8D2754362C0071B973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7EBAF8F2754362C0071B973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7EBAF8F2754362C0071B973 /* ViewControllerFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFirst.swift; sourceTree = "<group>"; };
 		A7EBAF922754362C0071B973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7EBAF952754362C0071B973 /* HailGate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HailGate.xcdatamodel; sourceTree = "<group>"; };
 		A7EBAF972754362D0071B973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7EBAF9A2754362D0071B973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7EBAF9C2754362D0071B973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7EBAFA22754B8AE0071B973 /* EntertainmentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntertainmentTVC.swift; sourceTree = "<group>"; };
+		A7EBAFA82754BFDB0071B973 /* RestaurantsAndCafeCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsAndCafeCVC.swift; sourceTree = "<group>"; };
+		A7EBAFAA2754C4890071B973 /* RestaurantsAndCafeCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsAndCafeCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		A7EBAFAC2754CBC10071B973 /* SectionCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +57,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A75CE7272755A8FC0065B793 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7EBAF992754362D0071B973 /* LaunchScreen.storyboard */,
+				A7EBAF972754362D0071B973 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A75CE7282755A9C70065B793 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A75CE7322755BE890065B793 /* Mall.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A75CE7292755AA110065B793 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A75CE72527559DE70065B793 /* EX.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A75CE72A2755AA410065B793 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7EBAF8F2754362C0071B973 /* ViewControllerFirst.swift */,
+				A7EBAFA22754B8AE0071B973 /* EntertainmentTVC.swift */,
+				A75CE72D2755BD370065B793 /* ShoppingCentersVC */,
+				A7EBAFA72754BF620071B973 /* Restaurants&CafeSection */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A75CE72D2755BD370065B793 /* ShoppingCentersVC */ = {
+			isa = PBXGroup;
+			children = (
+				A75CE72B2755BBFB0065B793 /* ShoppingCentersVC.swift */,
+				A75CE72E2755BDA00065B793 /* ShoppingCentersVC++CollectionView.swift */,
+				A75CE7302755BE3F0065B793 /* ShoppingCentersCVCell.swift */,
+			);
+			path = ShoppingCentersVC;
+			sourceTree = "<group>";
+		};
 		A7EBAF7F2754362C0071B973 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +122,27 @@
 		A7EBAF8A2754362C0071B973 /* HailGate */ = {
 			isa = PBXGroup;
 			children = (
+				A75CE7292755AA110065B793 /* Resources */,
+				A75CE7282755A9C70065B793 /* Model */,
+				A75CE72A2755AA410065B793 /* Controllers */,
+				A75CE7272755A8FC0065B793 /* View */,
+				A7EBAF912754362C0071B973 /* Main.storyboard */,
+				A7EBAF942754362C0071B973 /* HailGate.xcdatamodeld */,
 				A7EBAF8B2754362C0071B973 /* AppDelegate.swift */,
 				A7EBAF8D2754362C0071B973 /* SceneDelegate.swift */,
-				A7EBAF8F2754362C0071B973 /* ViewController.swift */,
-				A7EBAF912754362C0071B973 /* Main.storyboard */,
-				A7EBAF972754362D0071B973 /* Assets.xcassets */,
-				A7EBAF992754362D0071B973 /* LaunchScreen.storyboard */,
 				A7EBAF9C2754362D0071B973 /* Info.plist */,
-				A7EBAF942754362C0071B973 /* HailGate.xcdatamodeld */,
 			);
 			path = HailGate;
+			sourceTree = "<group>";
+		};
+		A7EBAFA72754BF620071B973 /* Restaurants&CafeSection */ = {
+			isa = PBXGroup;
+			children = (
+				A7EBAFA82754BFDB0071B973 /* RestaurantsAndCafeCVC.swift */,
+				A7EBAFAA2754C4890071B973 /* RestaurantsAndCafeCellCollectionViewCell.swift */,
+				A7EBAFAC2754CBC10071B973 /* SectionCollectionReusableView.swift */,
+			);
+			path = "Restaurants&CafeSection";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +217,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7EBAF962754362C0071B973 /* HailGate.xcdatamodeld in Sources */,
-				A7EBAF902754362C0071B973 /* ViewController.swift in Sources */,
+				A7EBAF902754362C0071B973 /* ViewControllerFirst.swift in Sources */,
 				A7EBAF8C2754362C0071B973 /* AppDelegate.swift in Sources */,
+				A75CE7312755BE3F0065B793 /* ShoppingCentersCVCell.swift in Sources */,
+				A7EBAFAD2754CBC10071B973 /* SectionCollectionReusableView.swift in Sources */,
+				A7EBAFA92754BFDB0071B973 /* RestaurantsAndCafeCVC.swift in Sources */,
+				A75CE72C2755BBFB0065B793 /* ShoppingCentersVC.swift in Sources */,
 				A7EBAF8E2754362C0071B973 /* SceneDelegate.swift in Sources */,
+				A7EBAFAB2754C4890071B973 /* RestaurantsAndCafeCellCollectionViewCell.swift in Sources */,
+				A75CE7332755BE890065B793 /* Mall.swift in Sources */,
+				A75CE72627559DE70065B793 /* EX.swift in Sources */,
+				A7EBAFA32754B8AF0071B973 /* EntertainmentTVC.swift in Sources */,
+				A75CE72F2755BDA00065B793 /* ShoppingCentersVC++CollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
