@@ -21,6 +21,7 @@
 		9D1315802753A7EA003FA71F /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D13157F2753A7EA003FA71F /* ViewController2.swift */; };
 		9D1315822753BE46003FA71F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1315812753BE46003FA71F /* User.swift */; };
 		9D1E4DEC2755FED70069B4B1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E4DEB2755FED70069B4B1 /* MainVC.swift */; };
+		9D1E4DEE275758AF0069B4B1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E4DED275758AF0069B4B1 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		9D13157F2753A7EA003FA71F /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		9D1315812753BE46003FA71F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9D1E4DEB2755FED70069B4B1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		9D1E4DED275758AF0069B4B1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				9D13154927537A70003FA71F /* Note App Project3 */,
-				9D13156327537A72003FA71F /* Note App Project3Tests */,
 				9D13156D27537A72003FA71F /* Note App Project3UITests */,
 				9D13154827537A70003FA71F /* Products */,
 			);
@@ -111,16 +112,18 @@
 			children = (
 				9D13154A27537A70003FA71F /* AppDelegate.swift */,
 				9D13154C27537A70003FA71F /* SceneDelegate.swift */,
+				9D1E4DEB2755FED70069B4B1 /* MainVC.swift */,
 				9D13154E27537A70003FA71F /* ViewController.swift */,
 				9D13157F2753A7EA003FA71F /* ViewController2.swift */,
-				9D13155027537A70003FA71F /* Main.storyboard */,
+				9D1E4DED275758AF0069B4B1 /* Extensions.swift */,
 				9D1315812753BE46003FA71F /* User.swift */,
 				9D13157D275392D4003FA71F /* NotesCellTableViewCell.swift */,
+				9D13155027537A70003FA71F /* Main.storyboard */,
 				9D13155627537A71003FA71F /* Assets.xcassets */,
 				9D13155827537A71003FA71F /* LaunchScreen.storyboard */,
 				9D13155B27537A71003FA71F /* Info.plist */,
 				9D13155327537A70003FA71F /* Note_App_Project3.xcdatamodeld */,
-				9D1E4DEB2755FED70069B4B1 /* MainVC.swift */,
+				9D13156327537A72003FA71F /* Note App Project3Tests */,
 			);
 			path = "Note App Project3";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D13154F27537A70003FA71F /* ViewController.swift in Sources */,
+				9D1E4DEE275758AF0069B4B1 /* Extensions.swift in Sources */,
 				9D13155527537A70003FA71F /* Note_App_Project3.xcdatamodeld in Sources */,
 				9D13154B27537A70003FA71F /* AppDelegate.swift in Sources */,
 				9D13157E275392D5003FA71F /* NotesCellTableViewCell.swift in Sources */,

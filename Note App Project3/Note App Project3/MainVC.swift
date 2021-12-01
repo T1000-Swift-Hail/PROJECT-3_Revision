@@ -8,7 +8,7 @@
 import UIKit
 
 class MainVC: UIViewController {
-
+    
     @IBOutlet weak var ImageView: UIImageView!
     
     
@@ -21,7 +21,7 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Animations()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -32,31 +32,31 @@ class MainVC: UIViewController {
     }
     
     fileprivate func Animations() {
-     UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
-    self.ImageView.transform = CGAffineTransform(rotationAngle: 120)
-} completion: { _ in
-    UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
-        self.ImageView.alpha = 0
-    } completion: { _ in
-    }
-    
-    UIView.animate(withDuration: 1, delay: 0.6, options: .curveEaseOut) {
-   self.labelView.transform = CGAffineTransform(rotationAngle: 120)
-} completion: { _ in
-   UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
-       self.labelView.alpha = 0
-   } completion: { _ in
-   }
-    
-    UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
-   self.textView.transform = CGAffineTransform(rotationAngle: 120)
-} completion: { _ in
-   UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
-       self.textView.alpha = 0
-   } completion: { _ in
-   }
-}
-}
-}
+        UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
+            self.ImageView.transform = CGAffineTransform(rotationAngle: 120)
+        } completion: { _ in
+            UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
+                self.ImageView.alpha = 0
+            } completion: { _ in
+            }
+            
+            UIView.animate(withDuration: 1, delay: 0.6, options: .curveEaseOut) {
+                self.labelView.transform = CGAffineTransform(rotationAngle: 120)
+            } completion: { _ in
+                UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
+                    self.labelView.alpha = 0
+                } completion: { _ in
+                }
+                
+                UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
+                    self.textView.transform = CGAffineTransform(rotationAngle: 120)
+                } completion: { _ in
+                    UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
+                        self.textView.alpha = 0
+                    } completion: { _ in
+                    }
+                }
+            }
+        }
     }
 }

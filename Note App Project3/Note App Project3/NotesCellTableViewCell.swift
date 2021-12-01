@@ -21,4 +21,4 @@ class NotesCellTableViewCell: UITableViewCell {
         
         textDetails.text = note.detlas
     }
-}
+} 

@@ -21,7 +21,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="write note" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMW-GL-syy">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="write note" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMW-GL-syy">
                                 <rect key="frame" x="0.0" y="319" width="414" height="352"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -45,8 +45,8 @@
                         <constraints>
                             <constraint firstItem="4wM-bj-aTK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Dhk-Is-Qeo"/>
                             <constraint firstItem="9Lk-Ft-MnU" firstAttribute="top" secondItem="kMW-GL-syy" secondAttribute="bottom" constant="40" id="HKQ-br-yOV"/>
-                            <constraint firstItem="kMW-GL-syy" firstAttribute="trailing" secondItem="4wM-bj-aTK" secondAttribute="trailing" id="Udv-fE-duN"/>
-                            <constraint firstItem="kMW-GL-syy" firstAttribute="leading" secondItem="4wM-bj-aTK" secondAttribute="leading" id="WQu-qg-jTI"/>
+                            <constraint firstItem="kMW-GL-syy" firstAttribute="trailing" secondItem="4wM-bj-aTK" secondAttribute="trailing" constant="33" id="Udv-fE-duN"/>
+                            <constraint firstItem="kMW-GL-syy" firstAttribute="leading" secondItem="4wM-bj-aTK" secondAttribute="leading" constant="-20" id="WQu-qg-jTI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4wM-bj-aTK" secondAttribute="trailing" constant="33" id="Xoc-ew-m2I"/>
                             <constraint firstItem="kMW-GL-syy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="319" id="aXC-oR-cxJ"/>
                             <constraint firstItem="kMW-GL-syy" firstAttribute="top" secondItem="4wM-bj-aTK" secondAttribute="bottom" constant="141" id="wz4-Tk-yP9"/>
@@ -142,6 +142,9 @@
                                     <segment title="weekly"/>
                                     <segment title="monthly"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segment:" destination="oTM-fY-0r5" eventType="valueChanged" id="csD-nl-43q"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y3Z-nf-xkc"/>
@@ -150,6 +153,7 @@
                     <navigationItem key="navigationItem" title="List of notes" id="n3n-wH-bcE"/>
                     <connections>
                         <outlet property="tvListNotes" destination="WZT-JY-B52" id="J0O-PW-TXg"/>
+                        <outlet property="typeNotes" destination="mj6-Qd-uYT" id="25a-Ro-gIO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSQ-Sa-Ffz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -164,8 +168,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dN0-mR-5k7">
-                                <rect key="frame" x="49" y="372" width="115" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dN0-mR-5k7">
+                                <rect key="frame" x="49" y="372" width="80" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
