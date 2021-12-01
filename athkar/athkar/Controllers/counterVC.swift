@@ -18,16 +18,17 @@ class counterVC: UIViewController {
 
     @IBAction func plusAction(_ sender: Any) {
         
-        if (count == count + 1 ){
-        }
-        else if (0 > 30){
-            
-//        count = count + 1
+        if count + 1 < 34 {
+        count = count + 1
                lblNumber.text = "\(count)"
         }
-        else{
-            
-        }
+//        else if  count 30 >0 {
+//            count = count - 0
+//                   lblNumber.text = "\(count)"
+//        }
+//        else{
+//
+//        }
       
 //            var  count = 0
 //        for count in countt 0...10{
@@ -41,8 +42,8 @@ class counterVC: UIViewController {
           
         }
         
-        
 }
+
 
      
      

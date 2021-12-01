@@ -10,6 +10,6 @@ import Foundation
 enum Suges:String {
     
     case athkar = "athkar"
-   case sugesLogin  = "sugesLogin"
+   case namesOfAllah  = "namesOfAllah"
 
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F61897EB2756031800C0F309 /* enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61897EA2756031800C0F309 /* enum.swift */; };
 		F61897F127561BAD00C0F309 /* AddAthkariTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61897F027561BAD00C0F309 /* AddAthkariTableVC.swift */; };
+		F62950042757A2FF008AA96C /* NameAllahVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62950032757A2FF008AA96C /* NameAllahVC.swift */; };
 		F69BEBB92753A9AD00D66486 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69BEBB82753A9AD00D66486 /* AppDelegate.swift */; };
 		F69BEBBB2753A9AD00D66486 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69BEBBA2753A9AD00D66486 /* SceneDelegate.swift */; };
 		F69BEBBD2753A9AD00D66486 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69BEBBC2753A9AD00D66486 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		F61897EA2756031800C0F309 /* enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enum.swift; sourceTree = "<group>"; };
 		F61897F027561BAD00C0F309 /* AddAthkariTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAthkariTableVC.swift; sourceTree = "<group>"; };
+		F62950032757A2FF008AA96C /* NameAllahVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameAllahVC.swift; sourceTree = "<group>"; };
 		F69BEBB52753A9AD00D66486 /* athkar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = athkar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69BEBB82753A9AD00D66486 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F69BEBBA2753A9AD00D66486 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				F69BEBD42753F44500D66486 /* SecondVC.swift */,
 				F69BEBDD2754BCE000D66486 /* counterVC.swift */,
 				F61897F027561BAD00C0F309 /* AddAthkariTableVC.swift */,
+				F62950032757A2FF008AA96C /* NameAllahVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F61897F127561BAD00C0F309 /* AddAthkariTableVC.swift in Sources */,
+				F62950042757A2FF008AA96C /* NameAllahVC.swift in Sources */,
 				F61897EB2756031800C0F309 /* enum.swift in Sources */,
 				F69BEBBD2753A9AD00D66486 /* ViewController.swift in Sources */,
 				F69BEBB92753A9AD00D66486 /* AppDelegate.swift in Sources */,
