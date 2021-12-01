@@ -10,6 +10,7 @@ import UIKit
 
 
 var arrayMovie  = [
+    UIImage(resource: .Dexter_Ani),
     UIImage(resource: .Cinderella_Ani),
     UIImage(resource: .Cruella_Ani),
     UIImage(resource: .Encanto_Ani),

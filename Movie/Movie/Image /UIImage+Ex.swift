@@ -28,6 +28,8 @@ enum UIImageResource: String {
     case Shang_Chi_Ani = "Shang_Chi_Ani"
     case SpiderMan_Ani = "SpiderMan_Ani"
     case WrathofMan_Ani = "WrathofMan_Ani"
+    case Dexter_Ani = "Dexter_Ani"
+    
 }
 
 extension UIImage {
