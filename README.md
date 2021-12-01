@@ -1,7 +1,16 @@
 # PROJECT-3_Revision
 
-### Based on what you’ve learned until now , create a project of your choosing.
-### Your project must demonstrate the following concepts : 
+Projrct 3
+talk about three section :
+-Europe
+-Africa
+-Middle East
+
+each area have three best city .
+each city have best images by collection
+
+vister have user to check the app
+ 
 - Variables
 - Arrays
 - Functions
@@ -16,6 +25,7 @@
 - Closure
 - Properties
 - Protocols
-- Extensions
+
+"Thank you for every thing "
 
 #### Deadline: next Thursday by 9:00 a.m.
