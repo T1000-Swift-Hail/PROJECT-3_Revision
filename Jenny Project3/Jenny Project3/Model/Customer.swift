@@ -16,14 +16,6 @@ enum Payment : Error {
     case paymentLow
     case paymentHigh
 }
-let myPayment = Payment.paymentLow
-
-switch myPayment {
-case Payment.paymentLow:
-    print("Low")
-case Payment.paymentHigh:
-   print("High")
-}
 
 //vare current delivery: delivery?
 // current delivery = get deliveryFromServer ()
@@ -57,6 +49,17 @@ class Customer {
     // The start of the trip is 3 saudi riyals,and according to the duration of the trip the price is determined the customer must be over 15 years old and not receive without that
 
             func connectig(payment : Int) throws -> String {
+                
+                let myPayment = Payment.paymentLow
+
+                switch myPayment {
+                case Payment.paymentLow:
+                    print("Low")
+                case Payment.paymentHigh:
+                   print("High")
+                }
+
+                
          print("\(name) paid \(payment)")
                 if (payment>3)  {
                     print("It takes you to the place you want \(payment)")
