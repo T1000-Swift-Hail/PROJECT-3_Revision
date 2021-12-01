@@ -10,14 +10,14 @@ import UIKit
 
 
 var arrayMovie  = [
-    UIImage(resource: .ABeautifulMind_Ani),
-    UIImage(resource: .Dune_Ani),
-    UIImage(resource: .Epic_Ani),
-    UIImage(resource: .Hope_Ani),
-    UIImage(resource: .Inception_Ani),
+    UIImage(resource: .Cinderella_Ani),
+    UIImage(resource: .Cruella_Ani),
+    UIImage(resource: .Encanto_Ani),
+    UIImage(resource: .HouseofGucci_Ani),
+    UIImage(resource: .Luca_Ani),
+    UIImage(resource: .Shang_Chi_Ani),
     UIImage(resource: .SpiderMan_Ani),
-    UIImage(resource: .SpiritedAway_Ani),
-    UIImage(resource: .ToyStory_Ani)
+    UIImage(resource: .WrathofMan_Ani)
 ]
 
 var posterImage = [

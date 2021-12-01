@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -18,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XXo-d4-XhJ">
-                                <rect key="frame" x="0.0" y="-92" width="414" height="292"/>
+                                <rect key="frame" x="0.0" y="-92" width="414" height="230"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="292" id="XZV-Bz-KqJ"/>
+                                    <constraint firstAttribute="height" constant="230" id="XZV-Bz-KqJ"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DtI-xw-aKD">
                                     <size key="itemSize" width="351" height="128"/>
@@ -31,7 +32,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="movieCell" id="TRm-i2-yb9" customClass="MovieCollectionViewCell" customModule="Movie" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="351" height="128"/>
+                                        <rect key="frame" x="0.0" y="51" width="351" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cxL-WY-lhQ">
                                             <rect key="frame" x="0.0" y="0.0" width="351" height="128"/>
@@ -56,7 +57,8 @@
                                 </cells>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BfG-uH-LIM">
-                                <rect key="frame" x="0.0" y="199" width="414" height="526"/>
+                                <rect key="frame" x="0.0" y="139" width="414" height="586"/>
+                                <color key="backgroundColor" name="ColorGray"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="movieCell" rowHeight="184" id="AVc-78-4C5" customClass="MovieTableViewCell" customModule="Movie" customModuleProvider="target">
                                         <rect key="frame" x="20" y="49.5" width="374" height="184"/>
@@ -99,6 +101,7 @@
                                                     <color key="tintColor" systemColor="systemYellowColor"/>
                                                 </imageView>
                                             </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="rjK-QX-p39" firstAttribute="top" secondItem="0GB-8a-WpH" secondAttribute="topMargin" id="0Fu-Pd-NkY"/>
                                                 <constraint firstItem="WjP-CC-DVl" firstAttribute="top" secondItem="0GB-8a-WpH" secondAttribute="topMargin" constant="21" id="3bc-Gd-brF"/>
@@ -124,12 +127,12 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="ColorGray"/>
                         <constraints>
                             <constraint firstItem="BfG-uH-LIM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5xo-L7-pjZ"/>
                             <constraint firstItem="XXo-d4-XhJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8cu-2c-Hb3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XXo-d4-XhJ" secondAttribute="trailing" id="LL8-NU-kBv"/>
-                            <constraint firstItem="BfG-uH-LIM" firstAttribute="top" secondItem="XXo-d4-XhJ" secondAttribute="bottom" constant="-1" id="S9h-bY-2mO"/>
+                            <constraint firstItem="BfG-uH-LIM" firstAttribute="top" secondItem="XXo-d4-XhJ" secondAttribute="bottom" constant="1" id="S9h-bY-2mO"/>
                             <constraint firstItem="XXo-d4-XhJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-92" id="gR5-ti-5Wi"/>
                             <constraint firstItem="BfG-uH-LIM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tHC-xH-ith"/>
                             <constraint firstItem="BfG-uH-LIM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xMJ-I4-Sp5"/>
@@ -172,7 +175,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8mZ-el-t5u">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="890-cS-b09" kind="relationship" relationship="viewControllers" id="ASJ-kr-qDF"/>
@@ -212,20 +216,22 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kjq-DK-QyT">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" name="ColorGray"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="watchCell" rowHeight="184" id="xMw-qV-LjN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="watchCell" rowHeight="184" id="xMw-qV-LjN">
                                         <rect key="frame" x="20" y="49.5" width="374" height="184"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xMw-qV-LjN" id="ZFH-t3-VwL">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="184"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LBh-II-KXl"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="ColorGray"/>
                         <constraints>
                             <constraint firstItem="Kjq-DK-QyT" firstAttribute="trailing" secondItem="LBh-II-KXl" secondAttribute="trailing" id="TyD-o0-9Ni"/>
                             <constraint firstItem="Kjq-DK-QyT" firstAttribute="bottom" secondItem="LBh-II-KXl" secondAttribute="bottom" id="cPi-le-8Pi"/>
@@ -249,6 +255,9 @@
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="ColorGray">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

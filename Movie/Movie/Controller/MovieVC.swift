@@ -14,7 +14,6 @@ class MovieVC: UIViewController {
     var timer: Timer?
     var currentCellIndex = 0
     var myWatchListMovies : [MovieWatchList] = []
-
     
     let persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "WatchlistCD")
@@ -45,8 +44,8 @@ class MovieVC: UIViewController {
     
     fileprivate func detilesForMovie() {
         arrayDetiles.append(Details.init(titleDetiles: "Spirited Away - 2001", describtion: "During her family's move to the suburbs, a sullen 10-year-old girl wanders int a world ruled by gods, witches, and spirits, and where humans are changed into beasts.", ratingDetiles: 8.6, imageDetiles: UIImageResource.SpiritedAway.rawValue))
-        arrayDetiles.append(Details.init(titleDetiles: "Toy Story - 1995", describtion: "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.", ratingDetiles: 8.3, imageDetiles: UIImageResource.ToyStory.rawValue))
-        arrayDetiles.append(Details.init(titleDetiles: "Spider-Man - 2018", describtion: "Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.", ratingDetiles: 8.4, imageDetiles:UIImageResource.SpiderMan.rawValue))
+        arrayDetiles.append(Details.init(titleDetiles: "Toy Story - 1995", describtion: "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.", ratingDetiles: 5.4, imageDetiles: UIImageResource.ToyStory.rawValue))
+        arrayDetiles.append(Details.init(titleDetiles: "Spider-Man - 2002", describtion: "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.", ratingDetiles: 1.1, imageDetiles:UIImageResource.SpiderMan.rawValue))
         arrayDetiles.append(Details.init(titleDetiles: "Epic - 2013", describtion: "During her family's move to the suburbs, a sullen 10-year-old girl wanders int a world ruled by gods, witches, and spirits, and where humans are changed into beasts.", ratingDetiles: 8.3, imageDetiles:UIImageResource.Epic.rawValue))
         arrayDetiles.append(Details.init(titleDetiles: "Dune - 2021", describtion: "Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.", ratingDetiles: 8.2, imageDetiles:UIImageResource.Dune.rawValue))
         arrayDetiles.append(Details.init(titleDetiles: "A Beautiful Mind - 2001", describtion: "After John Nash, a brilliant but asocial mathematician, accepts secret work in cryptography, his life takes a turn for the nightmarish.", ratingDetiles: 8.2, imageDetiles:UIImageResource.ABeautifulMind.rawValue))

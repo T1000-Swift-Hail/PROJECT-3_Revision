@@ -10,10 +10,6 @@
 
 - An application in which the user is able to check the world's most popular for movies. And check the rating for movies from IMDb and track what he want to watch using the Watchlist. 
 
-### Features List :
-
-- Supports dark mode
-
 
 ### Define the scenes :
 

@@ -18,7 +18,7 @@
 		047FCAFE2753838A0078C072 /* ArrayModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCAFD2753838A0078C072 /* ArrayModels.swift */; };
 		047FCB0227538BD00078C072 /* MovieVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCB0127538BD00078C072 /* MovieVC+CollectionView.swift */; };
 		047FCB082753DF310078C072 /* StructDetiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCB072753DF310078C072 /* StructDetiles.swift */; };
-		048A536A2755FAA9003F29A2 /* WatchListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A53692755FAA9003F29A2 /* WatchListVC.swift */; };
+		048A536A2755FAA9003F29A2 /* WatchListVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A53692755FAA9003F29A2 /* WatchListVC+TableView.swift */; };
 		048A536C275615DA003F29A2 /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A536B275615DA003F29A2 /* WatchList.swift */; };
 		048A536F27568CB2003F29A2 /* WatchlistCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 048A536D27568CB2003F29A2 /* WatchlistCD.xcdatamodeld */; };
 		04B0E58727575E1F004EBC03 /* MovieWatchList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0E58527575E1F004EBC03 /* MovieWatchList+CoreDataClass.swift */; };
@@ -41,7 +41,7 @@
 		047FCAFD2753838A0078C072 /* ArrayModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayModels.swift; sourceTree = "<group>"; };
 		047FCB0127538BD00078C072 /* MovieVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieVC+CollectionView.swift"; sourceTree = "<group>"; };
 		047FCB072753DF310078C072 /* StructDetiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructDetiles.swift; sourceTree = "<group>"; };
-		048A53692755FAA9003F29A2 /* WatchListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListVC.swift; sourceTree = "<group>"; };
+		048A53692755FAA9003F29A2 /* WatchListVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WatchListVC+TableView.swift"; sourceTree = "<group>"; };
 		048A536B275615DA003F29A2 /* WatchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
 		048A536E27568CB2003F29A2 /* WatchlistCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WatchlistCD.xcdatamodel; sourceTree = "<group>"; };
 		04B0E58527575E1F004EBC03 /* MovieWatchList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieWatchList+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -64,8 +64,6 @@
 		047FCAD127535F310078C072 = {
 			isa = PBXGroup;
 			children = (
-				04B0E58527575E1F004EBC03 /* MovieWatchList+CoreDataClass.swift */,
-				04B0E58627575E1F004EBC03 /* MovieWatchList+CoreDataProperties.swift */,
 				047FCADC27535F310078C072 /* Movie */,
 				047FCADB27535F310078C072 /* Products */,
 			);
@@ -87,20 +85,18 @@
 				047FCAF827537ADE0078C072 /* Controller */,
 				047FCADD27535F310078C072 /* AppDelegate.swift */,
 				047FCADF27535F310078C072 /* SceneDelegate.swift */,
-				047FCAEB27535F330078C072 /* Info.plist */,
-				047FCAE627535F330078C072 /* Assets.xcassets */,
-				047FCAF5275369C20078C072 /* Color+Image  */,
-				048A536D27568CB2003F29A2 /* WatchlistCD.xcdatamodeld */,
+				047FCAF5275369C20078C072 /* Image  */,
+				04B0E589275781DA004EBC03 /* CoreData */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
 		};
-		047FCAF5275369C20078C072 /* Color+Image  */ = {
+		047FCAF5275369C20078C072 /* Image  */ = {
 			isa = PBXGroup;
 			children = (
 				047FCAF6275369DE0078C072 /* UIImage+Ex.swift */,
 			);
-			path = "Color+Image ";
+			path = "Image ";
 			sourceTree = "<group>";
 		};
 		047FCAF827537ADE0078C072 /* Controller */ = {
@@ -127,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				047FCAE327535F310078C072 /* Main.storyboard */,
+				047FCAEB27535F330078C072 /* Info.plist */,
+				047FCAE627535F330078C072 /* Assets.xcassets */,
 				047FCAE827535F330078C072 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -141,12 +139,22 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		04B0E589275781DA004EBC03 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				04B0E58527575E1F004EBC03 /* MovieWatchList+CoreDataClass.swift */,
+				04B0E58627575E1F004EBC03 /* MovieWatchList+CoreDataProperties.swift */,
+				048A536D27568CB2003F29A2 /* WatchlistCD.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		04B2A1F52754BE760051A9C0 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
 				04B2A1F82754C7D60051A9C0 /* MovieVC+MovieTableView.swift */,
 				04B2A1F62754C3DA0051A9C0 /* MovieTableViewCell.swift */,
-				048A53692755FAA9003F29A2 /* WatchListVC.swift */,
+				048A53692755FAA9003F29A2 /* WatchListVC+TableView.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -224,7 +232,7 @@
 			files = (
 				047FCAFE2753838A0078C072 /* ArrayModels.swift in Sources */,
 				04B2A1F92754C7D60051A9C0 /* MovieVC+MovieTableView.swift in Sources */,
-				048A536A2755FAA9003F29A2 /* WatchListVC.swift in Sources */,
+				048A536A2755FAA9003F29A2 /* WatchListVC+TableView.swift in Sources */,
 				047FCB0227538BD00078C072 /* MovieVC+CollectionView.swift in Sources */,
 				04B0E58827575E1F004EBC03 /* MovieWatchList+CoreDataProperties.swift in Sources */,
 				047FCADE27535F310078C072 /* AppDelegate.swift in Sources */,
@@ -386,7 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Movie/Info.plist;
+				INFOPLIST_FILE = Movie/View/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -413,7 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Movie/Info.plist;
+				INFOPLIST_FILE = Movie/View/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
