@@ -11,6 +11,8 @@
 		4F63B27D27560C2F003090C2 /* FeaturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F63B27C27560C2F003090C2 /* FeaturesTableViewCell.swift */; };
 		4F63B27F27561B8C003090C2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F63B27E27561B8C003090C2 /* Models.swift */; };
 		4F67416527574C99008FD45A /* StagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67416427574C99008FD45A /* StagesVC.swift */; };
+		4F674177275799C8008FD45A /* Mjore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F674176275799C8008FD45A /* Mjore.swift */; };
+		4F67417927579EBC008FD45A /* ToDetilesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67417827579EBC008FD45A /* ToDetilesVC.swift */; };
 		4F72D560275402B2005D81A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F72D55F275402B2005D81A0 /* AppDelegate.swift */; };
 		4F72D562275402B2005D81A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F72D561275402B2005D81A0 /* SceneDelegate.swift */; };
 		4F72D564275402B2005D81A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F72D563275402B2005D81A0 /* HomeViewController.swift */; };
@@ -27,6 +29,8 @@
 		4F63B27C27560C2F003090C2 /* FeaturesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesTableViewCell.swift; sourceTree = "<group>"; };
 		4F63B27E27561B8C003090C2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		4F67416427574C99008FD45A /* StagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagesVC.swift; sourceTree = "<group>"; };
+		4F674176275799C8008FD45A /* Mjore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mjore.swift; sourceTree = "<group>"; };
+		4F67417827579EBC008FD45A /* ToDetilesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDetilesVC.swift; sourceTree = "<group>"; };
 		4F72D55C275402B2005D81A0 /* TuwaiqCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuwaiqCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F72D55F275402B2005D81A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F72D561275402B2005D81A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 				4F72D55F275402B2005D81A0 /* AppDelegate.swift */,
 				4F72D561275402B2005D81A0 /* SceneDelegate.swift */,
 				4F72D56D275402B3005D81A0 /* Info.plist */,
+				4F674176275799C8008FD45A /* Mjore.swift */,
+				4F67417827579EBC008FD45A /* ToDetilesVC.swift */,
 			);
 			path = TuwaiqCamp;
 			sourceTree = "<group>";
@@ -229,10 +235,12 @@
 				4F67416527574C99008FD45A /* StagesVC.swift in Sources */,
 				4F72D560275402B2005D81A0 /* AppDelegate.swift in Sources */,
 				4F63B27F27561B8C003090C2 /* Models.swift in Sources */,
+				4F67417927579EBC008FD45A /* ToDetilesVC.swift in Sources */,
 				4F63B27D27560C2F003090C2 /* FeaturesTableViewCell.swift in Sources */,
 				4F72D562275402B2005D81A0 /* SceneDelegate.swift in Sources */,
 				4F72D57427540520005D81A0 /* LogosCollectionViewCell.swift in Sources */,
 				4F8D44C62754C68D00BD3AA8 /* LocationsViewController.swift in Sources */,
+				4F674177275799C8008FD45A /* Mjore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
