@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func newReminder(_ sender: UIButton) {
+        performSegue(withIdentifier: "reminderSeque", sender: nil)
+    }
+    
 }
 
+//reminderSeque

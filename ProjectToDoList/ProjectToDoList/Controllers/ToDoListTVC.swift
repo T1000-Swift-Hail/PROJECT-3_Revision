@@ -118,15 +118,5 @@ extension ToDoListTVC : UITableViewDelegate , UITableViewDataSource {
 }
 
     
-//    switch segue.identifier {
-//    case "identifier":
-//       guard let vc = segue.destination as? NewTaskVC else {return}
-//       vc.viewImage = selectedImage
-    //case "profile":
-    //    print("")
-    //case "cart":
-    //    print("")
-    //default:
-    //    print("")
-    //}
+
 

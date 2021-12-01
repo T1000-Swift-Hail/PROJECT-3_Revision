@@ -45,7 +45,6 @@ class ScheduleVC: UIViewController {
                     
                     let dateComp = Calendar.current.dateComponents([.year , .month , .day , .hour , .minute], from: date)
                     
-//                    let dateComp2 = Calendar.current.dateComponents([.day], from: date)
                     
                     let trigger = UNCalendarNotificationTrigger(dateMatching: dateComp, repeats: false)
                     
@@ -60,7 +59,11 @@ class ScheduleVC: UIViewController {
                     }
                     
                     let ac = UIAlertController(title: "Notification Scheduled", message: "At " + self.formattedDate(date: date), preferredStyle: .alert)
-                    ac.addAction(UIAlertAction(title: "ok", style: .default, handler: {(_) in}))
+                    ac.addAction(UIAlertAction(title: "ok", style: .default, handler: {(_) in
+                        
+                        
+                        
+                    }))
                     self.present(ac , animated: true)
                 }
                 else {
@@ -89,5 +92,10 @@ func formattedDate(date : Date) -> String {
        return formatter.string(from: date)
 
     }
+    
+    @IBAction func closeBtn(_ sender: UIButton) {
+        
+    }
+    
 }
                                          

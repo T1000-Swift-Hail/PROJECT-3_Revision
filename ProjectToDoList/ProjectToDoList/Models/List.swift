@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol Tasks{
+protocol Tasks {
 
     var taskName : String {get}
     var taskPhoto : UIImage {get}

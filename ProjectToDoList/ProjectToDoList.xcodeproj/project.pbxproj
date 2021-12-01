@@ -66,12 +66,6 @@
 		B7028D03275241B900175637 = {
 			isa = PBXGroup;
 			children = (
-				B78EAA882757696700948805 /* NewTaskShopping+CoreDataClass.swift */,
-				B78EAA892757696700948805 /* NewTaskShopping+CoreDataProperties.swift */,
-				B78EAA8A2757696700948805 /* NewTaskWork+CoreDataClass.swift */,
-				B78EAA8B2757696700948805 /* NewTaskWork+CoreDataProperties.swift */,
-				B78EAA8C2757696700948805 /* NewTask+CoreDataClass.swift */,
-				B78EAA8D2757696700948805 /* NewTask+CoreDataProperties.swift */,
 				B7028D0E275241B900175637 /* ProjectToDoList */,
 				B7028D0D275241B900175637 /* Products */,
 			);
@@ -96,9 +90,23 @@
 				B7028D18275241BB00175637 /* Assets.xcassets */,
 				B7028D1A275241BB00175637 /* LaunchScreen.storyboard */,
 				B7028D1D275241BB00175637 /* Info.plist */,
+				B78EAA942757919B00948805 /* CoreDataSupportFiles */,
 				B7028D2A2752C10300175637 /* ToDoCoreData.xcdatamodeld */,
 			);
 			path = ProjectToDoList;
+			sourceTree = "<group>";
+		};
+		B78EAA942757919B00948805 /* CoreDataSupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B78EAA882757696700948805 /* NewTaskShopping+CoreDataClass.swift */,
+				B78EAA892757696700948805 /* NewTaskShopping+CoreDataProperties.swift */,
+				B78EAA8A2757696700948805 /* NewTaskWork+CoreDataClass.swift */,
+				B78EAA8B2757696700948805 /* NewTaskWork+CoreDataProperties.swift */,
+				B78EAA8C2757696700948805 /* NewTask+CoreDataClass.swift */,
+				B78EAA8D2757696700948805 /* NewTask+CoreDataProperties.swift */,
+			);
+			path = CoreDataSupportFiles;
 			sourceTree = "<group>";
 		};
 		B7B8BB5C27555476000D3AD0 /* Controllers */ = {

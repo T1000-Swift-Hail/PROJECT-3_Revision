@@ -157,16 +157,19 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
     
     
     
-    func deleteTask(task : NewTask) {
-        let context = persistentContainer.viewContext
-         context.delete(task)
-        do {
-         try context.save()
-            fetchNewTsak()
+    func deleteTask(task : NewTask?) {
+        if let task = task {
+            let context = persistentContainer.viewContext
+             context.delete(task)
+            do {
+             try context.save()
+                fetchNewTsak()
+            }
+            catch {
+                print(error)
+            }
         }
-        catch {
-            print(error)
-        }
+
 
     }
 
@@ -184,16 +187,19 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
 
     }
     
-    func deleteTaskShopping(task : NewTaskShopping){
-        let context = persistentContainer.viewContext
-         context.delete(task)
-        do {
-         try context.save()
-            fetchNewTsak()
+    func deleteTaskShopping(task : NewTaskShopping?){
+        if let task = task {
+            let context = persistentContainer.viewContext
+             context.delete(task)
+            do {
+             try context.save()
+                fetchNewTsak()
+            }
+            catch {
+                print(error)
+            }
         }
-        catch {
-            print(error)
-        }
+
 
     }
 
@@ -210,16 +216,19 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
         }
 
     }
-    func deleteTaskWork(task : NewTaskWork){
-        let context = persistentContainer.viewContext
-         context.delete(task)
-        do {
-         try context.save()
-            fetchNewTsak()
+    func deleteTaskWork(task : NewTaskWork?){
+        if let task = task {
+            let context = persistentContainer.viewContext
+             context.delete(task)
+            do {
+             try context.save()
+                fetchNewTsak()
+            }
+            catch {
+                print(error)
+            }
         }
-        catch {
-            print(error)
-        }
+
 
     }
 
@@ -278,7 +287,7 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let item = newTask[indexPath.row]
+       // let item = newTask[indexPath.row]
         let sheet = UIAlertController(title: "Edit", message: nil, preferredStyle:.actionSheet)
         sheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
@@ -286,12 +295,25 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
             let alert = UIAlertController(title: "Edit Task", message: nil, preferredStyle: .alert)
 
             alert.addTextField(configurationHandler: nil)
-            alert.textFields?.first?.text = item.task
+         //   alert.textFields?.first?.text = item.task
             alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { [weak self] _ in
                 guard let field = alert.textFields?.first , let newText = field.text , !newText.isEmpty else {
                     return
                 }
-                self?.ubdateTask(task: item, newTask: newText)
+                switch self?.typeOfTask.taskName {
+                case "To Do":
+                    self?.ubdateTask(task: self?.newTask[indexPath.row] ?? NewTask()  , newTask: newText)
+                case "Shopping":
+                    self?.ubdateTaskShopping(task: self?.newTaskShopping[indexPath.row] ?? NewTaskShopping() , newTask: newText)
+                case "Work":
+                    self?.ubdateTaskwork(task: self?.newTaskWork[indexPath.row] ?? NewTaskWork(), newTask: newText)
+                default:
+                    self?.ubdateTask(task: self?.newTask[indexPath.row] ?? NewTask()  , newTask: newText)
+                }
+                
+                self?.reloadAllData()
+                
+         //       self?.ubdateTask(task: item, newTask: newText)
 
             }))
             self.present(alert, animated: true)
@@ -299,7 +321,21 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
             //
       
         sheet.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { [weak self] _ in
-            self?.deleteTask(task: item)
+            
+      //      self?.deleteTask(task: item)
+            switch self?.typeOfTask.taskName {
+            case "To Do":
+                self?.deleteTask(task: self?.newTask[indexPath.row] )
+            case "Shopping":
+                self?.deleteTaskShopping(task: self?.newTaskShopping[indexPath.row] )
+            case "Work":
+                self?.deleteTaskWork(task: self?.newTaskWork[indexPath.row] )
+            default:
+                self?.deleteTask(task: self?.newTask[indexPath.row] )
+            }
+            
+            self?.reloadAllData()
+            
 
         }))
         self.present(sheet, animated: true)
