@@ -22,20 +22,19 @@ extension MovieVC: UITableViewDelegate, UITableViewDataSource {
         let movies = arrayDetiles[indexPath.row]
         cell.setUpCell(imageDetiles: UIImage(named: movies.imageDetiles)!, titleDetiles: movies.titleDetiles, describtionDetiles: movies.describtion, ratingDetiles: movies.ratingDetiles)
         
-        
 //        guard let rate = Double(cell.ratingMovie.text ?? "nil") else { return UITableViewCell() }
         
         let rate = arrayDetiles[indexPath.row].ratingDetiles
+        
         switch rate {
         case 7.0...10.0:
-            print("greeeeeen")
-            cell.ratingMovie.textColor = .green
+            cell.ratingMovie.textColor = .systemGreen
         case 4.0...6.9:
-            cell.ratingMovie.textColor = .yellow
+            cell.ratingMovie.textColor = .systemOrange
         case 1.0...3.9:
-            cell.ratingMovie.textColor = .red
+            cell.ratingMovie.textColor = .systemRed
         default:
-            break
+            print("The rate not found")
         }
         
         return cell
@@ -56,7 +55,7 @@ extension MovieVC: UITableViewDelegate, UITableViewDataSource {
             self.createNewList(titleMovie: self.arrayDetiles[indexPath.row].titleDetiles, posterMovie:
                                 self.arrayDetiles[indexPath.row].imageDetiles, isWatched: false)
             
-            let alertController = UIAlertController(title: "Save Movie", message: "Has been added to your watchlist", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Has been successfully added", message: "", preferredStyle: .alert)
             let alertAction  = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)

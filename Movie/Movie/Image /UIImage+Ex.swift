@@ -10,14 +10,14 @@ import UIKit
 
 enum UIImageResource: String {
     
-    case ABeautifulMind = "ABeautifulMind"
-    case Dune = "Dune"
-    case Epic = "Epic"
-    case Hope = "Hope"
-    case Inception = "Inception"
-    case SpiderMan = "SpiderMan"
     case SpiritedAway = "SpiritedAway"
-    case ToyStory = "ToyStory"
+    case BloodRayne = "BloodRayne"
+    case SlenderMan = "SlenderMan"
+    case TheGodfather = "TheGodfather"
+    case Spencer = "Spencer"
+    case OneShot = "OneShot"
+    case DontBreathe = "DontBreathe"
+    case TheWalkingDead = "TheWalkingDead"
     
     
     case Cinderella_Ani = "Cinderella_Ani"
@@ -25,9 +25,9 @@ enum UIImageResource: String {
     case Encanto_Ani = "Encanto_Ani"
     case HouseofGucci_Ani = "HouseofGucci_Ani"
     case Luca_Ani = "Luca_Ani"
-    case Shang_Chi_Ani = "Shang_Chi_Ani"
-    case SpiderMan_Ani = "SpiderMan_Ani"
-    case WrathofMan_Ani = "WrathofMan_Ani"
+    case RedNotice_Ani = "RedNotice_Ani"
+    case tick_Ani = "tick_Ani"
+    case TheMatrix_Ani = "TheMatrix_Ani"
     case Dexter_Ani = "Dexter_Ani"
     
 }
