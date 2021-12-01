@@ -1,0 +1,51 @@
+
+/* Class = "UILabel"; text = "Top Universities In Suadi Arabia."; ObjectID = "Dkk-re-xv0"; */
+"Dkk-re-xv0.text" = "أفضل الجامعات في السعودية";
+
+/* Class = "UIButton"; configuration.title = "Enter"; ObjectID = "Dq1-BZ-ebv"; */
+"Dq1-BZ-ebv.configuration.title" = "دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Dq1-BZ-ebv"; */
+"Dq1-BZ-ebv.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "ECE-KZ-8j3"; */
+"ECE-KZ-8j3.placeholder" = "الرقم السري الجديد";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Fm3-HP-nef"; */
+"Fm3-HP-nef.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Ranking of Saudi universities 2021 locally"; ObjectID = "IMk-6H-cnH"; */
+"IMk-6H-cnH.title" = "ترتيب الجامعات السعودية 2021 محلياً";
+
+/* Class = "UIButton"; configuration.title = "Sign In"; ObjectID = "ODE-qs-Avi"; */
+"ODE-qs-Avi.configuration.title" = "دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ODE-qs-Avi"; */
+"ODE-qs-Avi.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Repeat Password"; ObjectID = "Peh-SC-03t"; */
+"Peh-SC-03t.placeholder" = "اعاده كلمه السر";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RXO-Kz-L7T"; */
+"RXO-Kz-L7T.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "agv-AB-8cp"; */
+"agv-AB-8cp.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "or2-Le-x2m"; */
+"or2-Le-x2m.placeholder" = "الرقم السري";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "q4x-W2-ObB"; */
+"q4x-W2-ObB.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "vNE-oL-d0V"; */
+"vNE-oL-d0V.placeholder" = "اسم المستخدم";
+
+/* Class = "UITextField"; placeholder = "Enter Your Name"; ObjectID = "xGz-gC-MmV"; */
+"xGz-gC-MmV.placeholder" = "ادخل الاسم";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "yjm-Ak-Bi7"; */
+"yjm-Ak-Bi7.configuration.title" = "تسجيل دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "yjm-Ak-Bi7"; */
+"yjm-Ak-Bi7.normalTitle" = "Button";

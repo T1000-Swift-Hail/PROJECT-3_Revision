@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  TopUniversity
+
+  Created by Hesah Alqhtani on 01/12/2021.
+  
+*/
+"King Abdulaziz University" = "جامعة الملك عبدالعزيز";
+"King Abdulaziz University has made progress in the (US News) ranking list of world universities for the year 2021, by achieving rank (42) globally and first in the Arab world." =" أحرزت جامعة الملك عبد العزيز تقدماً في تصنيف (يو إس نيوز) لجامعات العالم لعام 2021 ، بتحقيقها المرتبة (42) عالمياً والأولى عربياً";
+"King Fahd University of Petroleum and Minerals " = "جامعة الملك فهد للبترول والمعادن";
+"King Fahd University topped Arab universities in invention readings and ranked fourth in the international rankings of US patents." = "تصدرت جامعة الملك فهد الجامعات العربية في قراءات الاختراع والمرتبة الرابعة في التصنيف العالمي لبراءات الاختراع الأمريكية.";
+"King Saud University" = "جامعة الملك سعود";
+"A public university established in 1957, it is the second university established in Saudi Arabia after Umm Al-Qura University by order of King Abdulaziz." = "جامعة حكومية تأسست عام 1957 ، وهي ثاني جامعة في المملكة العربية السعودية بعد جامعة أم القرى بأمر من الملك عبد العزيز";
+"Sign-Up is successfully" = "تم التسجيل بنجاح";
+"Welcome" = "مرحبا";
+"ok" = "تم";
+"Invalid Sign-Up" = "خطاء في تسجيل الدخول";
+"All fields are required!" = "جميع البينات مطلوبه";
+"Login is successfully" = "تم تسجيل الدخول بنجاح";
+"Login Invalid" = "خطا في تسجيل الدخول";
+"King Fahd University" = "جامعة الملك فهد";
