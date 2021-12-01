@@ -16,33 +16,45 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTx: UITextField!
    
 
-let customer = Customer(name: "nasser", age: 30, service: [Service(name: "it takes you to the place you want", description: "", price: 50)], password: "4334", phoneNumber: 0535173329)
+    let customer = Customer(name: "hind", age: 24, services: [], phoneNumber: 0536543678, password: "1234567", description: "delivery of the customer to the desired location")
+
   
- // The customer writes the user name and password and enters it on the application
+ // The customer writes the user name and password and phoneNumberenters it on the application
 override func viewDidLoad() {
        super.viewDidLoad()
     
-    
-    if (userNameTx.text == customer.name) && (passwordTx.text == customer.password)&&(phonenumberTx.text == String(customer.phoneNumber)) {
-        
-        performSegue(withIdentifier: "home", sender: nil)
-        
-    } else {
-        
-        let alert = UIAlertController(title: "Error", message: "wrong username or password", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: .cancel))
-        present(alert, animated: true)
-    }
+  
+
        
    }
 
 
 
-
+    @IBAction func logIn(_ sender: Any) {
+        if (userNameTx.text == customer.name) && (passwordTx.text == customer.password)&&(phonenumberTx.text == String(customer.phoneNumber)) {
+             
+             performSegue(withIdentifier: "home", sender: nil)
+             
+         } else {
+             
+             let alert = UIAlertController(title: "Error", message: "wrong username or password", preferredStyle: .alert)
+             alert.addAction(UIAlertAction(title: "Okay", style: .cancel))
+             present(alert, animated: true)
+         }
+    }
+    
 
 }
 
-
+//class Customer {
+//var  = 0 {
+//willSet {
+      //  print("About to have \(newValue) kids!  Make plans!")
+   // }
+//didSet {
+      //  print("You used to have \(oldValue) kids.  Now you have \(kidCount).")
+  //  }
+//} }
 
 
 

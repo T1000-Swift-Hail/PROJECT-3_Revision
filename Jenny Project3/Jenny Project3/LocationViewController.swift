@@ -1,13 +1,13 @@
 //
-//  ServiceCell.swift
+//  LocationViewController.swift
 //  Jenny Project3
 //
-//  Created by HIND12 on 24/04/1443 AH.
+//  Created by HIND12 on 26/04/1443 AH.
 //
 
 import UIKit
 
-class ServiceCell: UIViewController {
+class LocationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,13 +15,12 @@ class ServiceCell: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var Service: UILabel!
- 
-
-
-
-
-
+    
+    
+    
+    
+    
+    
 
     /*
     // MARK: - Navigation

@@ -19,9 +19,6 @@ import UIKit
 
 
 
-//protocol person {
-  //  var name : String {get}
-   // var age : Int {get}
 
 
 
@@ -35,4 +32,3 @@ import UIKit
         // Pass the selected object to the new view controller.
     }
     */
-

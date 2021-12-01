@@ -14,16 +14,18 @@ class DetailsVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    let ConnectinglocationService = Service(name: "Nasser", description: "it takes you to the place you want", price: 50, phoneNumber:0535173329)
-    let ConnectinghousewareService = Service(name: "Mohammed", description: "it delivers to you the best", price: 40, phoneNumber:0536549834)
-   // let ""Service = Service(name: "swimming"., description: "", price: 45)
-    
-    
+    // There are five services
+    let tobeacaptainService = Service(name: "Nasser", description: "allowing a person to visit his income inthe capacity of captain", price: 50, phoneNumber:0535173329)
+    let ConnectingService = Service(name: "Mohammed", description: "delivery of the customer to the desired location", price: 40, phoneNumber:0535173329)
+   
  var ourServices  = [Service]()
     
-    
-    
+
+  //  func Swift;.print("service is : \(service.name) for price \(service.price)")
+   // }
+
+
+
     
     
     
@@ -37,5 +39,5 @@ class DetailsVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
