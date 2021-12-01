@@ -14,8 +14,8 @@ class ToDoCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
+    
     func setUpCell(taskName :String , taskPhoto :UIImage){
         toDoImageView.image = taskPhoto
         toDoLabel.text = taskName
@@ -23,8 +23,6 @@ class ToDoCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

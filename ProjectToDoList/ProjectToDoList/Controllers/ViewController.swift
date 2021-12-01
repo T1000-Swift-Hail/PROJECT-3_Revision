@@ -12,7 +12,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func newReminder(_ sender: UIButton) {
@@ -21,4 +20,3 @@ class ViewController: UIViewController {
     
 }
 
-//reminderSeque

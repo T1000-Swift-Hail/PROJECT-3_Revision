@@ -23,5 +23,3 @@ extension UIImage {
     }
     
 }
-
-//    var toDoListImage = [UIImage(systemName: "list.bullet"),UIImage(systemName: "cart"),UIImage(systemName: "bag")]

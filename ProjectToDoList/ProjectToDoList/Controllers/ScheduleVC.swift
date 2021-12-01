@@ -32,48 +32,50 @@ class ScheduleVC: UIViewController {
 
     @IBAction func scheduleAction(_ sender: Any) {
         notificationCenter.getNotificationSettings { (settings) in
-            DispatchQueue.main.async {
-                let title = self.titelTF.text!
-                let message = self.messageTF.text!
-                let date = self.datePicker.date
+        DispatchQueue.main.async {
+            let title = self.titelTF.text!
+            let message = self.messageTF.text!
+            let date = self.datePicker.date
                 
-                if(settings.authorizationStatus == .authorized) {
+    if(settings.authorizationStatus == .authorized) {
                   
-                    let content = UNMutableNotificationContent()
-                    content.title = title
-                    content.body = message
+        let content = UNMutableNotificationContent()
+            content.title = title
+            content.body = message
                     
-                    let dateComp = Calendar.current.dateComponents([.year , .month , .day , .hour , .minute], from: date)
+        let dateComp = Calendar.current.dateComponents([.year , .month , .day , .hour , .minute], from: date)
                     
                     
-                    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComp, repeats: false)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComp, repeats: false)
                     
-                    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
                     
-                    self.notificationCenter.add(request) { (error) in
-                        if(error != nil){
-                            print("Error" + error.debugDescription)
-                            return
-                        }
+        self.notificationCenter.add(request) { (error) in
+            if(error != nil){
+            print("Error" + error.debugDescription)
+                return
+            }
                         
-                    }
+        }
                     
-                    let ac = UIAlertController(title: "Notification Scheduled", message: "At " + self.formattedDate(date: date), preferredStyle: .alert)
+        let ac = UIAlertController(title: "Notification Scheduled", message: "At " + self.formattedDate(date: date), preferredStyle: .alert)
                     ac.addAction(UIAlertAction(title: "ok", style: .default, handler: {(_) in
                         
                         
                         
-                    }))
-                    self.present(ac , animated: true)
-                }
-                else {
-                    let ac = UIAlertController(title: "Enable Notification ?", message: "To use this feature you must enable notifications in settings", preferredStyle: .alert)
-                    let goToSettings = UIAlertAction(title: "Settings", style: .default)
+            }))
+            self.present(ac , animated: true)
+        
+        }
+            
+        else {
+            let ac = UIAlertController(title: "Enable Notification ?", message: "To use this feature you must enable notifications in settings", preferredStyle: .alert)
+            let goToSettings = UIAlertAction(title: "Settings", style: .default)
                     { (_) in
-                        guard let settingsURL = URL(string: UIApplication.openSettingsURLString)
+        guard let settingsURL = URL(string: UIApplication.openSettingsURLString)
                         else { return }
                         
-                        if (UIApplication.shared.canOpenURL(settingsURL)) {
+              if (UIApplication.shared.canOpenURL(settingsURL)) {
                             UIApplication.shared.open(settingsURL) { (_) in }
                         }
                     }
@@ -92,10 +94,7 @@ func formattedDate(date : Date) -> String {
        return formatter.string(from: date)
 
     }
-    
-    @IBAction func closeBtn(_ sender: UIButton) {
-        
-    }
+
     
 }
                                          

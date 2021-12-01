@@ -11,12 +11,8 @@ class ToDoListTVC: ViewController {
 
     var listArr : [Task] = []
     var selectedIndex = 0
-   // var selectedList :[Task] = []
-
     
-
     @IBOutlet weak var ToDoTableView: UITableView!
-    
     let userDefaluts = UserDefaults.standard
     
     override func viewDidLoad() {
@@ -31,18 +27,19 @@ class ToDoListTVC: ViewController {
     
     
     func createArray() -> [Task]{
-        var type :[Task] = []
+        var typeOFTheTask :[Task] = []
         
         let task1 = Task(taskName: "To Do", taskPhoto: UIImage(resource: .Image1)!)
-        let task2 = Task(taskName: "Shopping", taskPhoto: UIImage(resource: .Image2)!)
-        let task3 = Task(taskName: "Work", taskPhoto: UIImage(resource: .Image3)!)
+        let task2 = Task(taskName: "Shopping List", taskPhoto: UIImage(resource: .Image2)!)
+        let task3 = Task(taskName: "Work List", taskPhoto: UIImage(resource: .Image3)!)
         
-        type.append(task1)
-        type.append(task2)
-        type.append(task3)
+        typeOFTheTask.append(task1)
+        typeOFTheTask.append(task2)
+        typeOFTheTask.append(task3)
         
-        return type
+        return typeOFTheTask
     }
+    
     @IBAction func editng(_ sender: UIBarButtonItem) {
         switch ToDoTableView.isEditing {
         case true :
@@ -52,27 +49,24 @@ class ToDoListTVC: ViewController {
         }
     }
     
-    @IBAction func addListBtn(_ sender: Any) {
-        
-    }
+
     
 }
+
 extension ToDoListTVC : UITableViewDelegate , UITableViewDataSource {
     
     // MARK: - Table view data source
     
      func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return listArr.count
     }
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell") as! ToDoCell
+         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell") as! ToDoCell
          let data = listArr[indexPath.row]
          cell.setUpCell(taskName: data.taskName, taskPhoto: data.taskPhoto)
         

@@ -1,21 +1,27 @@
+
 # PROJECT-3_Revision
 
-### Based on what you’ve learned until now , create a project of your choosing.
-### Your project must demonstrate the following concepts : 
-- Variables
-- Arrays
-- Functions
-- Loops
-- Conditionals
-- Enumerations
-- Classes
-- Struct
-- Switch
-- Optionals
-- Dictionaries
-- Closure
-- Properties
-- Protocols
-- Extensions
+### Project Name : 
+To Do List app
 
-#### Deadline: next Thursday by 9:00 a.m.
+### Project Description :
+App for notes with several sections (general lists, shopping list, work list)
+and there is a section for reminders.
+
+
+###project Features List :
+- It gives the user arrange and categorize notes by section.
+- User can set reminder
+
+
+### Define the scenes :
+- To Do List  interface: Show notes section.
+
+### User Stories :
+- The user is allowed to "write a note" in any section and he can edit or delete it .
+
+
+
+
+
+

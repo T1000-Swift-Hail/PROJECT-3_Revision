@@ -18,8 +18,6 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
     var newTaskShopping : [NewTaskShopping] = []
     var newTaskWork : [NewTaskWork] = []
     
-   // let context = persistentContainer.viewContext
-  
     let persistentContainer :NSPersistentContainer = {
         let container = NSPersistentContainer(name: "ToDoCoreData")
         container.loadPersistentStores(completionHandler: { desc, error in
@@ -33,23 +31,22 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         tableView.delegate = self
+         tableView.dataSource = self
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        reloadAllData()
-        
+         reloadAllData()
         
     }
     
     
-    func reloadAllData(){
+    func reloadAllData() {
+        
         switch typeOfTask.taskName {
         case "To Do":
             fetchNewTsak()
-        case "Shopping":
+        case "Shopping List":
             fetchNewTsakShopping()
-        case "Work":
+        case "Work List":
             fetchNewTsakWork()
         default:
             fetchNewTsak()
@@ -58,7 +55,8 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
         tableView.reloadData()
     }
     
-    
+
+    // MARK: - to do list (get data, create data, dealet data , update data and save data)
     func fetchNewTsak() {
         let context = persistentContainer.viewContext
         do {
@@ -87,73 +85,6 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
         }
         
     }
-    
-    
-    
-    
-    func fetchNewTsakShopping() {
-        let context = persistentContainer.viewContext
-        do {
-        newTaskShopping =  try context.fetch(NewTaskShopping.fetchRequest())
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-        catch {
-            print(error)
-        }
-    }
-    
-    func createNewTaskShopping(task : String) {
-        
-        let context = persistentContainer.viewContext
-        context.performAndWait {
-            let newTaskk = NewTaskShopping(context: context)
-            newTaskk.task = task
-        }
-        
-        do {
-         try context.save()
-        } catch {
-            print(error)
-        }
-        
-    }
-    
-    
-    func fetchNewTsakWork() {
-        let context = persistentContainer.viewContext
-        do {
-        newTaskWork =  try context.fetch(NewTaskWork.fetchRequest())
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-        catch {
-            print(error)
-        }
-    }
-    
-    func createNewTaskWork(task : String) {
-        
-        let context = persistentContainer.viewContext
-        context.performAndWait {
-            let newTaskk = NewTaskWork(context: context)
-            newTaskk.task = task
-        }
-        
-        do {
-         try context.save()
-        } catch {
-            print(error)
-        }
-        
-    }
-    
-    
-    
-    
-    
     
     
     
@@ -187,6 +118,38 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
 
     }
     
+    
+    // MARK: - Shopping list (get data, create data, dealet data , update data and save data)
+
+    func fetchNewTsakShopping() {
+        let context = persistentContainer.viewContext
+        do {
+        newTaskShopping =  try context.fetch(NewTaskShopping.fetchRequest())
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+        catch {
+            print(error)
+        }
+    }
+    
+    func createNewTaskShopping(task : String) {
+        
+        let context = persistentContainer.viewContext
+        context.performAndWait {
+            let newTaskk = NewTaskShopping(context: context)
+            newTaskk.task = task
+        }
+        
+        do {
+         try context.save()
+        } catch {
+            print(error)
+        }
+        
+    }
+    
     func deleteTaskShopping(task : NewTaskShopping?){
         if let task = task {
             let context = persistentContainer.viewContext
@@ -216,6 +179,39 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
         }
 
     }
+    
+    // MARK: - Work list (get data, create data, dealet data , update data and save data)
+
+        func fetchNewTsakWork() {
+            
+        let context = persistentContainer.viewContext
+        do {
+        newTaskWork =  try context.fetch(NewTaskWork.fetchRequest())
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+        catch {
+            print(error)
+        }
+    }
+    
+    func createNewTaskWork(task : String) {
+        
+        let context = persistentContainer.viewContext
+        context.performAndWait {
+            let newTaskk = NewTaskWork(context: context)
+            newTaskk.task = task
+        }
+        
+        do {
+         try context.save()
+        } catch {
+            print(error)
+        }
+        
+    }
+
     func deleteTaskWork(task : NewTaskWork?){
         if let task = task {
             let context = persistentContainer.viewContext
@@ -246,15 +242,16 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
 
     }
     
-    
+    // MARK: - Table view data source
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         switch typeOfTask.taskName {
         case "To Do":
             return newTask.count
-        case "Shopping":
+        case "Shopping List":
             return newTaskShopping.count
-        case "Work":
+        case "Work List":
             return newTaskWork.count
         default:
             return 0
@@ -270,9 +267,9 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
         switch typeOfTask.taskName {
         case "To Do":
             theTask = newTask[indexPath.row]
-        case "Shopping":
+        case "Shopping List":
             theTask = newTaskShopping[indexPath.row]
-        case "Work":
+        case "Work List":
             theTask = newTaskWork[indexPath.row]
         default:
             theTask = newTask[indexPath.row]
@@ -287,7 +284,6 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-       // let item = newTask[indexPath.row]
         let sheet = UIAlertController(title: "Edit", message: nil, preferredStyle:.actionSheet)
         sheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
@@ -295,7 +291,6 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
             let alert = UIAlertController(title: "Edit Task", message: nil, preferredStyle: .alert)
 
             alert.addTextField(configurationHandler: nil)
-         //   alert.textFields?.first?.text = item.task
             alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { [weak self] _ in
                 guard let field = alert.textFields?.first , let newText = field.text , !newText.isEmpty else {
                     return
@@ -303,9 +298,9 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
                 switch self?.typeOfTask.taskName {
                 case "To Do":
                     self?.ubdateTask(task: self?.newTask[indexPath.row] ?? NewTask()  , newTask: newText)
-                case "Shopping":
+                case "Shopping List":
                     self?.ubdateTaskShopping(task: self?.newTaskShopping[indexPath.row] ?? NewTaskShopping() , newTask: newText)
-                case "Work":
+                case "Work List":
                     self?.ubdateTaskwork(task: self?.newTaskWork[indexPath.row] ?? NewTaskWork(), newTask: newText)
                 default:
                     self?.ubdateTask(task: self?.newTask[indexPath.row] ?? NewTask()  , newTask: newText)
@@ -313,22 +308,19 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
                 
                 self?.reloadAllData()
                 
-         //       self?.ubdateTask(task: item, newTask: newText)
-
             }))
             self.present(alert, animated: true)
             }))
-            //
+         
       
         sheet.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { [weak self] _ in
             
-      //      self?.deleteTask(task: item)
             switch self?.typeOfTask.taskName {
             case "To Do":
                 self?.deleteTask(task: self?.newTask[indexPath.row] )
-            case "Shopping":
+            case "Shopping List":
                 self?.deleteTaskShopping(task: self?.newTaskShopping[indexPath.row] )
-            case "Work":
+            case "Work List":
                 self?.deleteTaskWork(task: self?.newTaskWork[indexPath.row] )
             default:
                 self?.deleteTask(task: self?.newTask[indexPath.row] )
@@ -358,9 +350,9 @@ class NewTaskVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
         switch self?.typeOfTask.taskName {
         case "To Do":
             self?.createNewTask(task : text)
-        case "Shopping":
+        case "Shopping List":
             self?.createNewTaskShopping(task : text)
-        case "Work":
+        case "Work List":
             self?.createNewTaskWork(task : text)
         default:
             self?.createNewTask(task : text)
