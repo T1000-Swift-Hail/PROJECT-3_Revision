@@ -387,27 +387,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="62" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZY3-Hy-We7">
-                                <rect key="frame" x="20" y="258" width="277" height="332"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="20"/>
-                                <color key="textColor" red="0.28660587527763615" green="0.29978682913743027" blue="0.45255905815360831" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Motifs" translatesAutoresizingMaskIntoConstraints="NO" id="urw-2z-Tfi">
                                 <rect key="frame" x="305" y="0.0" width="109" height="896"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="109" id="CJK-Lp-YKX"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="62" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZY3-Hy-We7">
+                                <rect key="frame" x="20" y="246" width="277" height="405"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="0.28660587527763615" green="0.29978682913743027" blue="0.45255905815360831" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wsh-E3-XIF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="wsh-E3-XIF" firstAttribute="bottom" secondItem="ZY3-Hy-We7" secondAttribute="bottom" constant="211" id="CKU-dY-Ayh"/>
                             <constraint firstAttribute="bottom" secondItem="urw-2z-Tfi" secondAttribute="bottom" id="DaX-hW-phH"/>
+                            <constraint firstItem="wsh-E3-XIF" firstAttribute="trailing" secondItem="ZY3-Hy-We7" secondAttribute="trailing" constant="117" id="Ifz-yY-5It"/>
                             <constraint firstItem="urw-2z-Tfi" firstAttribute="trailing" secondItem="wsh-E3-XIF" secondAttribute="trailing" id="Jxh-HN-289"/>
+                            <constraint firstItem="ZY3-Hy-We7" firstAttribute="leading" secondItem="wsh-E3-XIF" secondAttribute="leading" constant="20" id="WRH-Tn-Crf"/>
                             <constraint firstItem="urw-2z-Tfi" firstAttribute="leading" secondItem="wsh-E3-XIF" secondAttribute="leading" constant="305" id="gys-JF-Cya"/>
                             <constraint firstItem="urw-2z-Tfi" firstAttribute="top" secondItem="Znr-TQ-xge" secondAttribute="top" id="gzr-CW-309"/>
+                            <constraint firstItem="ZY3-Hy-We7" firstAttribute="top" secondItem="wsh-E3-XIF" secondAttribute="top" constant="158" id="q5r-yB-BMy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="061-v9-ldz"/>
@@ -417,7 +420,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZf-aw-YS4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="646"/>
+            <point key="canvasLocation" x="231.8840579710145" y="645.53571428571422"/>
         </scene>
         <!--StagesVC-->
         <scene sceneID="Mly-Kc-lbc">

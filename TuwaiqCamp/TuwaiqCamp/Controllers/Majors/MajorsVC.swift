@@ -29,11 +29,11 @@ class MajorsVC: UIViewController {
     func segmentSelected(_ selectedButton: Int) {
         
         if selectedButton == 0 {
-            dataSend = "Tuwaiq Software Path .. a training camp aimed at qualifying Saudi capabilities to become programmers using the latest programming languages to give them sufficient technical and practical experience to start their careers in web and mobile application development disciplines .."
+            dataSend = "Tuwaiq Software Path .. training camp aimed at qualifying Saudi capabilities to become programmers using the latest programming languages to give them sufficient technical and practical experience to start their careers in web and mobile application development disciplines .."
         } else if selectedButton == 1 {
-            dataSend = "Tuwaiq Cyber Security Path .. A training camp aimed at qualifying Saudi capabilities and developing their skills in various cybersecurity fields, including vulnerability assessment, penetration testing, incident response, and digital forensic investigation .."
+            dataSend = "Tuwaiq Cyber Security Path .. training camp aimed at qualifying Saudi capabilities and developing their skills in various cybersecurity fields, including vulnerability assessment, penetration testing, incident response, and digital forensic investigation .."
         } else {
-            dataSend = "Tuwaiq game development path .. A training camp aimed at qualifying Saudi capabilities to become game developers, designers and producers and giving them enough professional and practical experience to start their careers .."
+            dataSend = "Tuwaiq game development path .. training camp aimed at qualifying Saudi capabilities to become game developers, designers and producers and giving them enough professional and practical experience to start their careers .."
         }
         
         performSegue(withIdentifier: "toDetiles", sender: nil)
