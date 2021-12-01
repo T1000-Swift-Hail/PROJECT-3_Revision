@@ -23,6 +23,7 @@ class ViewController2: UIViewController,
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NotesCellTableViewCell
+        //This is optionals ??
         print(listNotes[indexPath.row].detlas ?? "cell" )
         cell.setCell(note: listNotes[indexPath.row])
         return cell
@@ -51,6 +52,7 @@ class ViewController2: UIViewController,
     @IBAction func segment(_ sender: UISegmentedControl) {
         
         let selectedindex = typeNotes.selectedSegmentIndex
+        //This is Switch
         switch selectedindex {
         case 0:
             print("day")
@@ -73,24 +75,19 @@ class ViewController2: UIViewController,
             tvListNotes.reloadData()
         }catch{
         }
-        
+        //This is Enumerations
         enum notes {
             case daily
             case weekly
             case monthly
         }
         
-        
-  
-        
-        
-        
-        
+        //This is Arrays and for loops
         let mynotes = ["one", "two", "three"]
         for number in mynotes {
             print(number)
         }
-        
+        //This is dictionaries of type Int,String
         let persons: [Int:String] = [1:"sami",2:"Ahmed",3:"lana"]
         print(persons[2]!)
     }

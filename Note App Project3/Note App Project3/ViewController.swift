@@ -52,9 +52,7 @@ class ViewController: UIViewController {
             
             
         }
-        catch{
-            print("error")
-        }
+        
     }
     
 }

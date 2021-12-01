@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-// This is for user
+// This is for user protocol
 protocol User {
     var email: String {get}
     var phone: Int {get}
@@ -15,6 +15,7 @@ protocol User {
     var age :Int {get}
     
 }
+//This is class properties  to willSet ,didSet
 class person {
     
     let notesdaily = 3
@@ -29,7 +30,7 @@ didSet {
             print("You used to have \(oldValue) notes.  Now you have \(addnotes).")
         }
     }
-
+//This is struct person
     struct person2: User {
         var Users: String
         var email: String

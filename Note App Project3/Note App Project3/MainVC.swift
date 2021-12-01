@@ -30,7 +30,7 @@ class MainVC: UIViewController {
     @IBAction func goToNext(_ sender: Any) {
         performSegue(withIdentifier: "ShowNotes", sender: nil)
     }
-    
+    // This is Animations and Use Closure
     fileprivate func Animations() {
         UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
             self.ImageView.transform = CGAffineTransform(rotationAngle: 120)

@@ -1,7 +1,12 @@
 # PROJECT-3_Revision
 
-### Based on what you’ve learned until now , create a project of your choosing.
-### Your project must demonstrate the following concepts : 
+- Create an application Using animated three animated Views Image,Label ,text
+
+- Using CoreDataMy notes Using atabelView tital,detlas
+savenotes
+
+-  User Protocols, Structperson and class properties 
+
 - Variables
 - Arrays
 - Functions
@@ -18,4 +23,4 @@
 - Protocols
 - Extensions
 
-#### Deadline: next Thursday by 9:00 a.m.
+

@@ -6,6 +6,8 @@
 //
 
 import Foundation
+
+//This is extension and conditionals
 extension person {
     
     
