@@ -26,10 +26,15 @@ class LocationsViewController: UIViewController {
             ["title":"Tabuk" , "latitude":28.516342625699476 , "longitude":36.56334872515212] ,
             ["title":"Medina" , "latitude":25.017951578774962 , "longitude":39.6300391964303] ,
             ["title":"Jeddah" , "latitude":21.504597073900744 , "longitude":39.19328942836984] ,
-            ["title":"Jazan" , "latitude":17.093096966466764 , "longitude":42.58583864634238] ,
+            ["title":"Najran" , "latitude":19.52088825417902 , "longitude":44.041096390509836] ,
             ["title":"Asir" , "latitude":19.909286763660983 , "longitude":42.9605268815227] ,
-            ["title":"Al-Jouf" , "latitude":31.756852751888115 , "longitude":39.301586337694246]]
-        
+            ["title":"Abha" , "latitude":21.649641814349863 , "longitude":44.189426855064255] ,
+            ["title":"Al-Dammam" , "latitude":26.00009825442419 , "longitude":49.55879015983026],
+            ["title":"Al-Baha" , "latitude": 22.09126748962605 , "longitude":41.29511328426819],
+            ["title":"Al-hadod Al-shamaliah" , "latitude": 29.552512578444738 , "longitude":42.03355070163725],
+            ["title":"Al-Jouf" , "latitude":31.756852751888115 , "longitude":39.301586337694246],
+            ["title":"Jazan" , "latitude":18.387954754177606 , "longitude":42.634791449389844]
+        ]
         
         //To add the pin to all areas
         for location in locations{
