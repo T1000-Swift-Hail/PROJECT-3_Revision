@@ -27,11 +27,16 @@ class InformationMallVC: UIViewController {
     @IBOutlet weak var thirdInformationLBL: UILabel!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        To print Information for enum Mall and Values of Dictionaries.....
+        decMallSection()
+        
+        view.backgroundColor = UIColor(rgb: 0xFFEAE7D6)
+        
+    }
+    fileprivate func decMallSection() {
+        //        To print Information for enum Mall and Values of Dictionaries.....
         firstMallLBL.text = mallFirstInformation
         firstInformationLBL.text = decMallInformaition["GRANDMALL"]
         
@@ -39,8 +44,5 @@ class InformationMallVC: UIViewController {
         secandInformationLBL.text = decMallInformaition["GardenMall"]
         thirdMallLBL.text = mallThirdInformation
         thirdInformationLBL.text = decMallInformaition["SALMAMALL"]
-        
-        view.backgroundColor = UIColor(rgb: 0xFFE0ECDE)
-        
     }
 }

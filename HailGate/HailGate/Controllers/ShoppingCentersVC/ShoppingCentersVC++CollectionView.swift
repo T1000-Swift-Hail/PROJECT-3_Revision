@@ -32,7 +32,7 @@ extension ShoppingCentersVC : UICollectionViewDataSource, UICollectionViewDelega
         cell.nameOfMallLBL.text = mallInformation.mallInfo[indexPath.row].rawValue
 //        using Arr to name the section ...
         cell.myImage.image = UIImage(named: myImageCitites[indexPath.row])
-        cell.backgroundColor = UIColor(rgb: 0xFFE0ECDE)
+        cell.backgroundColor = UIColor(rgb: 0xFFEAE7D6)
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

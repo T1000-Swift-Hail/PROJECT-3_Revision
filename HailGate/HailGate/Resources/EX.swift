@@ -25,8 +25,3 @@ extension UIColor {
         )
     }
 }
-
-//class MyColors : UIColor {
-//
-//    var myColors = UIColor(rgb: 0xFFE0ECDE)
-//}

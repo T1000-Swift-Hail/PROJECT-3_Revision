@@ -8,26 +8,23 @@
 import UIKit
 
 class HomePageVC: UIViewController {
-
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLBL: UILabel!
     @IBOutlet weak var infoTitle: UILabel!
-    
+       
     var pageTitle : String?
     var pageInfo : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "1")!)
+//         Home Screen
         if let titel = pageTitle {
-        titleLBL.text = titel
+            titleLBL.text = titel
         }
         if let description = pageInfo {
-        infoTitle.text = description
+            infoTitle.text = description
         }
-
     }
-    
-
-
 }

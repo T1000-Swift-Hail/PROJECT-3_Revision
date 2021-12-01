@@ -13,6 +13,8 @@
 		A75BE5CF2756EDAE0072DA97 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75BE5CE2756EDAE0072DA97 /* HomePageVC.swift */; };
 		A75BE5D2275707FC0072DA97 /* HotelsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75BE5D1275707FC0072DA97 /* HotelsTVC.swift */; };
 		A75BE5D4275708DB0072DA97 /* HotelsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75BE5D3275708DB0072DA97 /* HotelsTVCell.swift */; };
+		A75BE5D7275715E60072DA97 /* MilestonesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75BE5D6275715E60072DA97 /* MilestonesVC.swift */; };
+		A75BE5D927572E2A0072DA97 /* SecMilestonesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75BE5D827572E2A0072DA97 /* SecMilestonesVC.swift */; };
 		A75CE72627559DE70065B793 /* EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75CE72527559DE70065B793 /* EX.swift */; };
 		A75CE72C2755BBFB0065B793 /* ShoppingCentersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75CE72B2755BBFB0065B793 /* ShoppingCentersVC.swift */; };
 		A75CE72F2755BDA00065B793 /* ShoppingCentersVC++CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75CE72E2755BDA00065B793 /* ShoppingCentersVC++CollectionView.swift */; };
@@ -38,6 +40,8 @@
 		A75BE5CE2756EDAE0072DA97 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		A75BE5D1275707FC0072DA97 /* HotelsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsTVC.swift; sourceTree = "<group>"; };
 		A75BE5D3275708DB0072DA97 /* HotelsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsTVCell.swift; sourceTree = "<group>"; };
+		A75BE5D6275715E60072DA97 /* MilestonesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestonesVC.swift; sourceTree = "<group>"; };
+		A75BE5D827572E2A0072DA97 /* SecMilestonesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecMilestonesVC.swift; sourceTree = "<group>"; };
 		A75CE72527559DE70065B793 /* EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX.swift; sourceTree = "<group>"; };
 		A75CE72B2755BBFB0065B793 /* ShoppingCentersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCentersVC.swift; sourceTree = "<group>"; };
 		A75CE72E2755BDA00065B793 /* ShoppingCentersVC++CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingCentersVC++CollectionView.swift"; sourceTree = "<group>"; };
@@ -118,10 +122,12 @@
 			children = (
 				A7EBAF8F2754362C0071B973 /* ViewControllerFirst.swift */,
 				A7EBAFA22754B8AE0071B973 /* EntertainmentTVC.swift */,
+				A75BE5D6275715E60072DA97 /* MilestonesVC.swift */,
+				A75BE5D827572E2A0072DA97 /* SecMilestonesVC.swift */,
 				A75BE5D02756F8610072DA97 /* Home */,
 				A75CE72D2755BD370065B793 /* ShoppingCentersVC */,
-				A7EBAFA72754BF620071B973 /* Restaurants&CafeSection */,
 				A75BE5D527570C450072DA97 /* HotelsTVC */,
+				A7EBAFA72754BF620071B973 /* Restaurants&CafeSection */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75BE5D927572E2A0072DA97 /* SecMilestonesVC.swift in Sources */,
 				A7EBAF962754362C0071B973 /* HailGate.xcdatamodeld in Sources */,
 				A75BE5CB275650920072DA97 /* HailGateRules.swift in Sources */,
 				A7EBAF902754362C0071B973 /* ViewControllerFirst.swift in Sources */,
@@ -259,6 +266,7 @@
 				A75BE5C92755E0960072DA97 /* InformationMallVC.swift in Sources */,
 				A7EBAFAD2754CBC10071B973 /* SectionCollectionReusableView.swift in Sources */,
 				A75BE5D2275707FC0072DA97 /* HotelsTVC.swift in Sources */,
+				A75BE5D7275715E60072DA97 /* MilestonesVC.swift in Sources */,
 				A7EBAFA92754BFDB0071B973 /* RestaurantsAndCafeCVC.swift in Sources */,
 				A75CE72C2755BBFB0065B793 /* ShoppingCentersVC.swift in Sources */,
 				A7EBAF8E2754362C0071B973 /* SceneDelegate.swift in Sources */,

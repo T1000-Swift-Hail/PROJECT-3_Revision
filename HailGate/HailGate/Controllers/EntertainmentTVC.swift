@@ -22,9 +22,19 @@ class EntertainmentTVC: UITableViewController {
     @IBOutlet weak var secondTitleLBL: UILabel!
     @IBOutlet weak var secondTextViewInformation: UITextView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        entertainmentSection()
+        
+        tableView.backgroundColor = UIColor(rgb: 0xFFEAE7D6)
+        firstTextViewInformation.backgroundColor = UIColor(rgb: 0xFFEAE7D6)
+        secondTextViewInformation.backgroundColor = UIColor(rgb: 0xFFEAE7D6)
+    }
+    
+    // MARK: - Table view data source
+    fileprivate func entertainmentSection() {
         //        First ...
         headlineLBL.text = "Entertainment"
         firstImageEntertainment.image = UIImage(named: "Paragliding")
@@ -34,11 +44,7 @@ class EntertainmentTVC: UITableViewController {
         secondImageEntertainment.image = UIImage(named: "HailRally")
         secondTitleLBL.text = "HAIL RALLY"
         secondTextViewInformation.text = "The 2021 Hail Rally will be organized and organized in cooperation between the Saudi Automobile and Motorcycle Federation, the Hail Region Development Authority and the Ministry of Sports. It poses a challenge for drivers and their vehicles alike."
-        
-        tableView.backgroundColor = UIColor(rgb: 0xFFE0ECDE)
     }
-    
-    // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         
