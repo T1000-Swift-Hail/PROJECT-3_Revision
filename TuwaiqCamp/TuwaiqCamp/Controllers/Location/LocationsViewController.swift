@@ -17,6 +17,7 @@ class LocationsViewController: UIViewController {
         LocationsMapKitViwe()
     }
     
+    //array of regions
     func LocationsMapKitViwe() {
         let locations = [
             ["title":"Riyadh" , "latitude": 25.27816323228061 , "longitude":46.733208399337876 ] ,
@@ -29,6 +30,8 @@ class LocationsViewController: UIViewController {
             ["title":"Asir" , "latitude":19.909286763660983 , "longitude":42.9605268815227] ,
             ["title":"Al-Jouf" , "latitude":31.756852751888115 , "longitude":39.301586337694246]]
         
+        
+        //To add the pin to all areas
         for location in locations{
             let annotationn = MKPointAnnotation()
             annotationn.title = location["title"] as? String

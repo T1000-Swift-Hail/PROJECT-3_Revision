@@ -13,9 +13,9 @@ class FeaturesTableViewCell: UITableViewCell {
     @IBOutlet weak var lableTableViwe: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
+    //Function to setup items in cells
     func setup(pohto : UIImage ,Feature: String ){
         imageTableViwe.image = pohto
         lableTableViwe.text = Feature

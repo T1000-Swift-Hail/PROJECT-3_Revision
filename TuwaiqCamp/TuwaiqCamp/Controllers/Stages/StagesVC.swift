@@ -12,6 +12,5 @@ class StagesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundImage.image = UIImage(Resource: .wallPaper)
-        // Do any additional setup after loading the view.
     }
 }

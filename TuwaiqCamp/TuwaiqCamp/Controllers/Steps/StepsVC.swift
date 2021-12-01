@@ -22,6 +22,7 @@ class StepsVC: UIViewController {
     @IBOutlet weak var stepThree: UILabel!
     @IBOutlet weak var stepFour: UILabel!
     
+    //To add the animation for the lable
     func animationStepOne(){
         stepOne.transform = CGAffineTransform.init(translationX: 0, y: 400)
         UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseOut], animations: {
