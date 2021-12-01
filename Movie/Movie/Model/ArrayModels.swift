@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//MARK: - Array of movies shown in CollectionView
 
 var arrayMovie  = [
     UIImage(resource: .Cinderella_Ani),
@@ -21,13 +22,15 @@ var arrayMovie  = [
     UIImage(resource: .TheMatrix_Ani)
 ]
 
+//MARK: - Array of movies shown in TableView
+
 var posterImage = [
     UIImage(resource: .SpiritedAway),
     UIImage(resource: .BloodRayne),
     UIImage(resource: .SlenderMan),
     UIImage(resource: .TheGodfather),
     UIImage(resource: .Spencer),
-    UIImage(resource: .OneShot),
+    UIImage(resource: .OneShots),
     UIImage(resource: .DontBreathe),
     UIImage(resource: .TheWalkingDead)
 ]

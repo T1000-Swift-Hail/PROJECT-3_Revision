@@ -8,6 +8,9 @@
 import Foundation
 import UIKit
 
+//MARK: - Enums for images
+
+
 enum UIImageResource: String {
     
     case SpiritedAway = "SpiritedAway"
@@ -15,7 +18,7 @@ enum UIImageResource: String {
     case SlenderMan = "SlenderMan"
     case TheGodfather = "TheGodfather"
     case Spencer = "Spencer"
-    case OneShot = "OneShot"
+    case OneShots = "OneShots"
     case DontBreathe = "DontBreathe"
     case TheWalkingDead = "TheWalkingDead"
     

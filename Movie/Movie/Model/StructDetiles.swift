@@ -8,6 +8,9 @@
 import Foundation
 import UIKit
 
+
+//MARK: - Struct for movie data viewed in the TableView
+
 struct Details {
     
     let titleDetiles: String

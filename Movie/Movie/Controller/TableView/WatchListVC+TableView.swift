@@ -12,8 +12,8 @@ class WatchListVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     var watch = [Details]()
     
-    //MARK: -
-    
+    //MARK: - Save CoreData
+
     let persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "WatchlistCD")
         
@@ -28,9 +28,6 @@ class WatchListVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     var movieWatchList: [MovieWatchList] = []
     
-    //MARK: -
-    
-    
     @IBOutlet weak var watchListTableView: UITableView!
     
     override func viewDidLoad() {
@@ -44,15 +41,12 @@ class WatchListVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         self.fetchAllLists()
         self.watchListTableView.reloadData()
     }
-    //MARK: -
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return movieWatchList.count
     }
-    
-    //MARK: -
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -66,22 +60,13 @@ class WatchListVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         
     }
     
-    //MARK: -
-    
-    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    
-    //MARK: -
-    
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
         
     }
     
     
-    //MARK: -
+    //MARK: - Function for checkmark When a user selected or doesn't selected and save it in CoreData
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -104,7 +89,7 @@ class WatchListVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         }
     }
     
-    //MARK: - COREDATA
+    //MARK: - Fetch for COREDATA
     
     func fetchAllLists() {
         let context = persistentContainer.viewContext

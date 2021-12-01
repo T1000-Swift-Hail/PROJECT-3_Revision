@@ -11,6 +11,9 @@ import UIKit
 
 extension MovieVC: UITableViewDelegate, UITableViewDataSource {
     
+    
+
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayDetiles.count
     }
@@ -21,9 +24,7 @@ extension MovieVC: UITableViewDelegate, UITableViewDataSource {
         
         let movies = arrayDetiles[indexPath.row]
         cell.setUpCell(imageDetiles: UIImage(named: movies.imageDetiles)!, titleDetiles: movies.titleDetiles, describtionDetiles: movies.describtion, ratingDetiles: movies.ratingDetiles)
-        
-//        guard let rate = Double(cell.ratingMovie.text ?? "nil") else { return UITableViewCell() }
-        
+                
         let rate = arrayDetiles[indexPath.row].ratingDetiles
         
         switch rate {

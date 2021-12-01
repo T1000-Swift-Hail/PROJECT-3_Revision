@@ -12,6 +12,7 @@ import UIKit
 
 extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    //MARK: - The start timer function of moving from one image to another in the collection view
     
     func startTimer() {
         timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(moveToNextIndex) , userInfo: nil, repeats: true)
@@ -26,7 +27,6 @@ extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         movieCollection.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
     }
     
-    //MARK: -
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -34,7 +34,6 @@ extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         
     }
     
-    //MARK: -
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -44,7 +43,7 @@ extension MovieVC:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
         
     }
     
-    //MARK: -
+    //MARK: - size for CollectionView
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
