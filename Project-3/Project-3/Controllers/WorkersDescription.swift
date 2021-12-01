@@ -10,7 +10,6 @@ import UIKit
 class WorkersDescription: UIViewController {
 
    
-    var get = ""
     var textLabel: String?
     var imageView: UIImage?
     @IBOutlet weak var descriptionLabel: UILabel!

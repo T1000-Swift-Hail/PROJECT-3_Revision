@@ -10,14 +10,13 @@ import UIKit
 class HomeVC: UIViewController {
     
     var collectionImages = [UIImage(named: "cover1")!,UIImage(named: "cover2")!,UIImage(named: "cover3")!,UIImage(named: "cover4")!,UIImage(named: "cover5")!]
-    var pass = "you passed"
     var timer: Timer?
     var currentCellIndex = 0
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
     var textSelected: String?
     var imageSelected: UIImage?
-   
+    var pass = "passing"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +34,7 @@ class HomeVC: UIViewController {
     
     @objc func moveToNextIndex() {
         if currentCellIndex < collectionImages.count - 1 {
-            
             currentCellIndex += 1
-            
         }
         else {
             currentCellIndex = 0
@@ -47,11 +44,22 @@ class HomeVC: UIViewController {
         pageControl.currentPage = currentCellIndex
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! WorkersDescription
-        vc.imageView = imageSelected
-        vc.textLabel = textSelected
+    
+    
+    @IBAction func logOutButton(_ sender: UIBarButtonItem) {
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "returnToLogOut") as? CustomerProfile
+        self.navigationController?.pushViewController(vc!, animated: true)
+//        performSegue(withIdentifier: "returnToLogin", sender: nil)
     }
+    
+    
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as! WorkersDescription
+//        vc.imageView = imageSelected
+//        vc.textLabel = textSelected
+//    }
+    
     
     @IBAction func plumberButton(_ sender: Any) {
         imageSelected = UIImage(named: "plumber")
@@ -84,7 +92,9 @@ class HomeVC: UIViewController {
         textSelected = painter.description
         performSegue(withIdentifier: "goToRequest", sender: nil)
     }
+    
 }
+
 
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

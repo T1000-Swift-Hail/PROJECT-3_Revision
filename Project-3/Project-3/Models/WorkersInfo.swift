@@ -40,7 +40,9 @@ let electrical = Workers(job: WorkersJobs.Electrical.rawValue, description: "An 
 let carpenter = Workers(job: WorkersJobs.Carpenter.rawValue, description: "Carpentry is a skilled trade and a craft in which the primary work performed is the cutting, shaping and installation of building materials during the construction of buildings")
 
 let welder = Workers(job: WorkersJobs.Welder.rawValue, description: "Welders create or repair metal products or goods by using heat to fuse multiple metals, such as brass, stainless steel, or aluminum.")
+
 let cleaner = Workers(job: WorkersJobs.Cleaner.rawValue, description: "Cleaning operatives may specialise in cleaning particular things or places, such as window cleaners, They may clean offices at night or houses during the workday.")
+
 let painter = Workers(job: WorkersJobs.Painter.rawValue, description: "Painters use paint, tools, and materials such as plaster, to change the appearance and texture of buildings, walls, and other structures.")
 
 

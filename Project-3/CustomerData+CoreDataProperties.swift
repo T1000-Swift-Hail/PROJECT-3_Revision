@@ -2,7 +2,7 @@
 //  CustomerData+CoreDataProperties.swift
 //  Project-3
 //
-//  Created by Majed Alshammari on 24/04/1443 AH.
+//  Created by Majed Alshammari on 25/04/1443 AH.
 //
 //
 
@@ -16,6 +16,11 @@ extension CustomerData {
         return NSFetchRequest<CustomerData>(entityName: "CustomerData")
     }
 
+    @NSManaged public var email: String?
+    @NSManaged public var name: String?
+    @NSManaged public var phoneNumber: String?
+    @NSManaged public var isLogin: Bool
+    @NSManaged public var password: String?
 
 }
 
