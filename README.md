@@ -2,20 +2,20 @@
 
 ### Based on what you’ve learned until now , create a project of your choosing.
 ### Your project must demonstrate the following concepts : 
-- Variables
+- Variables ✅
 - Arrays
-- Functions
-- Loops
-- Conditionals
-- Enumerations
-- Classes
-- Struct
+- Functions ✅
+- Loops ✅
+- Conditionals ✅
+- Enumerations ✅
+- Classes ✅
+- Struct ✅
 - Switch
-- Optionals
+- Optionals ✅
 - Dictionaries
-- Closure
-- Properties
+- Closure ✅
+- Properties ✅
 - Protocols
-- Extensions
+- Extensions ✅
 
 #### Deadline: next Thursday by 9:00 a.m.
