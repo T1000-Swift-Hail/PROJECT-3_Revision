@@ -13,7 +13,7 @@ struct Details {
     let titleDetiles: String
     let describtion: String
     let ratingDetiles: Double
-    let imageDetiles: UIImage
+    let imageDetiles: String
     
 }
 

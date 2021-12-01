@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 enum UIImageResource: String {
     
     case ABeautifulMind = "ABeautifulMind"

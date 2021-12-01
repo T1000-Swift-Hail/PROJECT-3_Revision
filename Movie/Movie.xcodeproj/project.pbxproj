@@ -15,15 +15,16 @@
 		047FCAF2275363F50078C072 /* MovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCAF1275363F50078C072 /* MovieVC.swift */; };
 		047FCAF4275364490078C072 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCAF3275364490078C072 /* MovieCollectionViewCell.swift */; };
 		047FCAF7275369DF0078C072 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCAF6275369DE0078C072 /* UIImage+Ex.swift */; };
-		047FCAFE2753838A0078C072 /* ArrayCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCAFD2753838A0078C072 /* ArrayCollection.swift */; };
+		047FCAFE2753838A0078C072 /* ArrayModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCAFD2753838A0078C072 /* ArrayModels.swift */; };
 		047FCB0227538BD00078C072 /* MovieVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCB0127538BD00078C072 /* MovieVC+CollectionView.swift */; };
 		047FCB082753DF310078C072 /* StructDetiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047FCB072753DF310078C072 /* StructDetiles.swift */; };
-		048A53682755F9EB003F29A2 /* WatchListVC+WatchListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A53672755F9EB003F29A2 /* WatchListVC+WatchListTableView.swift */; };
 		048A536A2755FAA9003F29A2 /* WatchListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A53692755FAA9003F29A2 /* WatchListVC.swift */; };
 		048A536C275615DA003F29A2 /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A536B275615DA003F29A2 /* WatchList.swift */; };
+		048A536F27568CB2003F29A2 /* WatchlistCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 048A536D27568CB2003F29A2 /* WatchlistCD.xcdatamodeld */; };
+		04B0E58727575E1F004EBC03 /* MovieWatchList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0E58527575E1F004EBC03 /* MovieWatchList+CoreDataClass.swift */; };
+		04B0E58827575E1F004EBC03 /* MovieWatchList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0E58627575E1F004EBC03 /* MovieWatchList+CoreDataProperties.swift */; };
 		04B2A1F72754C3DA0051A9C0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B2A1F62754C3DA0051A9C0 /* MovieTableViewCell.swift */; };
 		04B2A1F92754C7D60051A9C0 /* MovieVC+MovieTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B2A1F82754C7D60051A9C0 /* MovieVC+MovieTableView.swift */; };
-		04B2A1FB2755256D0051A9C0 /* WatchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B2A1FA2755256C0051A9C0 /* WatchListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,15 +38,16 @@
 		047FCAF1275363F50078C072 /* MovieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVC.swift; sourceTree = "<group>"; };
 		047FCAF3275364490078C072 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		047FCAF6275369DE0078C072 /* UIImage+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
-		047FCAFD2753838A0078C072 /* ArrayCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCollection.swift; sourceTree = "<group>"; };
+		047FCAFD2753838A0078C072 /* ArrayModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayModels.swift; sourceTree = "<group>"; };
 		047FCB0127538BD00078C072 /* MovieVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieVC+CollectionView.swift"; sourceTree = "<group>"; };
 		047FCB072753DF310078C072 /* StructDetiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructDetiles.swift; sourceTree = "<group>"; };
-		048A53672755F9EB003F29A2 /* WatchListVC+WatchListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WatchListVC+WatchListTableView.swift"; sourceTree = "<group>"; };
 		048A53692755FAA9003F29A2 /* WatchListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListVC.swift; sourceTree = "<group>"; };
 		048A536B275615DA003F29A2 /* WatchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
+		048A536E27568CB2003F29A2 /* WatchlistCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WatchlistCD.xcdatamodel; sourceTree = "<group>"; };
+		04B0E58527575E1F004EBC03 /* MovieWatchList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieWatchList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04B0E58627575E1F004EBC03 /* MovieWatchList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieWatchList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		04B2A1F62754C3DA0051A9C0 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		04B2A1F82754C7D60051A9C0 /* MovieVC+MovieTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieVC+MovieTableView.swift"; sourceTree = "<group>"; };
-		04B2A1FA2755256C0051A9C0 /* WatchListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,8 @@
 		047FCAD127535F310078C072 = {
 			isa = PBXGroup;
 			children = (
+				04B0E58527575E1F004EBC03 /* MovieWatchList+CoreDataClass.swift */,
+				04B0E58627575E1F004EBC03 /* MovieWatchList+CoreDataProperties.swift */,
 				047FCADC27535F310078C072 /* Movie */,
 				047FCADB27535F310078C072 /* Products */,
 			);
@@ -86,6 +90,7 @@
 				047FCAEB27535F330078C072 /* Info.plist */,
 				047FCAE627535F330078C072 /* Assets.xcassets */,
 				047FCAF5275369C20078C072 /* Color+Image  */,
+				048A536D27568CB2003F29A2 /* WatchlistCD.xcdatamodeld */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -102,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				047FCAF1275363F50078C072 /* MovieVC.swift */,
-				048A53692755FAA9003F29A2 /* WatchListVC.swift */,
 				04B2A1F52754BE760051A9C0 /* TableView */,
 				047FCAFB275382C10078C072 /* CollectionView */,
 			);
@@ -112,7 +116,7 @@
 		047FCAF927537AF50078C072 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				047FCAFD2753838A0078C072 /* ArrayCollection.swift */,
+				047FCAFD2753838A0078C072 /* ArrayModels.swift */,
 				047FCB072753DF310078C072 /* StructDetiles.swift */,
 				048A536B275615DA003F29A2 /* WatchList.swift */,
 			);
@@ -142,8 +146,7 @@
 			children = (
 				04B2A1F82754C7D60051A9C0 /* MovieVC+MovieTableView.swift */,
 				04B2A1F62754C3DA0051A9C0 /* MovieTableViewCell.swift */,
-				048A53672755F9EB003F29A2 /* WatchListVC+WatchListTableView.swift */,
-				04B2A1FA2755256C0051A9C0 /* WatchListTableViewCell.swift */,
+				048A53692755FAA9003F29A2 /* WatchListVC.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -219,19 +222,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047FCAFE2753838A0078C072 /* ArrayCollection.swift in Sources */,
+				047FCAFE2753838A0078C072 /* ArrayModels.swift in Sources */,
 				04B2A1F92754C7D60051A9C0 /* MovieVC+MovieTableView.swift in Sources */,
 				048A536A2755FAA9003F29A2 /* WatchListVC.swift in Sources */,
 				047FCB0227538BD00078C072 /* MovieVC+CollectionView.swift in Sources */,
+				04B0E58827575E1F004EBC03 /* MovieWatchList+CoreDataProperties.swift in Sources */,
 				047FCADE27535F310078C072 /* AppDelegate.swift in Sources */,
 				048A536C275615DA003F29A2 /* WatchList.swift in Sources */,
 				047FCB082753DF310078C072 /* StructDetiles.swift in Sources */,
 				047FCAF4275364490078C072 /* MovieCollectionViewCell.swift in Sources */,
-				04B2A1FB2755256D0051A9C0 /* WatchListTableViewCell.swift in Sources */,
+				04B0E58727575E1F004EBC03 /* MovieWatchList+CoreDataClass.swift in Sources */,
+				048A536F27568CB2003F29A2 /* WatchlistCD.xcdatamodeld in Sources */,
 				047FCAF2275363F50078C072 /* MovieVC.swift in Sources */,
 				047FCAF7275369DF0078C072 /* UIImage+Ex.swift in Sources */,
 				047FCAE027535F310078C072 /* SceneDelegate.swift in Sources */,
-				048A53682755F9EB003F29A2 /* WatchListVC+WatchListTableView.swift in Sources */,
 				04B2A1F72754C3DA0051A9C0 /* MovieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +454,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		048A536D27568CB2003F29A2 /* WatchlistCD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				048A536E27568CB2003F29A2 /* WatchlistCD.xcdatamodel */,
+			);
+			currentVersion = 048A536E27568CB2003F29A2 /* WatchlistCD.xcdatamodel */;
+			path = WatchlistCD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 047FCAD227535F310078C072 /* Project object */;
 }

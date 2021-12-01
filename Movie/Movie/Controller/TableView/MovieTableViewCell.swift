@@ -24,7 +24,7 @@ class MovieTableViewCell: UITableViewCell, setCell {
         posterMovie.image = imageDetiles
         titleMovie.text = titleDetiles
         descriptionMovie.text = describtionDetiles
-        ratingMovie.text = "\(ratingDetiles) / 10"
+        ratingMovie.text =  "\(ratingDetiles) / 10"
         
     }
     
