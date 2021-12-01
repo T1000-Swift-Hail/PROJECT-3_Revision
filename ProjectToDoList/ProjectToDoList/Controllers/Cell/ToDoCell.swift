@@ -11,9 +11,14 @@ class ToDoCell: UITableViewCell {
 
     @IBOutlet weak var toDoImageView: UIImageView!
     @IBOutlet weak var toDoLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    func setUpCell(taskName :String , taskPhoto :UIImage){
+        toDoImageView.image = taskPhoto
+        toDoLabel.text = taskName
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

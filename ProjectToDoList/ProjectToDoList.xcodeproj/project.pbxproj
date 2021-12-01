@@ -15,10 +15,17 @@
 		B7028D1C275241BB00175637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7028D1A275241BB00175637 /* LaunchScreen.storyboard */; };
 		B7028D2C2752C10300175637 /* ToDoCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7028D2A2752C10300175637 /* ToDoCoreData.xcdatamodeld */; };
 		B728CC0F2752D76C00605F2C /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B728CC0E2752D76C00605F2C /* ScheduleVC.swift */; };
+		B78EAA7D2756BE4A00948805 /* Enum+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EAA7C2756BE4A00948805 /* Enum+Extension.swift */; };
+		B78EAA8E2757696700948805 /* NewTaskShopping+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EAA882757696700948805 /* NewTaskShopping+CoreDataClass.swift */; };
+		B78EAA8F2757696700948805 /* NewTaskShopping+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EAA892757696700948805 /* NewTaskShopping+CoreDataProperties.swift */; };
+		B78EAA902757696700948805 /* NewTaskWork+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EAA8A2757696700948805 /* NewTaskWork+CoreDataClass.swift */; };
+		B78EAA912757696700948805 /* NewTaskWork+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EAA8B2757696700948805 /* NewTaskWork+CoreDataProperties.swift */; };
+		B78EAA922757696700948805 /* NewTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EAA8C2757696700948805 /* NewTask+CoreDataClass.swift */; };
+		B78EAA932757696700948805 /* NewTask+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EAA8D2757696700948805 /* NewTask+CoreDataProperties.swift */; };
 		B7B8BB532753BBFC000D3AD0 /* ToDoListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8BB522753BBFC000D3AD0 /* ToDoListTVC.swift */; };
 		B7B8BB552754B27F000D3AD0 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8BB542754B27F000D3AD0 /* ToDoCell.swift */; };
 		B7B8BB592754B5A6000D3AD0 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8BB582754B5A6000D3AD0 /* List.swift */; };
-		B7B8BB5B2754CE02000D3AD0 /* NewListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8BB5A2754CE02000D3AD0 /* NewListVC.swift */; };
+		B7B8BB64275555F8000D3AD0 /* NewTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8BB63275555F8000D3AD0 /* NewTaskVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +39,17 @@
 		B7028D1D275241BB00175637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7028D2B2752C10300175637 /* ToDoCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoCoreData.xcdatamodel; sourceTree = "<group>"; };
 		B728CC0E2752D76C00605F2C /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
+		B78EAA7C2756BE4A00948805 /* Enum+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum+Extension.swift"; sourceTree = "<group>"; };
+		B78EAA882757696700948805 /* NewTaskShopping+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewTaskShopping+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B78EAA892757696700948805 /* NewTaskShopping+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewTaskShopping+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B78EAA8A2757696700948805 /* NewTaskWork+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewTaskWork+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B78EAA8B2757696700948805 /* NewTaskWork+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewTaskWork+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B78EAA8C2757696700948805 /* NewTask+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewTask+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B78EAA8D2757696700948805 /* NewTask+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewTask+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B7B8BB522753BBFC000D3AD0 /* ToDoListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTVC.swift; sourceTree = "<group>"; };
 		B7B8BB542754B27F000D3AD0 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 		B7B8BB582754B5A6000D3AD0 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
-		B7B8BB5A2754CE02000D3AD0 /* NewListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListVC.swift; sourceTree = "<group>"; };
+		B7B8BB63275555F8000D3AD0 /* NewTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,12 @@
 		B7028D03275241B900175637 = {
 			isa = PBXGroup;
 			children = (
+				B78EAA882757696700948805 /* NewTaskShopping+CoreDataClass.swift */,
+				B78EAA892757696700948805 /* NewTaskShopping+CoreDataProperties.swift */,
+				B78EAA8A2757696700948805 /* NewTaskWork+CoreDataClass.swift */,
+				B78EAA8B2757696700948805 /* NewTaskWork+CoreDataProperties.swift */,
+				B78EAA8C2757696700948805 /* NewTask+CoreDataClass.swift */,
+				B78EAA8D2757696700948805 /* NewTask+CoreDataProperties.swift */,
 				B7028D0E275241B900175637 /* ProjectToDoList */,
 				B7028D0D275241B900175637 /* Products */,
 			);
@@ -68,14 +88,10 @@
 		B7028D0E275241B900175637 /* ProjectToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				B7B8BB5E275554E0000D3AD0 /* Models */,
+				B7B8BB5C27555476000D3AD0 /* Controllers */,
 				B7028D0F275241B900175637 /* AppDelegate.swift */,
-				B7B8BB5A2754CE02000D3AD0 /* NewListVC.swift */,
 				B7028D11275241B900175637 /* SceneDelegate.swift */,
-				B7028D13275241B900175637 /* ViewController.swift */,
-				B728CC0E2752D76C00605F2C /* ScheduleVC.swift */,
-				B7B8BB522753BBFC000D3AD0 /* ToDoListTVC.swift */,
-				B7B8BB542754B27F000D3AD0 /* ToDoCell.swift */,
-				B7B8BB582754B5A6000D3AD0 /* List.swift */,
 				B7028D15275241B900175637 /* Main.storyboard */,
 				B7028D18275241BB00175637 /* Assets.xcassets */,
 				B7028D1A275241BB00175637 /* LaunchScreen.storyboard */,
@@ -83,6 +99,35 @@
 				B7028D2A2752C10300175637 /* ToDoCoreData.xcdatamodeld */,
 			);
 			path = ProjectToDoList;
+			sourceTree = "<group>";
+		};
+		B7B8BB5C27555476000D3AD0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7028D13275241B900175637 /* ViewController.swift */,
+				B728CC0E2752D76C00605F2C /* ScheduleVC.swift */,
+				B7B8BB522753BBFC000D3AD0 /* ToDoListTVC.swift */,
+				B7B8BB63275555F8000D3AD0 /* NewTaskVC.swift */,
+				B7B8BB5D275554A9000D3AD0 /* Cell */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B7B8BB5D275554A9000D3AD0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B7B8BB542754B27F000D3AD0 /* ToDoCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B7B8BB5E275554E0000D3AD0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7B8BB582754B5A6000D3AD0 /* List.swift */,
+				B78EAA7C2756BE4A00948805 /* Enum+Extension.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,12 +203,19 @@
 			files = (
 				B728CC0F2752D76C00605F2C /* ScheduleVC.swift in Sources */,
 				B7028D14275241B900175637 /* ViewController.swift in Sources */,
+				B7B8BB64275555F8000D3AD0 /* NewTaskVC.swift in Sources */,
 				B7B8BB552754B27F000D3AD0 /* ToDoCell.swift in Sources */,
+				B78EAA8F2757696700948805 /* NewTaskShopping+CoreDataProperties.swift in Sources */,
+				B78EAA7D2756BE4A00948805 /* Enum+Extension.swift in Sources */,
+				B78EAA912757696700948805 /* NewTaskWork+CoreDataProperties.swift in Sources */,
+				B78EAA922757696700948805 /* NewTask+CoreDataClass.swift in Sources */,
 				B7028D10275241B900175637 /* AppDelegate.swift in Sources */,
 				B7028D2C2752C10300175637 /* ToDoCoreData.xcdatamodeld in Sources */,
+				B78EAA8E2757696700948805 /* NewTaskShopping+CoreDataClass.swift in Sources */,
 				B7028D12275241B900175637 /* SceneDelegate.swift in Sources */,
-				B7B8BB5B2754CE02000D3AD0 /* NewListVC.swift in Sources */,
+				B78EAA932757696700948805 /* NewTask+CoreDataProperties.swift in Sources */,
 				B7B8BB592754B5A6000D3AD0 /* List.swift in Sources */,
+				B78EAA902757696700948805 /* NewTaskWork+CoreDataClass.swift in Sources */,
 				B7B8BB532753BBFC000D3AD0 /* ToDoListTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

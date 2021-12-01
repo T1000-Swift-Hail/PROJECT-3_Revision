@@ -24,6 +24,7 @@ class ScheduleVC: UIViewController {
                 print("Permission Denied")
             }
             
+            
         }
 
     }
@@ -43,6 +44,8 @@ class ScheduleVC: UIViewController {
                     content.body = message
                     
                     let dateComp = Calendar.current.dateComponents([.year , .month , .day , .hour , .minute], from: date)
+                    
+//                    let dateComp2 = Calendar.current.dateComponents([.day], from: date)
                     
                     let trigger = UNCalendarNotificationTrigger(dateMatching: dateComp, repeats: false)
                     
@@ -84,7 +87,7 @@ func formattedDate(date : Date) -> String {
        let formatter = DateFormatter()
        formatter.dateFormat = "d MMM y HH:mm"
        return formatter.string(from: date)
-                    
+
     }
 }
                                          
