@@ -26,6 +26,8 @@ enum Payment : Error {
 // switch current delivery ?? delivery.
 //
 
+
+// This is Class initialization
 class Customer {
 
     var name: String
@@ -59,8 +61,9 @@ class Customer {
                    print("High")
                 }
 
-                
          print("\(name) paid \(payment)")
+                
+         // This is conditionals
                 if (payment>3)  {
                     print("It takes you to the place you want \(payment)")
                 } else if (payment < 15) {

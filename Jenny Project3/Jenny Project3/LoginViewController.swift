@@ -16,6 +16,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTx: UITextField!
    
 
+   // This is Dicctionaries
+    // let persons = ["Nasser":3,"Mohammed":4,"Sara":2]
+   // func print (persons[1]!)
     let customer = Customer(name: "Nasser", age: 24, services: [], phoneNumber: 56666, password: "1234567", description: "delivery of the customer to the desired location")
 
   

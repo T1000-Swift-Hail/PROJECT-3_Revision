@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+// This is Animations and Use closure
     
     fileprivate func Animations() { UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
         self.ImageView.transform = CGAffineTransform(rotationAngle: 120)
