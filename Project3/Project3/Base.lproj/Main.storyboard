@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eF5-1E-5fo">
-                                <rect key="frame" x="20" y="455" width="374" height="34"/>
+                                <rect key="frame" x="20" y="411" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="FZG-zI-4Iq"/>
                                 </constraints>
@@ -29,7 +29,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KpJ-YZ-CIC">
-                                <rect key="frame" x="20" y="537" width="374" height="34"/>
+                                <rect key="frame" x="20" y="493" width="374" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="g4Z-ql-zPf"/>
@@ -38,7 +38,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJn-Dl-x6e">
-                                <rect key="frame" x="159" y="659" width="94" height="31"/>
+                                <rect key="frame" x="159" y="615" width="94" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="6C0-b4-bJy"/>
                                 </constraints>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksl-jd-gqt">
-                                <rect key="frame" x="144" y="303" width="126" height="39"/>
+                                <rect key="frame" x="144" y="259" width="126" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="E0p-lN-U5f"/>
                                 </constraints>
@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1201" y="-550"/>
+            <point key="canvasLocation" x="-1823" y="-550"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qfh-XL-KWP">
@@ -146,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIo-c4-ZW6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-443.47826086956525" y="-550.44642857142856"/>
+            <point key="canvasLocation" x="-862" y="-550"/>
         </scene>
         <!--Home-->
         <scene sceneID="FJA-ez-esm">
@@ -212,7 +212,7 @@
                                 </connections>
                             </button>
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="back2" id="fC9-s1-Qdi"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="back2" modalPresentationStyle="fullScreen" id="fC9-s1-Qdi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -223,7 +223,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yF-cw-hoY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-522" y="138"/>
+            <point key="canvasLocation" x="-862" y="185"/>
         </scene>
         <!--Details City-->
         <scene sceneID="Zrx-OE-LV4">
@@ -233,7 +233,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fLY-pD-HF5">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fLY-pD-HF5">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -272,7 +272,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GA1-G7-0hR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="310" y="151"/>
+            <point key="canvasLocation" x="309" y="185"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="u64-1k-cBu">
@@ -289,7 +289,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mIL-Tn-l8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="264" y="-550"/>
+            <point key="canvasLocation" x="309" y="-688"/>
         </scene>
     </scenes>
     <resources>

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class DetailsCity: UICollectionViewController {
+class DetailsCity: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var imageDetails: UIImageView!
     
@@ -36,5 +36,8 @@ class DetailsCity: UICollectionViewController {
         
         
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            return CGSize(width: (view.frame.width) - 12, height: (view.frame.height) / 3)
+        }
     
 }
