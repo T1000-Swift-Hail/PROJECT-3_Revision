@@ -8,7 +8,16 @@
 import UIKit
 //Animation for the Rapir View Controller
 class Animation: UIViewController {
+    var screenSize:CGRect!
+
+
+       var screenWidth:CGFloat!
+
+
+       var screenHeight:CGFloat!
     
+    @IBOutlet weak var car1AnimationImageView: UIImageView!
+    @IBOutlet weak var car2AnimationImageView: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +25,119 @@ class Animation: UIViewController {
         imageViewAnimation()
         textViewAnimation()
         buttonAnimation()
+        getScreenSize()
+
+
+        self.car1AnimationImageView.center = CGPoint(x: 0, y: Int(Int(self.screenHeight) / 2))
+
+
+        self.car2AnimationImageView.center = CGPoint(x: 0, y: Int(Int(self.screenHeight) / 2))
+
+
+        moveBugLeft()
+
+
+        moveBugRight()
+
+
     }
+
+
+
+
+    func getScreenSize()  {
+
+
+        screenSize = UIScreen.main.bounds
+
+
+        screenHeight = screenSize.height
+
+
+        screenWidth = screenSize.width
+
+
+       
+
+
+    }
+
+
+    
+
+
+    func moveBugLeft() {
+
+
+        getScreenSize()
+
+
+        car1AnimationImageView.isHidden = true
+
+
+        UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseInOut , .allowUserInteraction], animations: { self.car1AnimationImageView.center = CGPoint(x: 0, y: Int(Int(self.screenHeight) / 2))}, completion: {_ in self.faceBugLeft()})
+
+
+    }
+
+
+    
+
+
+    func faceBugLeft() {
+
+
+        getScreenSize()
+
+
+        car1AnimationImageView.isHidden = false
+
+
+        UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseInOut , .allowUserInteraction], animations: { self.car1AnimationImageView.center = CGPoint(x: Int(self.screenWidth), y: Int(Int(self.screenHeight) / 2))}, completion: {_ in self.moveBugLeft()})
+
+
+    }
+
+
+    
+
+
+    func moveBugRight() {
+
+
+        getScreenSize()
+
+
+        car2AnimationImageView.isHidden = true
+
+
+        UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseInOut , .allowUserInteraction], animations: { self.car2AnimationImageView.center = CGPoint(x: Int(self.screenWidth), y: Int(Int(self.screenHeight) / 2))}, completion: {_ in self.faceBugRight()})
+
+
+    }
+
+
+    
+
+
+    func faceBugRight() {
+
+
+        getScreenSize()
+
+
+        car2AnimationImageView.isHidden = false
+
+
+        UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseInOut , .allowUserInteraction], animations: { self.car2AnimationImageView.center = CGPoint(x: 0, y: Int(Int(self.screenHeight) / 2))}, completion: {_ in self.moveBugRight()})
+
+
+    }
+
+
+
+
+
     
     // function for image animation
     func imageViewAnimation() {
@@ -55,4 +176,9 @@ class Animation: UIViewController {
         })
         uiAnimationText.startAnimation()
     }
+  
 }
+
+       
+
+

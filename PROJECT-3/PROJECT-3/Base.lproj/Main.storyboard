@@ -255,6 +255,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="nJq-YH-agP">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Left" translatesAutoresizingMaskIntoConstraints="NO" id="nYb-Yf-7Xv">
+                                <rect key="frame" x="298" y="441" width="164" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dear customer don't worry. Stay Home ,we will come to fix your Phone..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mE5-mm-nyd">
                                 <rect key="frame" x="20" y="189" width="323" height="40.666666666666657"/>
                                 <constraints>
@@ -275,6 +279,18 @@
                                     <segue destination="8ba-8K-rsM" kind="presentation" modalPresentationStyle="fullScreen" id="zsi-uD-qWv"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horziental" translatesAutoresizingMaskIntoConstraints="NO" id="GwP-vg-eL9">
+                                <rect key="frame" x="-84" y="398" width="596" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horziental" translatesAutoresizingMaskIntoConstraints="NO" id="ir4-l3-SEa">
+                                <rect key="frame" x="-83" y="539" width="585" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="Pa1-HF-EA2">
+                                <rect key="frame" x="-17" y="459" width="112" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PR8-yg-jZB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -293,6 +309,8 @@
                     </view>
                     <connections>
                         <outlet property="button" destination="hyp-nw-6xg" id="eFT-uh-qIc"/>
+                        <outlet property="car1AnimationImageView" destination="Pa1-HF-EA2" id="vEj-q5-cS2"/>
+                        <outlet property="car2AnimationImageView" destination="nYb-Yf-7Xv" id="61b-Pp-f6t"/>
                         <outlet property="imageView" destination="nJq-YH-agP" id="sIU-Bf-xCr"/>
                         <outlet property="titleName" destination="mE5-mm-nyd" id="iiT-ht-aDi"/>
                     </connections>
@@ -304,6 +322,9 @@
     </scenes>
     <resources>
         <image name="Background" width="174" height="290"/>
+        <image name="Left" width="299" height="168"/>
+        <image name="horziental" width="577" height="433"/>
+        <image name="right" width="300" height="168"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
