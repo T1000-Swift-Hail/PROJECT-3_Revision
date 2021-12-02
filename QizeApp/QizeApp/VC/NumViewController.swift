@@ -36,7 +36,7 @@ class NumViewController: UIViewController {
          
          if userGotItRight {
              numTrueBtn.backgroundColor.self = UIColor.green
-             greatJobImage.image = UIImage(named: "goodJob")
+             greatJobImage?.image = UIImage(named: "goodJob")
          }
          quizee.nextQuestion()
          Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)

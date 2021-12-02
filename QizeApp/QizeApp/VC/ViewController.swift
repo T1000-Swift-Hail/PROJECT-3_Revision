@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageLabel: UIImageView!
     
     var quizBrain = QuizBrain()
-    //var quizee = Quize()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         
         if userGotItRight {
            trueButton.backgroundColor.self = UIColor.green
-            imageLabel.image = UIImage(named: "goodJob")
+            imageLabel?.image = UIImage(named: "goodJob")
         }
         
 
