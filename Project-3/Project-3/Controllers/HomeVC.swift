@@ -9,21 +9,21 @@ import UIKit
 
 class HomeVC: UIViewController {
     
+    
     var collectionImages = [UIImage(named: "cover1")!,UIImage(named: "cover2")!,UIImage(named: "cover3")!,UIImage(named: "cover4")!,UIImage(named: "cover5")!]
+    
     var timer: Timer?
     var currentCellIndex = 0
-    @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
     var textSelected: String?
     var imageSelected: UIImage?
-    var pass = "passing"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         collectionView.delegate = self
         collectionView.dataSource = self
-        pageControl.numberOfPages = collectionImages.count
         startTimer()
     }
     
@@ -41,24 +41,25 @@ class HomeVC: UIViewController {
         }
         
         collectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
-        pageControl.currentPage = currentCellIndex
     }
     
     
     
-    @IBAction func logOutButton(_ sender: UIBarButtonItem) {
-        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "returnToLogOut") as? CustomerProfile
-        self.navigationController?.pushViewController(vc!, animated: true)
-//        performSegue(withIdentifier: "returnToLogin", sender: nil)
+    @IBAction func showProfile(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "profile", sender: nil)
     }
     
     
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let vc = segue.destination as! WorkersDescription
-//        vc.imageView = imageSelected
-//        vc.textLabel = textSelected
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "profile" {
+            
+        } else {
+            let vc = segue.destination as! WorkersDescription
+            vc.imageView = imageSelected
+            vc.textLabel = textSelected
+        }
+    }
     
     
     @IBAction func plumberButton(_ sender: Any) {
@@ -102,7 +103,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? HomeImagesCell else {
             return UICollectionViewCell()
         }
         cell.imageView.image = collectionImages[indexPath.row]

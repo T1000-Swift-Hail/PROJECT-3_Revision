@@ -21,6 +21,7 @@ extension CustomerData {
     @NSManaged public var phoneNumber: String?
     @NSManaged public var isLogin: Bool
     @NSManaged public var password: String?
+    @NSManaged public var id: UUID?
 
 }
 

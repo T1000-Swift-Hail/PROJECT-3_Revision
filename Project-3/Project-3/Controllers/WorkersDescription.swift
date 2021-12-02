@@ -18,13 +18,8 @@ class WorkersDescription: UIViewController {
         super.viewDidLoad()
         descriptionLabel.text = textLabel
         workerImage.image = imageView
-        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-    
-    }
     
     @IBAction func orderContinue(_ sender: Any) {
         performSegue(withIdentifier: "mapPage", sender: nil)

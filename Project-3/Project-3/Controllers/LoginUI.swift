@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+var userUIID = ""
 class LoginUI: UIViewController {
     
     let persistentContainer : NSPersistentContainer = {
@@ -18,10 +19,9 @@ class LoginUI: UIViewController {
                     print(readError)
                 }
             })
-        
         return container
     }()
-    var get = ""
+    
     let userDefault = UserDefaults.standard
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -38,19 +38,17 @@ class LoginUI: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fetchAllCustomers()
-    }
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        for customers in customerData {
-            if customers.isLogin == true {
-                performSegue(withIdentifier: "Home", sender: nil)
+        for user in customerData {
+            let userIslogin = userDefault.bool(forKey: "isLogin")
+            userUIID = userDefault.string(forKey: "userUIID") ?? ""
+           
+            if (user.id?.uuidString == userUIID) && (userIslogin == true) {
                 
+                performSegue(withIdentifier: "Home", sender: nil)
             }
         }
-
     }
+    
     
     
     func fetchAllCustomers() {
@@ -68,17 +66,20 @@ class LoginUI: UIViewController {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         
-//        userDefault.set(true, forKey: "isLogIn")
+        
         for users in customerData {
         if (email == users.email) && (password == users.password) {
+            users.isLogin = true
+            userDefault.set(true, forKey: "isLogin")
+            // save in userDe = uiid for user
+            userUIID = users.id?.uuidString ?? ""
+            userDefault.set(true, forKey: "isLogIn")
+            userDefault.set(userUIID, forKey: "userUIID")
             performSegue(withIdentifier: "Home", sender: nil)
+            emailTextField.text = ""
+            passwordTextField.text = ""
             return
         }
-            
-            
-//            if email == userDefault.string(forKey: "email") && password == userDefault.string(forKey: "password") {
-//                performSegue(withIdentifier: "Home", sender: nil)
-//            }
             
             
         }
