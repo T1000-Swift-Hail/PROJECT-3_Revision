@@ -33,10 +33,10 @@ struct ProductDetails {
 }
 
 struct Productsf{
-    var productName : String!
-    var productImage : String!
-    var productPrice : String!
-    var productCat : String!
+    var productName : String?
+    var productImage : NSData?
+    var productPrice : String?
+    var productCat : String?
 }
 
 

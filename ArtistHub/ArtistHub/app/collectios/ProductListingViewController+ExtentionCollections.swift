@@ -17,8 +17,6 @@ extension ProductListingViewController:UICollectionViewDataSource,UICollectionVi
         collectionRandom.delegate = self
         collectionRandom.dataSource = self
         
-       
-        
     }
     
 

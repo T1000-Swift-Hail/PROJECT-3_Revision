@@ -82,7 +82,6 @@
 			children = (
 				D80FDCB02757DBAC003FC288 /* ProductModel 2.swift */,
 				D80FDC902757D9B9003FC288 /* ModelAuth.swift */,
-				D84B40742757EB7600E840C3 /* Main.storyboard */,
 				D80FDC912757D9B9003FC288 /* ModelDataBase.swift */,
 			);
 			path = model;
@@ -155,6 +154,7 @@
 				D80FDCB42757DC58003FC288 /* model */,
 				D8E62E882753918F008E0A02 /* Register */,
 				D80FDC892757D9B9003FC288 /* AddProduct.swift */,
+				D84B40742757EB7600E840C3 /* Main.storyboard */,
 				D80FDC8A2757D9B9003FC288 /* ContainerView.swift */,
 				D80FDC8B2757D9B9003FC288 /* AppDelegate.swift */,
 				D80FDC832757D9B8003FC288 /* LaunchScreen.storyboard */,

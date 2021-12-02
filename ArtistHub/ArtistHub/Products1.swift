@@ -11,12 +11,12 @@ import CoreData
 
 class CDProducts : NSManagedObject{
     
-    @NSManaged var productName : String!
-    @NSManaged var productImage : String!
-    @NSManaged var productPrice : String!
-    @NSManaged var productCat : String!
-    @NSManaged var deletedData : Date?
-    @NSManaged var id : NSNumber!
+    @NSManaged var productName : String?
+    @NSManaged var productImage : NSData?
+    @NSManaged var productPrice : String?
+    @NSManaged var productCat : String?
+    @NSManaged var deletedData : Data?
+    @NSManaged var id : Int32
     
     func create(productss: Productsf) {
 

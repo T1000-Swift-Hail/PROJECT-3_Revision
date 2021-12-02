@@ -16,7 +16,7 @@ class PersistentStorage {
     
     lazy var persistentContainer: NSPersistentContainer = {
         
-        let container = NSPersistentContainer(name: "AppContact")
+        let container = NSPersistentContainer(name: "ArtistHub")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")

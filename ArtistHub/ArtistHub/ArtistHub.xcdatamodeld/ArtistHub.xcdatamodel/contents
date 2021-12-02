@@ -4,7 +4,7 @@
         <attribute name="deletedData" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="productCat" optional="YES" attributeType="String"/>
-        <attribute name="productImage" optional="YES" attributeType="String"/>
+        <attribute name="productImage" optional="YES" attributeType="Binary"/>
         <attribute name="productName" optional="YES" attributeType="String"/>
         <attribute name="productPrice" optional="YES" attributeType="String"/>
     </entity>

@@ -12,40 +12,83 @@ class OrderViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
-    
+    //let cdItems = CDProducts()
     var imageselected : UIImage?
     var nameLabela : String?
     var priceLabela : String?
     var categoryLabela : String?
+    var items : [CDProducts]?
+    let context = PersistentStorage.shared.context
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
+        items = PersistentStorage.shared.fetchManagedObject(managedObject: CDProducts.self)
+       
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.reloadData()
         
         
-        super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
-        tableView.reloadData()
-    }
     @IBAction func doneBottun(_ sender: Any) {
-        
-        dismiss(animated: true, completion: nil)
+        if tableView.isEditing {
+            tableView.isEditing = false
+        }else{
+            tableView.isEditing = true
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+extension OrderViewController : UITableViewDelegate,UITableViewDataSource{
+    
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        items?.count ?? 0
     }
-    */
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? OrderTableCell else {return UITableViewCell()}
+        
+        guard let items = items else { return UITableViewCell() }
+        guard let image = items[indexPath.row].productImage else { return UITableViewCell() }
+        
+        cell.priceLabel.text = items[indexPath.row].productPrice
+        cell.nameLabel.text = items[indexPath.row].productName
+        cell.categoryLabel.text = items[indexPath.row].productCat
+        if let image = UIImage(data:image as Data, scale:1.0) {
+            cell.imageViews.image = image
+        }
+        
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let product = items?[indexPath.row]
+            guard let product = product else {return}
+            items?.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            
+            
+            
+            context.delete(product)
+            PersistentStorage.shared.saveContext()
+            
+            
+        }
+    }
+    
+    
 
+    
+    
+    
 }
