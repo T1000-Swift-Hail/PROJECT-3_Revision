@@ -1,8 +1,7 @@
 # PROJECT-3_Revision
+## Project :  ALHILAL SHOP:
 
-### Based on what you’ve learned until now , create a project of your choosing.
-### Your project must demonstrate the following concepts : 
-- Variables
+###  I created this project Based on what I learned until now by ussing And some other additions:- Variables
 - Arrays
 - Functions
 - Loops
@@ -15,7 +14,10 @@
 - Dictionaries
 - Closure
 - Properties
-- Protocols
 - Extensions
 
-#### Deadline: next Thursday by 9:00 a.m.
+
+#### Overview: It is an application that helps the user to select the products displayed in the store.
+
+
+
