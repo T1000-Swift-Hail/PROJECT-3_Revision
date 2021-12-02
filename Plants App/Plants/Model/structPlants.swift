@@ -10,7 +10,7 @@ import UIKit
 
 
 
-struct plants {
+struct Plants {
     let names : String
     let des :   String
     let photo : UIImage
