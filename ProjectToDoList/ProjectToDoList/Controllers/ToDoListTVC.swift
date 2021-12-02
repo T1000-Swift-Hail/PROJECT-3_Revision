@@ -41,10 +41,10 @@ class ToDoListTVC: ViewController {
     }
     
     @IBAction func editng(_ sender: UIBarButtonItem) {
-        switch ToDoTableView.isEditing {
-        case true :
+        if ToDoTableView.isEditing {
             ToDoTableView.isEditing = false
-        case false :
+        }
+        else {
             ToDoTableView.isEditing = true
         }
     }
