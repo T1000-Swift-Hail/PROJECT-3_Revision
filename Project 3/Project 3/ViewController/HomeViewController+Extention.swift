@@ -12,15 +12,14 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     
     func dataSet () {
-        
-        
+    
         collectionViewPectuers.delegate = self
         collectionViewPectuers.dataSource = self
         productCollection.delegate = self
         productCollection.dataSource = self
     }
     
-    
+    // number of item in section
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == collectionViewPectuers {
             return collectionImeges.imeges.count
@@ -32,7 +31,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
 
     }
     
-    
+    // cell for item
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         //collectionView
@@ -56,7 +55,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
 }
     
    
-    
+    // did select to add selection action on the cell
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) -> Void {
           
             performSegue(withIdentifier: "products", sender: nil)

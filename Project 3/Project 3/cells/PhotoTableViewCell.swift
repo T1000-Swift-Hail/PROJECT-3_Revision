@@ -9,9 +9,9 @@ import UIKit
 
 class PhotoTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
-    
+    // set identifier = name of class
     static let identifier = "PhotoTableViewCell"
-
+    // set data layout for collection view and his properties like height or spacing
     private let collectionView:UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -21,7 +21,7 @@ class PhotoTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectio
         let collectionView = UICollectionView(frame:CGRect(x: 500, y: 0, width: 500, height: 500), collectionViewLayout: layout)
         
         collectionView.isPagingEnabled = true
-        collectionView.backgroundColor = .systemBackground
+        collectionView.backgroundColor = .gray
         collectionView.register(PhotoCollectionViewCell.self, forCellWithReuseIdentifier: PhotoCollectionViewCell.identifier)
         
         return collectionView
@@ -36,15 +36,19 @@ class PhotoTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectio
         contentView.backgroundColor = .systemBackground
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.backgroundColor = .gray
     }
+    
     required init?(coder: NSCoder) {
         fatalError()
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
         collectionView.frame = collectionView.bounds
     }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return images.count

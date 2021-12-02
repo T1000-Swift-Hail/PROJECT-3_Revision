@@ -6,6 +6,8 @@
 //
 
 import UIKit
+
+// struct
 struct TextCallViewModel {
     let text:String
     let font:UIFont
@@ -13,6 +15,7 @@ struct TextCallViewModel {
     
 }
 
+// Main Enume witch in it the three main data section
 enum SuctionType {
     case productPhotos(Imeges:[UIImage])
     case productinfo(viewModels: [TextCallViewModel])
@@ -34,6 +37,7 @@ enum SuctionType {
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
    
    
+    // define the table view
     
     private let tableView:UITableView = {
         let table = UITableView()
@@ -54,19 +58,24 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = .lightGray
+        
+        
         // Do any additional setup after loading the view.
     }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
     }
     
+    // function to configure sections data for section
     private func configureSections() {
+        
         sections.append(.productPhotos(Imeges: [
         UIImage(named: "images-1"),
         UIImage(named: "images-2"),
-        UIImage(named: "images-3"),
-        UIImage(named: "images-4")
+        UIImage(named: "images-3")
         
         
         ].compactMap({ $0 })))
@@ -75,21 +84,27 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             TextCallViewModel(text: "price", font: .systemFont(ofSize: 22))
         ]))
         sections.append(.relatedProducts(viewModels: [
-            RelatedProductTableViewCellViewModel(imege:UIImage(named: "images-6") , titel: "product"),
-            RelatedProductTableViewCellViewModel(imege:UIImage(named: "images-7") , titel: "product"),
-            RelatedProductTableViewCellViewModel(imege:UIImage(named: "images-8") , titel: "product"),
-            RelatedProductTableViewCellViewModel(imege:UIImage(named: "images-9") , titel: "product")
+           
+            RelatedProductTableViewCellViewModel(imege:UIImage(named: "images-7") , titel: "shirt"),
+            RelatedProductTableViewCellViewModel(imege:UIImage(named: "images-8") , titel: "dress"),
+            RelatedProductTableViewCellViewModel(imege:UIImage(named: "images-9") , titel: "shirt")
         ]))
         
     }
+    // number of section
     func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
     }
+    // number of rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         let sectionType = sections[section]
+        
         switch sectionType {
+            
         case.productPhotos:
             return 1
+            
         case .productinfo(let viewModels):
             return viewModels.count
             
@@ -97,13 +112,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             return viewModels.count
         }
     }
+    // titel for header
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let sectionType = sections[section]
         return sectionType.titel
 
     }
     
-    
+    // cell for row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let sectionType = sections[indexPath.section]
@@ -112,6 +128,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         switch sectionType {
             
         case .productPhotos(let images):
+            
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PhotoTableViewCell.identifier, for: indexPath) as? PhotoTableViewCell else {
                 
                 fatalError()
@@ -130,6 +147,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             
             
         case .relatedProducts(let viewModels):
+            
             guard let cell = tableView.dequeueReusableCell(withIdentifier: RelatedProductTableViewCell.identifire, for: indexPath) as? RelatedProductTableViewCell else {
                 
                 fatalError()
@@ -140,6 +158,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
     
     }
+    // height for row
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let sectionType = sections[indexPath.section]
         
@@ -155,7 +174,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
   
 }
+
 extension UITableViewCell {
+    // configer the text
     func configure(with viewModel:TextCallViewModel){
         textLabel?.text = viewModel.text
         textLabel?.numberOfLines = 0

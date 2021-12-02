@@ -8,7 +8,7 @@
 import UIKit
 
 class PhotoCollectionViewCell: UICollectionViewCell {
-    
+    // set identifier = name of class
     static let identifier = "PhotoCollectionViewCell"
     
     
@@ -17,12 +17,14 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         let imegeView = UIImageView()
         imegeView.contentMode = .scaleAspectFill
         imegeView.clipsToBounds = true
+        imegeView.layer.cornerRadius = 12
      return imegeView
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(imegeView)
+        contentView.backgroundColor = .gray
     }
     
     

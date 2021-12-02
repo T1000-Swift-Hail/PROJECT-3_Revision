@@ -20,7 +20,7 @@ struct RelatedProductTableViewCellViewModel {
 
 
 class RelatedProductTableViewCell: UITableViewCell {
-    
+    // set identifier = name of class
     static let identifire = "RelatedProductTableViewCell"
     private let productImegeView : UIImageView = {
      let imegeView = UIImageView()

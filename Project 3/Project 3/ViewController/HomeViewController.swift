@@ -31,14 +31,16 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // function call for delegate and datasours
         dataSet()
       
+        // setting timer for imeg changing
         timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(anim), userInfo: nil, repeats: true)
         
     }
     
     
-  
+  // this function to set the order of imeges
     @objc func anim (){
         
         let lastItem = collectionViewPectuers.indexPathsForVisibleItems.last

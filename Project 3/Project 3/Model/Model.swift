@@ -23,18 +23,18 @@ struct Imeges {
 }
 
 enum Products: String {
-    case productOne = "images-4"
-    case productTwo = "images-5"
-    case productThree = "images-6"
+    case productOne = "images-10"
+    case productTwo = "images-11"
+    case productThree = "images-12"
     case productFour = "images-7"
     case productFive = "images-8"
     case productSix = "images-9"
-    case productSeven = "images-10"
+    
     
 }
 struct Product {
     
-    var product : [Products] = [.productOne,.productTwo,.productThree,.productFour,.productSix,.productSeven]
+    var product : [Products] = [.productOne,.productTwo,.productThree,.productFour,.productFive,.productSix]
 }
 
 
