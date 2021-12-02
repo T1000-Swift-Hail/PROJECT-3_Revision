@@ -1,30 +1,18 @@
 //
-//  SecondViewController.swift
-//  PROJECT-3
+//  Location1ViewController.swift
+//  saudi elctri city company
 //
-//  Created by Abdoalaziz Alshammari on 02/12/2021.
+//  Created by Abdoalaziz Alshammari on 29/11/2021.
 //
 
 import UIKit
 import MapKit
-// second controller
-class SecondViewController: UIViewController,MKMapViewDelegate {
+class Location1ViewController: UIViewController, MKMapViewDelegate {
     
-    @IBOutlet weak var dataText: UITextView!
-    // customer entered data in text view
-    var dataTextEntered = ""
-    
-    @IBOutlet weak var dataImage: UIImageView!
-    // customer slected image
-    var dataImageEntered = UIImage(named: "")
+    @IBOutlet weak var mapOutLet: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //  asgining what the customer write and selcte to display it in second controller
-        dataText.text = dataTextEntered
-        dataImage.image = dataImageEntered
-        
-        
         
         let latitude : CLLocationDegrees = 21.314438
         let longtitude : CLLocationDegrees = 40.4324153
@@ -50,11 +38,8 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
         mapOutLet.addGestureRecognizer(uilpgr)
         
         
+        
     }
-    
-    @IBOutlet weak var mapOutLet: MKMapView!
-    
-   
     
     
     @objc func longPressGeuster(gusterRecognizer : UIGestureRecognizer) {
@@ -64,30 +49,18 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
         
         let newUserAnnotation = MKPointAnnotation()
         newUserAnnotation.title = "My Favorite Place"
-        newUserAnnotation.subtitle = "Will Be Here as soon as possible"
+        newUserAnnotation.subtitle = "Will Be Here Tomorwe"
         newUserAnnotation.coordinate = coordinte
         mapOutLet.addAnnotation(newUserAnnotation)
         
         
     }
     
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
-    @IBAction func ConfirmOrders(_ sender: Any) {
-       
-        let alert = UIAlertController(title: "Complete", message: "Dear Customer our team will be contact you soon Don't Worry", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
-        self.present(alert, animated: true)
-        
-        
-        
-    }
     
 }
-
-
-
-
-
