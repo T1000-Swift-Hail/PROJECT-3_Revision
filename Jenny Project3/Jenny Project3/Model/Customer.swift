@@ -52,7 +52,7 @@ class Customer {
                 
                 let myPayment = Payment.paymentLow
 
-                switch myPayment {
+        switch myPayment {
                 case Payment.paymentLow:
                     print("Low")
                 case Payment.paymentHigh:

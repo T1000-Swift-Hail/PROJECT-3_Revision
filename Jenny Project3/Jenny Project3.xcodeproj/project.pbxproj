@@ -74,18 +74,18 @@
 			children = (
 				3A894F732754AE5700F15B8B /* Model */,
 				3A894F702754A79C00F15B8B /* Service */,
-				3A0C2E0D27537A0800E6D9AF /* AppDelegate.swift */,
-				3A0C2E0F27537A0800E6D9AF /* SceneDelegate.swift */,
+				3A0C2E212753A1DD00E6D9AF /* LoginViewController.swift */,
+				3A8A1C5D27555C09001D15C6 /* HomeViewController.swift */,
 				3A0C2E1127537A0800E6D9AF /* ViewController.swift */,
-				3A0C2E1327537A0800E6D9AF /* Main.storyboard */,
 				3A7EE25F2756323E0055E3A9 /* DetailsVC.swift */,
+				3A0C2E0F27537A0800E6D9AF /* SceneDelegate.swift */,
+				3A0C2E0D27537A0800E6D9AF /* AppDelegate.swift */,
+				3A0C2E1327537A0800E6D9AF /* Main.storyboard */,
+				3A8A4BDF2756D316005C59C0 /* LocationViewController.swift */,
+				3A803C31275758B900242466 /* Extensions.swift */,
 				3A0C2E1627537A0900E6D9AF /* Assets.xcassets */,
 				3A0C2E1827537A0900E6D9AF /* LaunchScreen.storyboard */,
 				3A0C2E1B27537A0900E6D9AF /* Info.plist */,
-				3A0C2E212753A1DD00E6D9AF /* LoginViewController.swift */,
-				3A8A1C5D27555C09001D15C6 /* HomeViewController.swift */,
-				3A8A4BDF2756D316005C59C0 /* LocationViewController.swift */,
-				3A803C31275758B900242466 /* Extensions.swift */,
 			);
 			path = "Jenny Project3";
 			sourceTree = "<group>";

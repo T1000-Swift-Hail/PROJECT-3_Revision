@@ -15,7 +15,7 @@ class DetailsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     // There are five services
-    let tobeacaptainService = Service(name: "Nasser", description: "allowing a person to visit his income inthe capacity of captain", price: 50, phoneNumber:0535173329)
+    let tobeacaptainService = Service(name: "Ali", description: "allowing a person to visit his income inthe capacity of captain", price: 50, phoneNumber:0535173329)
     let ConnectingService = Service(name: "Mohammed", description: "delivery of the customer to the desired location", price: 40, phoneNumber:0535173329)
    
  var ourServices  = [Service]()

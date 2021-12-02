@@ -16,7 +16,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTx: UITextField!
    
 
-    let customer = Customer(name: "hind", age: 24, services: [], phoneNumber: 0536543678, password: "1234567", description: "delivery of the customer to the desired location")
+    let customer = Customer(name: "Nasser", age: 24, services: [], phoneNumber: 56666, password: "1234567", description: "delivery of the customer to the desired location")
 
   
  // The customer writes the user name and password and phoneNumberenters it on the application
@@ -31,7 +31,8 @@ override func viewDidLoad() {
 
 
     @IBAction func logIn(_ sender: Any) {
-        if (userNameTx.text == customer.name) && (passwordTx.text == customer.password)&&(phonenumberTx.text == String(customer.phoneNumber)) {
+        
+        if (userNameTx.text == customer.name) && (passwordTx.text == customer.password) && (phonenumberTx.text == String(customer.phoneNumber)) {
              
              performSegue(withIdentifier: "home", sender: nil)
              
