@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+// struct of city
 struct Cities {
     var name : String
     var pic : [UIImage]

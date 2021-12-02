@@ -6,12 +6,12 @@
 //
 
 import UIKit
-
+//first page to sign in
 class ViewController: UIViewController {
     @IBOutlet weak var useName: UITextField!
     @IBOutlet weak var userPassword: UITextField!
     @IBOutlet weak var titleName: UILabel!
-    
+//    users examples
     var Name1 = User(firstName: "Ali", password: "1")
     var Name2 = User(firstName: "Saad", password: "2")
     
@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+//    action of button
     @IBAction func logIn(_ sender: Any) {
         let NewNames = [Name1 , Name2 ]
         guard let AcountUser = useName.text else {return}
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
             }
 }
     }
-    
+//    Alert message
     func Message() {
         let message1 = UIAlertController(title: "Your Username And Password not corect", message: "", preferredStyle: .alert)
         let done = UIAlertAction(title: "try Again", style: .default) { action in

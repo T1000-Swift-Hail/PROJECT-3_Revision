@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+// class to profile image
 class ProfileImage: UITableViewCell {
     @IBOutlet weak var cityPic: UIImageView!
     @IBOutlet weak var cityName: UILabel!

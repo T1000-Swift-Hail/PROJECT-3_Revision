@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+// class to use collectionViewCell
 class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cityImages: UIImageView!

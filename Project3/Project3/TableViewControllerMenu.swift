@@ -6,10 +6,11 @@
 //
 
 import UIKit
-
+// class to UITableViewController
 class TableViewControllerMenu: UITableViewController {
     @IBOutlet var menuTableView: UITableView!
     
+//    Name of sections
     let menu = ["Europe","Africa","Middle East"]
     
     var citys : [[Cities]] = []
@@ -139,6 +140,7 @@ class TableViewControllerMenu: UITableViewController {
      */
     
 }
+//    action to return back first page
     @IBAction func backTo(_ sender: Any) {
         performSegue(withIdentifier: "back2", sender: nil)
     }

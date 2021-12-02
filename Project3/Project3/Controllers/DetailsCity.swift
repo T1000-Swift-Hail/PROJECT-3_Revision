@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//class using collection view give us UIimage
 class DetailsCity: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var imageDetails: UIImageView!

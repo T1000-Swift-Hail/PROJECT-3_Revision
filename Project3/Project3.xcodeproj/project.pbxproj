@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7703E65C2758BB6100ED2798 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7703E65B2758BB6100ED2798 /* AnimationViewController.swift */; };
 		778B308527538CA300A4B68A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B308427538CA300A4B68A /* AppDelegate.swift */; };
 		778B308727538CA300A4B68A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B308627538CA300A4B68A /* SceneDelegate.swift */; };
 		778B308927538CA300A4B68A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B308827538CA300A4B68A /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7703E65B2758BB6100ED2798 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		778B308127538CA300A4B68A /* Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778B308427538CA300A4B68A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		778B308627538CA300A4B68A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7703E65A2758BB1400ED2798 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				7703E65B2758BB6100ED2798 /* AnimationViewController.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		778B307827538CA300A4B68A = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 				778B308D27538CA400A4B68A /* Assets.xcassets */,
 				778B308F27538CA400A4B68A /* LaunchScreen.storyboard */,
 				778B309227538CA400A4B68A /* Info.plist */,
+				7703E65A2758BB1400ED2798 /* Animation */,
 			);
 			path = Project3;
 			sourceTree = "<group>";
@@ -179,6 +190,7 @@
 				778B30A32756012300A4B68A /* DetailsCity.swift in Sources */,
 				778B308527538CA300A4B68A /* AppDelegate.swift in Sources */,
 				778B30A12754C7B900A4B68A /* Cities.swift in Sources */,
+				7703E65C2758BB6100ED2798 /* AnimationViewController.swift in Sources */,
 				778B308727538CA300A4B68A /* SceneDelegate.swift in Sources */,
 				778B309B2754BC5B00A4B68A /* TableViewControllerMenu.swift in Sources */,
 			);
