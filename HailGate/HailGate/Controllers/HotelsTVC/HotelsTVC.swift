@@ -14,7 +14,7 @@ class HotelsTVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.backgroundColor = UIColor(rgb: 0xFFEAE7D6)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,7 +29,7 @@ class HotelsTVC: UITableViewController {
         cell?.hotelsName.text = hotelsInformationData.name
         
         cell?.hotelsRates.text = hotelsInformationData.scoure
-        
+        cell?.backgroundColor = UIColor(rgb: 0xFFEAE7D6)
         return cell ?? UITableViewCell()
         
     }

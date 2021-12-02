@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dna-rM-Ld9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qrz-WJ-RaR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -33,7 +33,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3xK-bh-bDH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="36"/>
                                 <color key="textColor" red="0.20784313725490194" green="0.13725490196078433" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -112,7 +112,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="oQy-wO-6NK">
                                         <rect key="frame" x="20" y="100" width="350" height="740"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7W-dB-3Q2">
+                                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7W-dB-3Q2">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="Lus-aN-q9e"/>
@@ -122,13 +122,13 @@
                                                 <buttonConfiguration key="configuration" style="filled" title=" Entertainment                        " subtitle="">
                                                     <backgroundConfiguration key="background" cornerRadius="75" image="Entertainment" imageContentMode="scaleToFill"/>
                                                     <fontDescription key="titleFontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="32"/>
-                                                    <color key="baseForegroundColor" red="0.51372549020000002" green="0.29803921570000003" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="baseForegroundColor" red="0.075915249909999996" green="0.075915249909999996" blue="0.075915249909999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <segue destination="Web-ZV-hmd" kind="show" id="O3m-qn-0VR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbK-37-v8D">
+                                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbK-37-v8D">
                                                 <rect key="frame" x="0.0" y="155" width="350" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="af1-y4-Rcb"/>
@@ -137,13 +137,13 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="ShoppingCenters                                            ">
                                                     <backgroundConfiguration key="background" cornerRadius="70" image="ShoppingCenters"/>
                                                     <fontDescription key="titleFontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="27"/>
-                                                    <color key="baseForegroundColor" red="0.51372549020000002" green="0.29803921570000003" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="baseForegroundColor" red="0.1377034043" green="0.1377034043" blue="0.1377034043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <segue destination="OB5-7H-jaJ" kind="show" id="EUS-qs-Jvz"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtK-71-OOA">
+                                            <button opaque="NO" alpha="0.84999999999999998" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtK-71-OOA">
                                                 <rect key="frame" x="0.0" y="310" width="350" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="aEo-7t-PI3"/>
@@ -152,13 +152,13 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Hotels                         . ">
                                                     <backgroundConfiguration key="background" cornerRadius="80" image="Hotels"/>
                                                     <fontDescription key="titleFontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="29"/>
-                                                    <color key="baseForegroundColor" red="0.51372549020000002" green="0.29803921570000003" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseForegroundColor" red="0.1377034043" green="0.1377034043" blue="0.1377034043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <segue destination="hCU-0g-1y2" kind="show" id="yNc-hp-pdg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fc-q6-XQ5">
+                                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fc-q6-XQ5">
                                                 <rect key="frame" x="0.0" y="465" width="350" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="Whx-I3-DqD"/>
@@ -167,13 +167,13 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Milestones                       . ">
                                                     <backgroundConfiguration key="background" cornerRadius="81" image="Milestones"/>
                                                     <fontDescription key="titleFontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="28"/>
-                                                    <color key="baseForegroundColor" red="0.51372549020000002" green="0.29803921570000003" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseForegroundColor" red="0.1377034043" green="0.1377034043" blue="0.1377034043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <segue destination="B59-K0-6fk" kind="show" id="DOw-cj-I4f"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wt5-ga-ce9">
+                                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wt5-ga-ce9">
                                                 <rect key="frame" x="0.0" y="620" width="350" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="ihJ-1L-4zR"/>
@@ -182,7 +182,7 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Restaurants&amp;Cafe          .  ">
                                                     <backgroundConfiguration key="background" cornerRadius="80" image="Restaurants&amp;Cafe"/>
                                                     <fontDescription key="titleFontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="27"/>
-                                                    <color key="baseForegroundColor" red="0.51372549020000002" green="0.29803921570000003" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseForegroundColor" red="0.1377034043" green="0.1377034043" blue="0.1377034043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <segue destination="Dna-rM-Ld9" kind="show" id="Dkz-QB-jKQ"/>
@@ -451,42 +451,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="2aU-We-jRX">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="2aU-We-jRX">
                                 <rect key="frame" x="20" y="64" width="374" height="729"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rue-Zw-0rg">
-                                        <rect key="frame" x="20" y="0.0" width="334" height="97.5"/>
+                                        <rect key="frame" x="20" y="0.0" width="334" height="101.5"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="34"/>
                                         <color key="textColor" red="0.51372549020000002" green="0.29803921570000003" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCR-Rk-Foy">
-                                        <rect key="frame" x="10" y="122.5" width="354" height="43"/>
+                                        <rect key="frame" x="10" y="123.5" width="354" height="45"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
                                         <color key="textColor" red="0.047058823530000002" green="0.23137254900000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzz-jQ-88k">
-                                        <rect key="frame" x="10" y="190.5" width="354" height="97"/>
+                                        <rect key="frame" x="10" y="190.5" width="354" height="101.5"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="34"/>
                                         <color key="textColor" red="0.51372549020000002" green="0.29803921570000003" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5T-gn-PJ1">
-                                        <rect key="frame" x="10" y="312.5" width="354" height="43.5"/>
+                                        <rect key="frame" x="10" y="314" width="354" height="45"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
                                         <color key="textColor" red="0.047058823530000002" green="0.23137254900000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gU-1Z-KNt">
-                                        <rect key="frame" x="10" y="381" width="354" height="97"/>
+                                        <rect key="frame" x="10" y="381" width="354" height="101.5"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="34"/>
                                         <color key="textColor" red="0.51372549020000002" green="0.29803921570000003" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJV-DP-ZYn">
-                                        <rect key="frame" x="10" y="503" width="354" height="226"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJV-DP-ZYn">
+                                        <rect key="frame" x="10" y="504.5" width="354" height="224.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <color key="textColor" red="0.047058823530000002" green="0.23137254900000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -540,25 +540,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="66S-b4-5E2" customClass="HotelsTVCell" customModule="HailGate" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="66S-b4-5E2" id="Pk8-nF-2uA">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTU-vg-7nX">
-                                            <rect key="frame" x="30" y="11" width="42" height="21.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="30" y="11" width="45.5" height="22.5"/>
+                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="19"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mk-9H-cib">
-                                            <rect key="frame" x="314" y="0.0" width="90" height="43.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mk-9H-cib">
+                                            <rect key="frame" x="314" y="0.0" width="90" height="44.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="90" id="Omi-Qj-NNR"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="0.90297154043660022" green="0.75527259352262599" blue="0.26435151203637697" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -640,7 +640,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cGS-Jk-5kC">
-                                    <size key="itemSize" width="200" height="193"/>
+                                    <size key="itemSize" width="280" height="193"/>
                                     <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -654,12 +654,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r6H-bf-BXo">
-                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="159"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="140"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoV-oK-k7m">
-                                                    <rect key="frame" x="8" y="169" width="184" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoV-oK-k7m">
+                                                    <rect key="frame" x="8" y="150" width="184" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="MrQ-fZ-ofD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                    <color key="textColor" red="0.20784313730000001" green="0.13725490200000001" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -719,7 +722,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ShH-Yh-6Ob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="254" y="1564"/>
+            <point key="canvasLocation" x="838" y="1402"/>
         </scene>
         <!--MilestonesVC-->
         <scene sceneID="YJW-F0-w5g">
@@ -730,7 +733,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S1o-XK-GeH">
-                                <rect key="frame" x="10" y="10" width="394" height="161"/>
+                                <rect key="frame" x="10" y="27" width="394" height="180"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45q-pS-uIA">
                                 <rect key="frame" x="30" y="271" width="354" height="130"/>
@@ -742,9 +745,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AX-0x-rbS">
-                                <rect key="frame" x="40" y="181" width="334" height="80"/>
+                                <rect key="frame" x="40" y="209" width="334" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Nwn-2d-SdL"/>
+                                    <constraint firstAttribute="height" constant="60" id="Nwn-2d-SdL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="28"/>
                                 <color key="textColor" red="0.51372549020000002" green="0.29803921570000003" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -755,15 +758,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="S1o-XK-GeH" firstAttribute="centerX" secondItem="0AX-0x-rbS" secondAttribute="centerX" id="3nn-oI-qWz"/>
-                            <constraint firstItem="45q-pS-uIA" firstAttribute="top" secondItem="0AX-0x-rbS" secondAttribute="bottom" constant="10" id="6OY-Qp-9lG"/>
+                            <constraint firstItem="45q-pS-uIA" firstAttribute="top" secondItem="0AX-0x-rbS" secondAttribute="bottom" constant="2" id="6OY-Qp-9lG"/>
                             <constraint firstAttribute="bottomMargin" secondItem="45q-pS-uIA" secondAttribute="bottom" constant="5" id="I5f-iH-PNJ"/>
                             <constraint firstItem="S1o-XK-GeH" firstAttribute="leading" secondItem="KId-sT-jYc" secondAttribute="leading" constant="10" id="IFb-tB-Il5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="45q-pS-uIA" secondAttribute="trailing" constant="10" id="Wdc-J0-rgY"/>
                             <constraint firstItem="45q-pS-uIA" firstAttribute="leading" secondItem="j8n-oi-cKy" secondAttribute="leadingMargin" constant="10" id="bKg-U0-oAL"/>
-                            <constraint firstItem="S1o-XK-GeH" firstAttribute="top" secondItem="j8n-oi-cKy" secondAttribute="topMargin" constant="-34" id="dXp-oZ-sUj"/>
+                            <constraint firstItem="S1o-XK-GeH" firstAttribute="top" secondItem="KId-sT-jYc" secondAttribute="top" constant="-17" id="dXp-oZ-sUj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0AX-0x-rbS" secondAttribute="trailing" constant="20" id="g3L-oT-Gjs"/>
                             <constraint firstItem="0AX-0x-rbS" firstAttribute="leading" secondItem="j8n-oi-cKy" secondAttribute="leadingMargin" constant="20" id="whJ-Vm-Wtc"/>
-                            <constraint firstItem="0AX-0x-rbS" firstAttribute="top" secondItem="S1o-XK-GeH" secondAttribute="bottom" constant="10" id="z2E-pn-sS4"/>
+                            <constraint firstItem="0AX-0x-rbS" firstAttribute="top" secondItem="S1o-XK-GeH" secondAttribute="bottom" constant="2" id="z2E-pn-sS4"/>
                         </constraints>
                     </view>
                     <connections>

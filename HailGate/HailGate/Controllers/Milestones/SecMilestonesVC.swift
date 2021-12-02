@@ -24,8 +24,12 @@ class SecMilestonesVC: UIViewController {
         titelSecondMuseum.text = "Araf Castle"
         secondMuseumInfo.text = "The historic Araf Castle in the heart of the city of Hail on top of a mountain overlooking the city It is believed that the castle was built in the year 1840."
         
+      
+    }
+    override func viewWillAppear(_ animated: Bool) {
         Animations()
     }
+    
     fileprivate func Animations() {
         
         //        * secondMuseumInfo *

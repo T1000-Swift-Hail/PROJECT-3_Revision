@@ -21,7 +21,7 @@ class ViewControllerFirst: UIViewController {
         super.viewDidLoad()
         titleAppLBL.text = "Hail Gate"
         view.backgroundColor = UIColor(rgb: 0xFFE0ECDE)
-        backgroundImage.image = UIImage(named: "2")
+        backgroundImage.image = UIImage(named: "1")
     }
 }
 

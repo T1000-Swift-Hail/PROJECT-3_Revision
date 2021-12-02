@@ -13,4 +13,7 @@ class RestaurantsAndCafeCellCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var photosForSection: UIImageView!
     
     @IBOutlet weak var nameOfRestaurantsOrCafeLBL: UILabel!
+    
+  
+    
 }

@@ -9,8 +9,11 @@ import UIKit
 
 
 struct Photo {
-    let name : String
+    let nameSection : String
     let photos : [UIImage]
+    let name : [String]
+   
+    
 }
 
 
@@ -23,13 +26,13 @@ class RestaurantsAndCafeCVC: UIViewController ,  UICollectionViewDataSource, UIC
     override func viewDidLoad() {
         super.viewDidLoad()
         arraysPhoto = [
-            Photo(name: "Restaurants", photos: [UIImage(named: "Home")!,UIImage(named: "Home")!])
+            Photo(nameSection: " ✶ Restaurants", photos: [UIImage(named: "Re1")!,UIImage(named: "Re2")!], name: ["TAN Resturant", "Marsaai"])
             ,
-            Photo(name: "Popular Restaurants", photos: [UIImage(named: "Home")!,UIImage(named: "Home")!])
+            Photo(nameSection: " ✶ Popular Restaurants", photos: [UIImage(named: "Ch1")!,UIImage(named: "Ch2")!], name: ["AlSaddh Restaurants", "Hail Restaurants"])
             ,
-            Photo(name: "Cafe", photos: [UIImage(named: "Home")!,UIImage(named: "Home")!])
+            Photo(nameSection: " ✶ Cafe", photos: [UIImage(named: "Co1")!,UIImage(named: "Co2")!], name: ["AGZAL", "Ghasaaq"])
             ,
-            Photo(name: "FoodTruck", photos: [UIImage(named: "Home")!,UIImage(named: "Home")!])
+            Photo(nameSection: " ✶ FoodTruck", photos: [UIImage(named: "T2")!,UIImage(named: "T1")!], name: ["WAKNAH", "AlAsil"])
         ]
         
         view.backgroundColor = UIColor(rgb: 0xFFEAE7D6)
@@ -48,15 +51,19 @@ class RestaurantsAndCafeCVC: UIViewController ,  UICollectionViewDataSource, UIC
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RestaurantsAndCafeCell", for: indexPath) as? RestaurantsAndCafeCellCollectionViewCell
         cell?.photosForSection.image = arraysPhoto[indexPath.section].photos[indexPath.row]
+        cell?.nameOfRestaurantsOrCafeLBL.text = arraysPhoto[indexPath.section].name[indexPath.row]
+        
         cell?.backgroundColor = UIColor(rgb: 0xFFEAE7D6)
         return cell ?? UICollectionViewCell()
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width * 0.45, height: collectionView.frame.width * 0.45)
+        return CGSize(width: collectionView.frame.width * 0.487, height: collectionView.frame.width * 0.45)
     }
+    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "sectionHeader", for: indexPath) as! SectionCollectionReusableView
-        header.sectionHeaderCV.text = arraysPhoto[indexPath.section].name
+        header.sectionHeaderCV.text = arraysPhoto[indexPath.section].nameSection
         header.backgroundColor = UIColor(rgb: 0xFFCECBBC)
         return header
     }

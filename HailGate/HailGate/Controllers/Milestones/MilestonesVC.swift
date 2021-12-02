@@ -23,6 +23,10 @@ class MilestonesVC: UIViewController {
         titelFirstMuseum.text = "Hail Regional Museum"
         firstMuseumInfo.text = "It tells the history of a prehistoric period in the Arabian Peninsula , passing through the beginnings of Islam to the current stage."
         
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         Animations()
     }
     

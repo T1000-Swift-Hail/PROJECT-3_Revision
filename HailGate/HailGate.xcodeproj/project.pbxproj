@@ -112,6 +112,7 @@
 		A75CE7292755AA110065B793 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A7EBAF942754362C0071B973 /* HailGate.xcdatamodeld */,
 				A75CE72527559DE70065B793 /* EX.swift */,
 			);
 			path = Resources;
@@ -120,13 +121,12 @@
 		A75CE72A2755AA410065B793 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A75BE5D02756F8610072DA97 /* Home */,
 				A7EBAF8F2754362C0071B973 /* ViewControllerFirst.swift */,
 				A7EBAFA22754B8AE0071B973 /* EntertainmentTVC.swift */,
-				A75BE5D6275715E60072DA97 /* MilestonesVC.swift */,
-				A75BE5D827572E2A0072DA97 /* SecMilestonesVC.swift */,
-				A75BE5D02756F8610072DA97 /* Home */,
 				A75CE72D2755BD370065B793 /* ShoppingCentersVC */,
 				A75BE5D527570C450072DA97 /* HotelsTVC */,
+				A772704A2758500300914A35 /* Milestones */,
 				A7EBAFA72754BF620071B973 /* Restaurants&CafeSection */,
 			);
 			path = Controllers;
@@ -141,6 +141,15 @@
 				A75BE5C82755E0960072DA97 /* InformationMallVC.swift */,
 			);
 			path = ShoppingCentersVC;
+			sourceTree = "<group>";
+		};
+		A772704A2758500300914A35 /* Milestones */ = {
+			isa = PBXGroup;
+			children = (
+				A75BE5D6275715E60072DA97 /* MilestonesVC.swift */,
+				A75BE5D827572E2A0072DA97 /* SecMilestonesVC.swift */,
+			);
+			path = Milestones;
 			sourceTree = "<group>";
 		};
 		A7EBAF7F2754362C0071B973 = {
@@ -167,7 +176,6 @@
 				A75CE72A2755AA410065B793 /* Controllers */,
 				A75CE7272755A8FC0065B793 /* View */,
 				A7EBAF912754362C0071B973 /* Main.storyboard */,
-				A7EBAF942754362C0071B973 /* HailGate.xcdatamodeld */,
 				A7EBAF8B2754362C0071B973 /* AppDelegate.swift */,
 				A7EBAF8D2754362C0071B973 /* SceneDelegate.swift */,
 				A7EBAF9C2754362D0071B973 /* Info.plist */,
