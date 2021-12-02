@@ -49,8 +49,6 @@
 		445E915527518E1C00401468 = {
 			isa = PBXGroup;
 			children = (
-				4466606427577427000D75DC /* models */,
-				44666067275775AC000D75DC /* Controller */,
 				445E916027518E1C00401468 /* QuestionAndAnswer */,
 				445E915F27518E1C00401468 /* Products */,
 			);
@@ -67,6 +65,10 @@
 		445E916027518E1C00401468 /* QuestionAndAnswer */ = {
 			isa = PBXGroup;
 			children = (
+				44666067275775AC000D75DC /* Controller */,
+				445E916527518E1C00401468 /* ViewController.swift */,
+				445F328E2754B23900F60165 /* Customer.swift */,
+				4466606427577427000D75DC /* models */,
 				445E916127518E1C00401468 /* AppDelegate.swift */,
 				445E916327518E1C00401468 /* SceneDelegate.swift */,
 				445E916727518E1C00401468 /* Main.storyboard */,
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				446660652757752C000D75DC /* struct.swift */,
+				44669E012757B5AA005A9468 /* image */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -87,10 +90,7 @@
 		44666067275775AC000D75DC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				445E916527518E1C00401468 /* ViewController.swift */,
-				445F328E2754B23900F60165 /* Customer.swift */,
 				445F32862753EA6000F60165 /* Home.swift */,
-				44669E012757B5AA005A9468 /* image */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

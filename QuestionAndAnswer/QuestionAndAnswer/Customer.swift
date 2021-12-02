@@ -15,23 +15,22 @@ protocol Customers {
     func describeCustomer()
 }
 
+
 var theUserName = {
     print("userName")
 }
 
-
 class Customer: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
    
     @IBOutlet weak var userName: UITextField!
     
     @IBOutlet weak var emailText: UITextField!
     
     @IBOutlet weak var password: UITextField!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
     
     @IBAction func loginButton(_ sender: UIButton) {
        
