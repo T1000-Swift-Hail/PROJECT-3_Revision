@@ -1,21 +1,16 @@
 # PROJECT-3_Revision
 
-### Based on what you’ve learned until now , create a project of your choosing.
-### Your project must demonstrate the following concepts : 
-- Variables
-- Arrays
-- Functions
-- Loops
-- Conditionals
-- Enumerations
-- Classes
-- Struct
-- Switch
-- Optionals
-- Dictionaries
-- Closure
-- Properties
-- Protocols
-- Extensions
+#### descrebtion project :
 
-#### Deadline: next Thursday by 9:00 a.m.
+The application of plants is an application that displays the types of indoor and outdoor plants, flowers and a description of each plant ... and what it needs.
+
+Features List :
+
+- indoor plants
+- outdoor plants
+- flowers
+
+
+User Stories :
+
+The user gets a glimpse of all kinds of plants
