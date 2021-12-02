@@ -16,13 +16,14 @@ class FirstViewController: UIViewController {
        
     }
     
-
+// optional
     @IBAction func button(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "secound") as! SecoundViewController
         vc.userData = User(name: textfild.text!, des: ": Gardens and outdoor plants add a special aesthetic to our homes ، ")
         present(vc, animated: true, completion: nil)
     }
 
+    // conditional
     
     @IBAction func `switch`(_ sender: UISwitch) {
         if (sender as AnyObject).isOn{

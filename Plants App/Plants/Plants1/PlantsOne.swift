@@ -8,7 +8,8 @@
 import UIKit
 
 class PlantsOne: UIViewController {
-
+    
+// array
     var arrayplants = [Plants]()
 
     @IBOutlet weak var tableview: UITableView!

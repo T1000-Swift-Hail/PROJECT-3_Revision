@@ -18,11 +18,7 @@ class SecoundViewController: UIViewController {
             lalUserName.text = "\(user.name) \(user.des)"
         }
         
-
     }
-    
-
-   
 
 }
 

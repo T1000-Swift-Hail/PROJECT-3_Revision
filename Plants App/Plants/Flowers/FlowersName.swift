@@ -8,6 +8,9 @@
 import UIKit
 
 class FlowersName: UITableViewController {
+    
+    
+    // Dic
     var plants = [[String:Any]]()
     
     override func viewDidLoad() {
@@ -38,5 +41,6 @@ class FlowersName: UITableViewController {
         return cell!
     }
    
+    }
+    
 
-}

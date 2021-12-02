@@ -79,7 +79,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="ugy-fy-Zef" kind="show" identifier="FlowersPlants" id="x5b-cf-KYh"/>
+                                    <action selector="btnFlorwers:" destination="uoz-6g-MPq" eventType="touchUpInside" id="aUQ-Bh-08f"/>
+                                    <action selector="flowerBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZO-iK-3av"/>
+                                    <action selector="flowerBtn:" destination="uoz-6g-MPq" eventType="touchUpInside" id="aIG-a8-srf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpf-Kn-Rw1">
@@ -155,9 +157,11 @@
                     <connections>
                         <outlet property="collectionView" destination="gRh-k0-xUe" id="WTY-h9-3E1"/>
                         <outlet property="textLa" destination="Mex-og-lOH" id="CZx-et-hzp"/>
+                        <segue destination="ugy-fy-Zef" kind="show" identifier="FlowersPlants" id="PBJ-dN-gD7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="uoz-6g-MPq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="941.53846153846155" y="83.886255924170612"/>
         </scene>
