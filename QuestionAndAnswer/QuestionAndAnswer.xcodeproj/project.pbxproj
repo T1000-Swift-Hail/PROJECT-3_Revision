@@ -66,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				44666067275775AC000D75DC /* Controller */,
-				445E916527518E1C00401468 /* ViewController.swift */,
-				445F328E2754B23900F60165 /* Customer.swift */,
 				4466606427577427000D75DC /* models */,
 				445E916127518E1C00401468 /* AppDelegate.swift */,
 				445E916327518E1C00401468 /* SceneDelegate.swift */,
@@ -90,7 +88,9 @@
 		44666067275775AC000D75DC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				445E916527518E1C00401468 /* ViewController.swift */,
 				445F32862753EA6000F60165 /* Home.swift */,
+				445F328E2754B23900F60165 /* Customer.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

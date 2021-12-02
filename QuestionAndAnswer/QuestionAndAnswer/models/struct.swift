@@ -19,3 +19,10 @@ extension Qustion {
             print("Qustion: \(Qustion) and \(Answers.description) is\(Answer)")
         }
 }
+
+enum PageHome : String {
+
+case customer
+case communication
+
+}

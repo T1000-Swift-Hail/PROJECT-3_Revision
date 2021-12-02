@@ -21,6 +21,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+//        arry and dictionry for Qustion
         Qustions = [Qustion(Qustion:"The day when Adam, peace be upon him, was created?",Answers: ["Friday","Monday","Wednesday","Tuesday"], Answer: 0),
                     Qustion(Qustion: "What is the capital of China?", Answers: ["Taiwan","HongKong","Beijing","Sol" ], Answer: 2),Qustion(Qustion: "What is the political capital of the United States of America?", Answers: ["New York","Washington","Ottawa","Los Angeles"], Answer: 1),Qustion(Qustion: "What is the metal that is characterized by its lightness?", Answers: ["Lithium", "Sodium","Potassium" ,"Magnesium"], Answer:0 ),Qustion(Qustion: "In which city is the Olive Mosque located?", Answers: ["Tunisia","Morocco","Libya","Turkey"], Answer: 1),Qustion(Qustion: "Where The River Nile springs ?", Answers: ["Uganda", "Sudan","Kenya","Egypt"], Answer:0)]
 

@@ -8,13 +8,6 @@
 import UIKit
 
 
-enum PageHome : String {
-
-case customer
-case communication
-
-}
-
 
 
 class Home: UIViewController {
@@ -30,11 +23,9 @@ class Home: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-//        home()
         imageinmation()
     }
-
+//inmation
     @IBOutlet weak var imageView: UIImageView!
     func imageinmation () {
         imageView.transform = imageView.transform.rotated(by: -200)
