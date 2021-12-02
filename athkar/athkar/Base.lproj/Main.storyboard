@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -92,6 +91,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hand Painted Watercolor Green Minimalist Material Background" translatesAutoresizingMaskIntoConstraints="NO" id="7yT-KS-PGe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8hh-KV-Vvd">
                                 <rect key="frame" x="20" y="176" width="374" height="243"/>
                                 <constraints>
@@ -149,6 +152,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hand Painted Watercolor Green Minimalist Material Background" translatesAutoresizingMaskIntoConstraints="NO" id="TES-1K-wvA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="cqB-m2-ct3"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQL-hx-Hct">
                                 <rect key="frame" x="80" y="126" width="254" height="92"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="77"/>
@@ -169,10 +178,14 @@
                         <viewLayoutGuide key="safeArea" id="zEf-Vd-KEF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="TES-1K-wvA" firstAttribute="trailing" secondItem="zEf-Vd-KEF" secondAttribute="trailing" id="FKC-2Q-527"/>
                             <constraint firstItem="WQL-hx-Hct" firstAttribute="centerX" secondItem="Kw6-da-60D" secondAttribute="centerX" id="QNY-wY-Fkk"/>
+                            <constraint firstItem="TES-1K-wvA" firstAttribute="top" secondItem="Kw6-da-60D" secondAttribute="top" id="YhX-AG-h6B"/>
                             <constraint firstItem="WQL-hx-Hct" firstAttribute="leading" secondItem="zEf-Vd-KEF" secondAttribute="leading" constant="80" id="dcf-UJ-BL8"/>
                             <constraint firstItem="8AL-RE-fAt" firstAttribute="top" secondItem="WQL-hx-Hct" secondAttribute="bottom" constant="123" id="fZS-9N-Rbe"/>
                             <constraint firstItem="zEf-Vd-KEF" firstAttribute="trailing" secondItem="WQL-hx-Hct" secondAttribute="trailing" constant="80" id="fns-hK-jhl"/>
+                            <constraint firstAttribute="bottom" secondItem="TES-1K-wvA" secondAttribute="bottom" id="ljT-QW-BId"/>
+                            <constraint firstItem="TES-1K-wvA" firstAttribute="leading" secondItem="zEf-Vd-KEF" secondAttribute="leading" id="pNL-XI-I7K"/>
                             <constraint firstItem="WQL-hx-Hct" firstAttribute="top" secondItem="zEf-Vd-KEF" secondAttribute="top" constant="38" id="pf8-Na-94H"/>
                             <constraint firstItem="8AL-RE-fAt" firstAttribute="leading" secondItem="zEf-Vd-KEF" secondAttribute="leading" constant="160" id="xco-xB-tzV"/>
                             <constraint firstItem="zEf-Vd-KEF" firstAttribute="trailing" secondItem="8AL-RE-fAt" secondAttribute="trailing" constant="160" id="zFZ-uZ-29o"/>
@@ -191,7 +204,7 @@
         <scene sceneID="8j4-5d-ScS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VqA-fM-rBs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icons8-tied-hands-48" id="8hk-5w-WnD"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-praying-hand-prayer-worship-islam-muslim-respect-dua-64" id="8hk-5w-WnD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IF4-Gp-eK6">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -234,7 +247,7 @@
         <scene sceneID="h7F-B1-IeQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IkS-l3-rTe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="circle" catalog="system" id="9w0-cA-gHT"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-prayer-beads-48" id="9w0-cA-gHT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IiD-DH-gqg">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -298,16 +311,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sage green line art by Miss-Belle _ Redbubble" translatesAutoresizingMaskIntoConstraints="NO" id="JOo-u9-BVh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hand Painted Watercolor Green Minimalist Material Background" translatesAutoresizingMaskIntoConstraints="NO" id="JOo-u9-BVh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="896" id="ZnQ-Rr-Ani"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtT-po-pSt">
-                                <rect key="frame" x="69" y="480" width="276" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="9kg-KZ-JGw">
+                                <rect key="frame" x="20" y="88" width="374" height="409"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="409" id="jHK-2O-wN0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtT-po-pSt">
+                                <rect key="frame" x="20" y="594" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.09043797105550766" green="0.44262212514877319" blue="0.29797673225402832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="The Names of Allah">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
@@ -316,33 +335,18 @@
                                     <action selector="namesOfAllahBtn:" destination="s7t-S6-VQJ" eventType="touchUpInside" id="Ji7-8N-YCt"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tFE-7n-KJG">
-                                <rect key="frame" x="20" y="88" width="374" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hbQ-2L-kBl">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8oo-kC-zcx">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Cgb-Qr-Zr0">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D6H-2A-55D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="jtT-po-pSt" firstAttribute="leading" secondItem="D6H-2A-55D" secondAttribute="leading" constant="20" id="2IA-Cm-bMS"/>
+                            <constraint firstItem="9kg-KZ-JGw" firstAttribute="leading" secondItem="D6H-2A-55D" secondAttribute="leading" constant="20" id="6xO-re-wm7"/>
+                            <constraint firstItem="9kg-KZ-JGw" firstAttribute="top" secondItem="D6H-2A-55D" secondAttribute="top" id="9M1-pN-OV8"/>
+                            <constraint firstItem="jtT-po-pSt" firstAttribute="top" secondItem="9kg-KZ-JGw" secondAttribute="bottom" constant="97" id="D0i-hg-RzR"/>
+                            <constraint firstItem="D6H-2A-55D" firstAttribute="trailing" secondItem="9kg-KZ-JGw" secondAttribute="trailing" constant="20" id="Osl-yy-SJ6"/>
                             <constraint firstItem="JOo-u9-BVh" firstAttribute="trailing" secondItem="D6H-2A-55D" secondAttribute="trailing" id="UCm-Id-Fs1"/>
                             <constraint firstAttribute="bottom" secondItem="JOo-u9-BVh" secondAttribute="bottom" id="dl0-cZ-0mh"/>
+                            <constraint firstItem="D6H-2A-55D" firstAttribute="trailing" secondItem="jtT-po-pSt" secondAttribute="trailing" constant="20" id="gIo-jZ-uJF"/>
                             <constraint firstItem="JOo-u9-BVh" firstAttribute="top" secondItem="QN5-8o-T9A" secondAttribute="top" id="in0-7Y-IzK"/>
                             <constraint firstItem="JOo-u9-BVh" firstAttribute="leading" secondItem="D6H-2A-55D" secondAttribute="leading" id="qyR-Ac-rax"/>
                         </constraints>
@@ -364,23 +368,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hand Painted Watercolor Green Minimalist Material Background" translatesAutoresizingMaskIntoConstraints="NO" id="p03-mf-LRP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="sXF-lG-Gyk"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="hCx-zf-mPb">
                                 <rect key="frame" x="20" y="140" width="374" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmq-5W-yib">
                                         <rect key="frame" x="0.0" y="0.0" width="155.5" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="backgroundColor" red="0.09043797105550766" green="0.44262212514877319" blue="0.29797673225402832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Allah"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Al Jabbar"/>
                                         <connections>
                                             <action selector="allah:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="6Rb-vz-B9R"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqr-rv-18I">
                                         <rect key="frame" x="218.5" y="0.0" width="155.5" height="31"/>
-                                        <color key="backgroundColor" red="0.86839695130000005" green="0.97100986280000001" blue="0.92931689049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.09043797105550766" green="0.44262212514877319" blue="0.29797673225402832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="AlRahmaan"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Al Rahmaan"/>
                                         <connections>
                                             <action selector="alrhman:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="TjD-Mh-2UB"/>
                                         </connections>
@@ -388,22 +400,24 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="3FE-My-C0x">
-                                <rect key="frame" x="20" y="179" width="374" height="31"/>
+                                <rect key="frame" x="20" y="231" width="374" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H14-EM-DiW">
                                         <rect key="frame" x="0.0" y="0.0" width="156" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="backgroundColor" red="0.09043797105550766" green="0.44262212514877319" blue="0.29797673225402832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Allah"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Al Rahim"/>
                                         <connections>
                                             <action selector="allah:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="Vza-Po-L3S"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqb-HC-rNN">
                                         <rect key="frame" x="218" y="0.0" width="156" height="31"/>
-                                        <color key="backgroundColor" red="0.86839695130000005" green="0.97100986280000001" blue="0.92931689049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.09043797105550766" green="0.44262212514877319" blue="0.29797673225402832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="AlRahmaan"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Al Baasith"/>
                                         <connections>
                                             <action selector="alrhman:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="dbm-fV-Cdw"/>
                                         </connections>
@@ -411,22 +425,24 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="61x-tu-uXB">
-                                <rect key="frame" x="20" y="218" width="374" height="31"/>
+                                <rect key="frame" x="20" y="310" width="374" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRM-yD-7Op">
                                         <rect key="frame" x="0.0" y="0.0" width="156" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="backgroundColor" red="0.09043797105550766" green="0.44262212514877319" blue="0.29797673225402832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Allah"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Al Malik"/>
                                         <connections>
                                             <action selector="allah:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="nWN-7Q-AV2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYz-cF-EXD">
                                         <rect key="frame" x="218" y="0.0" width="156" height="31"/>
-                                        <color key="backgroundColor" red="0.86839695130000005" green="0.97100986280000001" blue="0.92931689049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.09043797105550766" green="0.44262212514877319" blue="0.29797673225402832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="AlRahmaan"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Al Hakam"/>
                                         <connections>
                                             <action selector="alrhman:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="jcc-7g-wUH"/>
                                         </connections>
@@ -434,162 +450,26 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="iW5-oX-qoj">
-                                <rect key="frame" x="20" y="257" width="374" height="31"/>
+                                <rect key="frame" x="20" y="390" width="374" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kI1-ld-EPq">
                                         <rect key="frame" x="0.0" y="0.0" width="156" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="backgroundColor" red="0.09043797105550766" green="0.44262212514877319" blue="0.29797673225402832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Allah"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="As Salam"/>
                                         <connections>
                                             <action selector="allah:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="vop-VH-tU8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBe-FP-hHU">
                                         <rect key="frame" x="218" y="0.0" width="156" height="31"/>
-                                        <color key="backgroundColor" red="0.86839695130000005" green="0.97100986280000001" blue="0.92931689049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.09043797105550766" green="0.44262212514877319" blue="0.29797673225402832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="AlRahmaan"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Al Razzaaq"/>
                                         <connections>
                                             <action selector="alrhman:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="A2M-Md-ek5"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="5za-em-7Jl">
-                                <rect key="frame" x="20" y="296" width="374" height="31"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzh-i8-65a">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Allah"/>
-                                        <connections>
-                                            <action selector="allah:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="M1t-vL-leu"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94r-Am-zWW">
-                                        <rect key="frame" x="218" y="0.0" width="156" height="31"/>
-                                        <color key="backgroundColor" red="0.86839695130000005" green="0.97100986280000001" blue="0.92931689049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="AlRahmaan"/>
-                                        <connections>
-                                            <action selector="alrhman:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="7qu-Cv-KCT"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-4Y-5X1">
-                                <rect key="frame" x="20" y="335" width="374" height="31"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7H-5O-als">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Allah"/>
-                                        <connections>
-                                            <action selector="allah:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="uUD-1O-3UX"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzd-Ab-HTt">
-                                        <rect key="frame" x="218" y="0.0" width="156" height="31"/>
-                                        <color key="backgroundColor" red="0.86839695130000005" green="0.97100986280000001" blue="0.92931689049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="AlRahmaan"/>
-                                        <connections>
-                                            <action selector="alrhman:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="2Po-BT-tiF"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="5CE-S1-V1D">
-                                <rect key="frame" x="20" y="374" width="374" height="31"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v29-EJ-nhG">
-                                        <rect key="frame" x="0.0" y="0.0" width="157" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Allah"/>
-                                        <connections>
-                                            <action selector="allah:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="mga-fk-mpq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uh-Go-fEz">
-                                        <rect key="frame" x="217" y="0.0" width="157" height="31"/>
-                                        <color key="backgroundColor" red="0.86839695130000005" green="0.97100986280000001" blue="0.92931689049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="AlRahmaan"/>
-                                        <connections>
-                                            <action selector="alrhman:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="5g9-Um-Dfm"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="sy3-jZ-R4z">
-                                <rect key="frame" x="20" y="452" width="374" height="31"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Y1-Un-8g3">
-                                        <rect key="frame" x="0.0" y="0.0" width="157" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Allah"/>
-                                        <connections>
-                                            <action selector="allah:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="NXI-P2-EaF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-cv-VGT">
-                                        <rect key="frame" x="217" y="0.0" width="157" height="31"/>
-                                        <color key="backgroundColor" red="0.86839695130000005" green="0.97100986280000001" blue="0.92931689049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="AlRahmaan"/>
-                                        <connections>
-                                            <action selector="alrhman:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="9bf-1d-bck"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="CiQ-Cv-TD4">
-                                <rect key="frame" x="20" y="491" width="374" height="31"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sf4-9f-w6Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="157" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Allah"/>
-                                        <connections>
-                                            <action selector="allah:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="Fz2-xs-Aby"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrO-WZ-cLw">
-                                        <rect key="frame" x="217" y="0.0" width="157" height="31"/>
-                                        <color key="backgroundColor" red="0.86839695130000005" green="0.97100986280000001" blue="0.92931689049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="AlRahmaan"/>
-                                        <connections>
-                                            <action selector="alrhman:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="KxI-PO-FdY"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="mDI-W6-vF3">
-                                <rect key="frame" x="20" y="413" width="374" height="31"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8S8-xb-Ptl">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Allah"/>
-                                        <connections>
-                                            <action selector="allah:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="8WX-wE-f68"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzK-E7-D26">
-                                        <rect key="frame" x="218" y="0.0" width="156" height="31"/>
-                                        <color key="backgroundColor" red="0.86839695130000005" green="0.97100986280000001" blue="0.92931689049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="AlRahmaan"/>
-                                        <connections>
-                                            <action selector="alrhman:" destination="xxi-Pg-XbY" eventType="touchUpInside" id="SvY-kY-I1x"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -598,36 +478,22 @@
                         <viewLayoutGuide key="safeArea" id="mev-ro-rNr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mev-ro-rNr" firstAttribute="trailing" secondItem="CiQ-Cv-TD4" secondAttribute="trailing" constant="20" id="4gU-dw-8mu"/>
                             <constraint firstItem="61x-tu-uXB" firstAttribute="leading" secondItem="mev-ro-rNr" secondAttribute="leading" constant="20" id="4h8-Fl-SFJ"/>
-                            <constraint firstItem="CiQ-Cv-TD4" firstAttribute="leading" secondItem="mev-ro-rNr" secondAttribute="leading" constant="20" id="4xH-0B-Fs6"/>
-                            <constraint firstItem="5za-em-7Jl" firstAttribute="leading" secondItem="mev-ro-rNr" secondAttribute="leading" constant="20" id="5OV-VC-ZHp"/>
                             <constraint firstItem="mev-ro-rNr" firstAttribute="trailing" secondItem="3FE-My-C0x" secondAttribute="trailing" constant="20" id="8Ss-xj-j6E"/>
                             <constraint firstItem="hCx-zf-mPb" firstAttribute="top" secondItem="mev-ro-rNr" secondAttribute="top" constant="52" id="BHy-Xy-SMT"/>
                             <constraint firstItem="mev-ro-rNr" firstAttribute="trailing" secondItem="iW5-oX-qoj" secondAttribute="trailing" constant="20" id="DOU-Gp-ByN"/>
-                            <constraint firstItem="61x-tu-uXB" firstAttribute="top" secondItem="3FE-My-C0x" secondAttribute="bottom" constant="8" symbolic="YES" id="LZz-W3-rr9"/>
-                            <constraint firstItem="sy3-jZ-R4z" firstAttribute="leading" secondItem="mev-ro-rNr" secondAttribute="leading" constant="20" id="NkO-oP-cBZ"/>
-                            <constraint firstItem="CiQ-Cv-TD4" firstAttribute="top" secondItem="sy3-jZ-R4z" secondAttribute="bottom" constant="8" id="O2n-Gp-hQc"/>
-                            <constraint firstItem="jzD-4Y-5X1" firstAttribute="leading" secondItem="mev-ro-rNr" secondAttribute="leading" constant="20" id="Oj2-5P-mkl"/>
+                            <constraint firstItem="61x-tu-uXB" firstAttribute="top" secondItem="3FE-My-C0x" secondAttribute="bottom" constant="48" id="LZz-W3-rr9"/>
                             <constraint firstItem="iW5-oX-qoj" firstAttribute="leading" secondItem="mev-ro-rNr" secondAttribute="leading" constant="20" id="RWu-RL-PNl"/>
-                            <constraint firstItem="mev-ro-rNr" firstAttribute="trailing" secondItem="mDI-W6-vF3" secondAttribute="trailing" constant="20" id="TUC-Cs-Wca"/>
+                            <constraint firstAttribute="bottom" secondItem="p03-mf-LRP" secondAttribute="bottom" id="RmU-Ns-wK8"/>
                             <constraint firstItem="mev-ro-rNr" firstAttribute="trailing" secondItem="hCx-zf-mPb" secondAttribute="trailing" constant="20" id="Wef-nj-wYu"/>
-                            <constraint firstItem="5za-em-7Jl" firstAttribute="top" secondItem="iW5-oX-qoj" secondAttribute="bottom" constant="8" symbolic="YES" id="ZTB-fe-G1Z"/>
-                            <constraint firstItem="jzD-4Y-5X1" firstAttribute="top" secondItem="5za-em-7Jl" secondAttribute="bottom" constant="8" id="byZ-f6-yEc"/>
-                            <constraint firstItem="5CE-S1-V1D" firstAttribute="leading" secondItem="mev-ro-rNr" secondAttribute="leading" constant="20" id="dBB-dT-YoS"/>
-                            <constraint firstItem="mev-ro-rNr" firstAttribute="trailing" secondItem="5CE-S1-V1D" secondAttribute="trailing" constant="20" id="eJS-iH-LNr"/>
-                            <constraint firstItem="sy3-jZ-R4z" firstAttribute="top" secondItem="mDI-W6-vF3" secondAttribute="bottom" constant="8" id="fNd-tg-MvD"/>
-                            <constraint firstItem="mev-ro-rNr" firstAttribute="trailing" secondItem="sy3-jZ-R4z" secondAttribute="trailing" constant="20" id="fqE-aE-hxB"/>
-                            <constraint firstItem="3FE-My-C0x" firstAttribute="top" secondItem="hCx-zf-mPb" secondAttribute="bottom" constant="8" symbolic="YES" id="hQy-NE-CmY"/>
+                            <constraint firstItem="3FE-My-C0x" firstAttribute="top" secondItem="hCx-zf-mPb" secondAttribute="bottom" constant="60" id="hQy-NE-CmY"/>
                             <constraint firstItem="mev-ro-rNr" firstAttribute="trailing" secondItem="61x-tu-uXB" secondAttribute="trailing" constant="20" id="hjA-bP-Lb1"/>
-                            <constraint firstItem="mev-ro-rNr" firstAttribute="trailing" secondItem="jzD-4Y-5X1" secondAttribute="trailing" constant="20" id="jQr-yh-1JA"/>
-                            <constraint firstItem="mDI-W6-vF3" firstAttribute="top" secondItem="5CE-S1-V1D" secondAttribute="bottom" constant="8" symbolic="YES" id="kW0-o0-rhh"/>
-                            <constraint firstItem="mev-ro-rNr" firstAttribute="trailing" secondItem="5za-em-7Jl" secondAttribute="trailing" constant="20" id="m0l-3D-SYB"/>
-                            <constraint firstItem="5CE-S1-V1D" firstAttribute="top" secondItem="jzD-4Y-5X1" secondAttribute="bottom" constant="8" id="odM-sD-Awi"/>
+                            <constraint firstItem="p03-mf-LRP" firstAttribute="leading" secondItem="mev-ro-rNr" secondAttribute="leading" id="kAa-YO-Fr4"/>
                             <constraint firstItem="hCx-zf-mPb" firstAttribute="leading" secondItem="mev-ro-rNr" secondAttribute="leading" constant="20" id="pfV-ku-gKO"/>
+                            <constraint firstItem="p03-mf-LRP" firstAttribute="top" secondItem="NHN-r3-1OE" secondAttribute="top" id="vrc-hz-Cac"/>
+                            <constraint firstItem="p03-mf-LRP" firstAttribute="trailing" secondItem="mev-ro-rNr" secondAttribute="trailing" id="vzC-Ac-2hd"/>
                             <constraint firstItem="3FE-My-C0x" firstAttribute="leading" secondItem="mev-ro-rNr" secondAttribute="leading" constant="20" id="wer-zs-50f"/>
-                            <constraint firstItem="mDI-W6-vF3" firstAttribute="leading" secondItem="mev-ro-rNr" secondAttribute="leading" constant="20" id="xKH-r5-NxO"/>
-                            <constraint firstItem="iW5-oX-qoj" firstAttribute="top" secondItem="61x-tu-uXB" secondAttribute="bottom" constant="8" symbolic="YES" id="yvG-sK-p5l"/>
+                            <constraint firstItem="iW5-oX-qoj" firstAttribute="top" secondItem="61x-tu-uXB" secondAttribute="bottom" constant="49" id="yvG-sK-p5l"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eyi-fa-Ji7"/>
@@ -640,7 +506,7 @@
         <scene sceneID="waI-L0-1y6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I66-hW-qNC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="person.fill" catalog="system" id="pWp-52-Kr1"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-prayer-muslim-man-praying-islam-dua-muslim-64" id="pWp-52-Kr1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bEF-V3-T2G">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -660,7 +526,7 @@
         <scene sceneID="p0W-FW-hEb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uuy-M5-iyc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icons8-add-64" id="4Ip-Y7-FAN">
+                    <tabBarItem key="tabBarItem" title="" image="icons8-add-list-50" id="4Ip-Y7-FAN">
                         <color key="badgeColor" red="0.76505848740000004" green="0.86078917980000003" blue="0.69140965880000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -680,17 +546,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Sage green line art by Miss-Belle _ Redbubble" width="401" height="600"/>
-        <image name="circle" catalog="system" width="128" height="121"/>
-        <image name="icons8-add-64" width="32" height="32"/>
-        <image name="icons8-tied-hands-48" width="48" height="48"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="1" width="697" height="982"/>
+        <image name="Hand Painted Watercolor Green Minimalist Material Background" width="640" height="856"/>
+        <image name="icons8-add-list-50" width="50" height="50"/>
+        <image name="icons8-prayer-beads-48" width="48" height="48"/>
+        <image name="icons8-prayer-muslim-man-praying-islam-dua-muslim-64" width="64" height="64"/>
+        <image name="icons8-praying-hand-prayer-worship-islam-muslim-respect-dua-64" width="64" height="64"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

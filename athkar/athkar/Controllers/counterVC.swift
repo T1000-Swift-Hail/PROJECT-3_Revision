@@ -22,13 +22,7 @@ class counterVC: UIViewController {
         count = count + 1
                lblNumber.text = "\(count)"
         }
-//        else if  count 30 >0 {
-//            count = count - 0
-//                   lblNumber.text = "\(count)"
-//        }
-//        else{
 //
-//        }
       
 //            var  count = 0
 //        for count in countt 0...10{
@@ -48,7 +42,13 @@ class counterVC: UIViewController {
      
      
         
-        
+//else if  count 30 >0 {
+////            count = count - 0
+//                   lblNumber.text = "\(count)"
+//        }
+//        else{
+//
+//        }
         
 
 
