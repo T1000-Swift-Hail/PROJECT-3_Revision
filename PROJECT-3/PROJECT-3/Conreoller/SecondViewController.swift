@@ -54,9 +54,6 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
     
     @IBOutlet weak var mapOutLet: MKMapView!
     
-   
-    
-    
     @objc func longPressGeuster(gusterRecognizer : UIGestureRecognizer) {
         
         let touchPoint = gusterRecognizer.location(in: self.mapOutLet)
@@ -68,7 +65,6 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
         newUserAnnotation.coordinate = coordinte
         mapOutLet.addAnnotation(newUserAnnotation)
         
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -76,12 +72,10 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
         
     }
     @IBAction func ConfirmOrders(_ sender: Any) {
-       
+        
         let alert = UIAlertController(title: "Complete", message: "Dear Customer our team will be contact you soon Don't Worry", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
         self.present(alert, animated: true)
-        
-        
         
     }
     

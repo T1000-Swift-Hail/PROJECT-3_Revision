@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-// protocol for app for company type
+// protocol for app 
 protocol Company {
     
     var companiesImages : [CompanyTypes] {get}

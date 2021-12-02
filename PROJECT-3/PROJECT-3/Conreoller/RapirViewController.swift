@@ -8,7 +8,7 @@
 import UIKit
 //class for rapir view controller
 class RapirViewController: UIViewController {
-// define new properties to asign to for the cpmpany name
+    // define new properties to asign to for the cpmpany name
     let phoneCompanies = Companies()
     // assgin text data and selecte image to no value
     var selectedTextData = ""

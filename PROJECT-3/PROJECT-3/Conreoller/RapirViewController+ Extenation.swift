@@ -21,7 +21,7 @@ extension RapirViewController : UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return phoneCompanies.companiesImages.count
     }
-  //  function for collection view cell
+    //  function for collection view cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColllectionCell", for: indexPath) as? CollectionViewCell else {return UICollectionViewCell()}
         let imageName = phoneCompanies.companiesImages[indexPath.row].rawValue
@@ -42,19 +42,19 @@ extension RapirViewController : UICollectionViewDelegate, UICollectionViewDataSo
         selectedImageData = UIImage(named: imageName)
         
     }
-        //function prepare to display in second view controller
+    //function prepare to display in second view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! SecondViewController
         vc.dataImageEntered = selectedImageData
         vc.dataTextEntered = selectedTextData
         
     }
-   // function height for the raw
+    // function height for the raw
     func CollectionView(_ CollectionView: UICollectionView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 400
         
     }
-  //  function alert massage for customer
+    //  function alert massage for customer
     func DisplayAlert(withTitle title: String, message: String,isEntered: Bool) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title:NSLocalizedString("Ok", comment: ""), style: .default, handler: { action in
