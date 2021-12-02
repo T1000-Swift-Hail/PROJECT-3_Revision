@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
 protocol Photos{
     var name : String {get}
@@ -18,4 +19,8 @@ struct Photo :Photos {
     let photo : UIImage
     
 }
-
+struct Maps{
+    var name : String
+    var lattitude : CLLocationDegrees
+    var longtitude : CLLocationDegrees
+}

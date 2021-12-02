@@ -210,6 +210,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.76505848740000004" green="0.86078917980000003" blue="0.69140965880000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.85298254799999995" green="0.95377403800000005" blue="0.91282113320000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -253,6 +254,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.76505848740000004" green="0.86078917980000003" blue="0.69140965880000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -335,12 +337,25 @@
                                     <action selector="namesOfAllahBtn:" destination="s7t-S6-VQJ" eventType="touchUpInside" id="Ji7-8N-YCt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAU-zy-LLE">
+                                <rect key="frame" x="20" y="667" width="374" height="86"/>
+                                <color key="backgroundColor" red="0.090437971059999997" green="0.44262212509999999" blue="0.29797673229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="The most famous mosque in Riyadh">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnMosq:" destination="s7t-S6-VQJ" eventType="touchUpInside" id="WP3-lM-ex4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D6H-2A-55D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jtT-po-pSt" firstAttribute="leading" secondItem="D6H-2A-55D" secondAttribute="leading" constant="20" id="2IA-Cm-bMS"/>
                             <constraint firstItem="9kg-KZ-JGw" firstAttribute="leading" secondItem="D6H-2A-55D" secondAttribute="leading" constant="20" id="6xO-re-wm7"/>
+                            <constraint firstItem="D6H-2A-55D" firstAttribute="trailing" secondItem="LAU-zy-LLE" secondAttribute="trailing" constant="20" id="8PC-mp-KdT"/>
                             <constraint firstItem="9kg-KZ-JGw" firstAttribute="top" secondItem="D6H-2A-55D" secondAttribute="top" id="9M1-pN-OV8"/>
                             <constraint firstItem="jtT-po-pSt" firstAttribute="top" secondItem="9kg-KZ-JGw" secondAttribute="bottom" constant="97" id="D0i-hg-RzR"/>
                             <constraint firstItem="D6H-2A-55D" firstAttribute="trailing" secondItem="9kg-KZ-JGw" secondAttribute="trailing" constant="20" id="Osl-yy-SJ6"/>
@@ -348,12 +363,15 @@
                             <constraint firstAttribute="bottom" secondItem="JOo-u9-BVh" secondAttribute="bottom" id="dl0-cZ-0mh"/>
                             <constraint firstItem="D6H-2A-55D" firstAttribute="trailing" secondItem="jtT-po-pSt" secondAttribute="trailing" constant="20" id="gIo-jZ-uJF"/>
                             <constraint firstItem="JOo-u9-BVh" firstAttribute="top" secondItem="QN5-8o-T9A" secondAttribute="top" id="in0-7Y-IzK"/>
+                            <constraint firstItem="LAU-zy-LLE" firstAttribute="top" secondItem="jtT-po-pSt" secondAttribute="bottom" constant="23" id="qPH-tK-wbS"/>
                             <constraint firstItem="JOo-u9-BVh" firstAttribute="leading" secondItem="D6H-2A-55D" secondAttribute="leading" id="qyR-Ac-rax"/>
+                            <constraint firstItem="LAU-zy-LLE" firstAttribute="leading" secondItem="D6H-2A-55D" secondAttribute="leading" constant="20" id="svR-bM-QHF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sSi-az-lwW"/>
                     <connections>
                         <segue destination="xxi-Pg-XbY" kind="show" identifier="namesOfAllah" id="xMl-Cs-fIQ"/>
+                        <segue destination="6Gb-Uw-Qff" kind="show" identifier="map" id="qse-QA-9Bl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lfQ-Sk-ZHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -512,6 +530,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.76505848740000004" green="0.86078917980000003" blue="0.69140965880000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -521,6 +540,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XqU-ZE-N9P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="975.36231884057975" y="2076.5625"/>
+        </scene>
+        <!--MapVC-->
+        <scene sceneID="o5H-7n-AJe">
+            <objects>
+                <viewController id="6Gb-Uw-Qff" customClass="MapVC" customModule="athkar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U1s-1S-G0s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qmi-tV-GnE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="KvT-ee-m7l"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vh3-Rw-6rv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qmi-tV-GnE" firstAttribute="top" secondItem="U1s-1S-G0s" secondAttribute="top" id="Jvk-dK-0bo"/>
+                            <constraint firstItem="qmi-tV-GnE" firstAttribute="trailing" secondItem="vh3-Rw-6rv" secondAttribute="trailing" id="r1d-kB-b5t"/>
+                            <constraint firstAttribute="bottom" secondItem="qmi-tV-GnE" secondAttribute="bottom" id="shL-Wy-x1B"/>
+                            <constraint firstItem="qmi-tV-GnE" firstAttribute="leading" secondItem="vh3-Rw-6rv" secondAttribute="leading" id="wsz-K3-k5E"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CVe-AA-zdg"/>
+                    <connections>
+                        <outlet property="Location" destination="qmi-tV-GnE" id="DfL-60-FmB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F3Y-j9-m9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1873.913043478261" y="2803.7946428571427"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p0W-FW-hEb">
@@ -534,6 +586,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.76505848740000004" green="0.86078917980000003" blue="0.69140965880000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
