@@ -342,7 +342,7 @@
                                                                 <fragment content="Electrical">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.01720112501972848" green="0.01720112501972848" blue="0.01720112501972848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" size="30" name="TimesNewRomanPS-BoldMT"/>
+                                                                        <font key="NSFont" size="33" name="TimesNewRomanPS-BoldMT"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>

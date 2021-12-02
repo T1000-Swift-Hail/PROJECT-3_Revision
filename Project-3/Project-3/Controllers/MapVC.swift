@@ -49,22 +49,7 @@ class MapVC: UIViewController, CLLocationManagerDelegate {
         mapView.addAnnotation(pin)
     }
 
-//    func mapSet() {
-//    let components = cor?.components(separatedBy: ",")
-//        let latitude: CLLocationDegrees = Double(components![0])!
-//        let longitude: CLLocationDegrees = Double(components![1])!
-//        let regionDistance:CLLocationDistance = 10000
-//        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
-//        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
-//        let options = [
-//          MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
-//          MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
-//        ]
-//        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
-//        let mapItem = MKMapItem(placemark: placemark)
-//        mapItem.name = "Customer Location"
-//        mapItem.openInMaps(launchOptions: options)
-//    }
+
 
 }
 
