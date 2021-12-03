@@ -1,0 +1,60 @@
+
+/* Class = "UIButton"; configuration.title = "Get Ticket"; ObjectID = "0ff-v1-EKH"; */
+"0ff-v1-EKH.configuration.title" = "حجز تذاكر";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0ff-v1-EKH"; */
+"0ff-v1-EKH.normalTitle" = " ";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "0i7-hF-GgN"; */
+"0i7-hF-GgN.text" = "مرحبا بك";
+
+/* Class = "UILabel"; text = "movieTitle"; ObjectID = "DDg-VX-eWB"; */
+"DDg-VX-eWB.text" = " ";
+
+/* Class = "UIButton"; configuration.title = "Looking For Movie Recommednations?"; ObjectID = "HVX-Im-X6U"; */
+"HVX-Im-X6U.configuration.title" = "تبحث عن توصية أفلام؟";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HVX-Im-X6U"; */
+"HVX-Im-X6U.normalTitle" = " ";
+
+/* Class = "UIButton"; configuration.title = "Get Ticket"; ObjectID = "LAU-vB-jPG"; */
+"LAU-vB-jPG.configuration.title" = "حجز تذاكر";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "LAU-vB-jPG"; */
+"LAU-vB-jPG.normalTitle" = " ";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "XHi-rY-g7H"; */
+"XHi-rY-g7H.configuration.title" = "تسجيل دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XHi-rY-g7H"; */
+"XHi-rY-g7H.normalTitle" = " ";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "YSs-EC-l1w"; */
+"YSs-EC-l1w.title" = "التالي";
+
+/* Class = "UINavigationItem"; title = "Trending Movies"; ObjectID = "d8a-ZK-qn1"; */
+"d8a-ZK-qn1.title" = "أفلام رائجة الآن";
+
+/* Class = "UINavigationItem"; title = "Top Rated Movies"; ObjectID = "iQK-ct-q1E"; */
+"iQK-ct-q1E.title" = "الأفلام الأعلى تصنيف";
+
+/* Class = "UIButton"; configuration.title = "Trending Movies"; ObjectID = "jKA-ZZ-Sey"; */
+"jKA-ZZ-Sey.configuration.title" = "أفلام رائجة الآن";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jKA-ZZ-Sey"; */
+"jKA-ZZ-Sey.normalTitle" = " ";
+
+/* Class = "UIViewController"; title = "HomeViewController"; ObjectID = "mMK-Bz-cYO"; */
+"mMK-Bz-cYO.title" = " ";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "nd5-V2-cey"; */
+"nd5-V2-cey.placeholder" = "ايميل";
+
+/* Class = "UILabel"; text = "movieTitle"; ObjectID = "q6b-HP-fgD"; */
+"q6b-HP-fgD.text" = " ";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "sU2-uV-FKq"; */
+"sU2-uV-FKq.placeholder" = "كلمة المرور";
+
+/* Class = "UINavigationItem"; title = "Top Rated Movies"; ObjectID = "zwE-lf-6vh"; */
+"zwE-lf-6vh.title" = "الأفلام الأعلى تصنيف";
